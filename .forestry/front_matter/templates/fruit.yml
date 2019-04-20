@@ -4,32 +4,48 @@ hide_body: true
 fields:
 - type: text
   name: template
-  label: template
+  label: Template
+  hidden: true
+  default: fruit
 - type: text
   name: title
-  label: title
+  label: Titre
 - type: text
   name: family
-  label: family
-- type: text
-  name: intro
-  label: intro
+  label: Famille
+  description: Abricots, Kiwis, Pèches...
+- name: intro
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Intro
+  description: Texte présent sur l'accueil
 - type: textarea
   name: text
-  label: text
+  label: Texte
 - type: field_group_list
   name: calendar
-  label: calendar
+  label: Calendrier
   fields:
   - type: text
     name: name
-    label: name
+    label: Mois
   - type: text
     name: title
-    label: title
+    label: Titre
   - type: textarea
     name: text
-    label: text
+    label: Texte
+    config:
+      wysiwyg: true
+      schema:
+        format: markdown
   - type: boolean
     name: has_offers
-    label: has_offers
+    label: Offres présentes
+  config:
+    labelField: name
