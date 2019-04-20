@@ -4,92 +4,129 @@ hide_body: true
 fields:
 - type: text
   name: template
-  label: template
+  label: Template
+  hidden: true
+  description: Page Template
+  default: home
 - type: text
   name: title
-  label: title
+  label: Titre
 - type: field_group
   name: about
-  label: about
+  label: À propos
   fields:
   - type: text
     name: subtitle
-    label: subtitle
+    label: Sous-titre
   - type: text
     name: title
-    label: title
-  - type: text
-    name: text
-    label: text
-  - type: text
-    name: visual
-    label: visual
+    label: Titre
+  - name: text
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: markdown
+    label: Texte
+  - name: visual
+    type: file
+    config:
+      maxSize: 250
+    label: Visuel
 - type: field_group
   name: verger
-  label: verger
+  label: Le Verger
   fields:
   - type: text
     name: subtitle
-    label: subtitle
+    label: Sous-titre
   - type: field_group_list
     name: content
     label: content
     fields:
     - type: text
       name: title
-      label: title
+      label: Titre
     - type: textarea
       name: text
-      label: text
+      label: Texte
+      config:
+        wysiwyg: true
+        schema:
+          format: markdown
+    config:
+      labelField: title
+      max: '2'
 - type: field_group
   name: fruits
-  label: fruits
+  label: Fruits
   fields:
   - type: text
     name: subtitle
-    label: subtitle
+    label: Sous-titre
   - type: text
     name: title
-    label: title
+    label: Titre
 - type: field_group
   name: bref
-  label: bref
+  label: En bref
   fields:
   - type: text
     name: title
-    label: title
-  - type: text
-    name: text
-    label: text
+    label: Title
+  - name: text
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: markdown
+    label: Texte
 - type: field_group
   name: recrutment
-  label: recrutment
+  label: Recrutement
   fields:
   - type: text
     name: title
-    label: title
+    label: Titre
   - type: textarea
     name: text
-    label: text
-  - type: text
-    name: visual
-    label: visual
+    label: Texte
+    config:
+      wysiwyg: true
+      schema:
+        format: markdown
+  - name: visual
+    type: file
+    config:
+      maxSize: 250
+    label: Visuel
 - type: field_group
   name: apply
-  label: apply
+  label: Postuler
   fields:
   - type: text
     name: title
-    label: title
+    label: Titre
   - type: textarea
     name: text
-    label: text
-  - type: text
-    name: file
-    label: file
+    label: Texte
+    config:
+      wysiwyg: true
+      schema:
+        format: markdown
+  - name: file
+    type: file
+    config:
+      maxSize: 250
+    label: Fichier
+    description: Dépôt de dossier
   - type: text
     name: phone
-    label: phone
+    label: Téléphone
   - type: text
     name: email
-    label: email
+    label: Email
