@@ -1,0 +1,23 @@
+[
+  {
+    "type": "internal",
+    "url": "#About",
+    "title": "À propos"
+  },
+  {
+    "type": "internal",
+    "url": "#Verger",
+    "title": "Le verger"
+  },
+  {
+    "type": "internal",
+    "url": "#fruits",
+    "title": "Les fruits"
+  },
+  {
+    "type": "internal",
+    "url": "#Contact",
+    "title": "Recrutement & contact",
+    "type": "button"
+  }
+]
