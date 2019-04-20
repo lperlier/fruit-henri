@@ -1,0 +1,95 @@
+---
+label: Site
+hide_body: true
+fields:
+- type: text
+  name: template
+  label: template
+- type: text
+  name: title
+  label: title
+- type: field_group
+  name: about
+  label: about
+  fields:
+  - type: text
+    name: subtitle
+    label: subtitle
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: text
+    label: text
+  - type: text
+    name: visual
+    label: visual
+- type: field_group
+  name: verger
+  label: verger
+  fields:
+  - type: text
+    name: subtitle
+    label: subtitle
+  - type: field_group_list
+    name: content
+    label: content
+    fields:
+    - type: text
+      name: title
+      label: title
+    - type: textarea
+      name: text
+      label: text
+- type: field_group
+  name: fruits
+  label: fruits
+  fields:
+  - type: text
+    name: subtitle
+    label: subtitle
+  - type: text
+    name: title
+    label: title
+- type: field_group
+  name: bref
+  label: bref
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: text
+    label: text
+- type: field_group
+  name: recrutment
+  label: recrutment
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: textarea
+    name: text
+    label: text
+  - type: text
+    name: visual
+    label: visual
+- type: field_group
+  name: apply
+  label: apply
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: textarea
+    name: text
+    label: text
+  - type: text
+    name: file
+    label: file
+  - type: text
+    name: phone
+    label: phone
+  - type: text
+    name: email
+    label: email
