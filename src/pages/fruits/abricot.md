@@ -3,8 +3,6 @@ template: fruit
 title: L'abricot
 family: Abricots
 intro: Text d'intro quae legam quis quorum irure fore irure veniam export sint.
-text: Text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-  tempor incididunt ut labore et dolore magna aliqua.
 calendar:
 - name: Mars
   title: Plantation
