@@ -131,3 +131,5 @@ fields:
   - type: text
     name: email
     label: Email
+pages:
+- src/pages/index.md
