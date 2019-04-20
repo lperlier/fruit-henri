@@ -1,6 +1,6 @@
 ---
 label: Fruit
-hide_body: true
+hide_body: false
 display_field: title
 fields:
 - type: text
@@ -25,9 +25,6 @@ fields:
       format: markdown
   label: Intro
   description: Texte présent sur l'accueil
-- type: textarea
-  name: text
-  label: Texte
 - type: field_group_list
   name: calendar
   label: Calendrier
