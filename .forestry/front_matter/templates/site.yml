@@ -12,6 +12,11 @@ fields:
 - type: text
   name: title
   label: Titre
+- name: pagevisual
+  type: file
+  config:
+    maxSize: 250
+  label: Visuel
 - type: field_group
   name: about
   label: À propos
