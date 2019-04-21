@@ -38,6 +38,7 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 800,
+              pathFields: ["image", "cover", "visual", "pagevisual"],
             },
           },
           'gatsby-remark-normalize-paths',

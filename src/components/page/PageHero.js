@@ -2,15 +2,16 @@ import React from 'react'
 
 import { Container } from 'components/container/Container'
 
-import s from './PageHeader.module.scss';
+import s from './PageHero.module.scss';
 
-export const PageHeader = ({ children, ...rest }) => {
+export const PageHero = ({ children, ...rest }) => {
   
   const passProps = { ...rest };
-  let itemClasses = s.PageHeader;
+  let itemClasses = s.PageHero;
   if (passProps.className) itemClasses += ' ' + passProps.className ;
   
   return (
+    
     <>
       <div className={itemClasses}>
         <Container>
@@ -18,6 +19,7 @@ export const PageHeader = ({ children, ...rest }) => {
         </Container>
       </div>
     </>
+    
   )
   
 }

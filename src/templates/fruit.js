@@ -9,27 +9,33 @@ export default class Homepage extends React.Component {
     
     const fruit = this.props.data.markdownRemark.frontmatter;
     const calendar = this.props.data.markdownRemark.frontmatter.calendar;
+    
+    console.log(this.props.data.markdownRemark.html);
 
     return (
       <>
     
-        <main className="HomePage">
+        <main className="Single Fruit">
           <PageHeader>
           
             <h1>{fruit.title}</h1>
-            <p>{fruit.text}</p>
             
-            {calendar.map((month, index) => (
-              <div key={index}>
-                <span>{month.name}</span>
-                <h3>{month.title}</h3>
-                <p>{month.text}</p>
-                {month.has_offers ? (
-                  <Link to="/#Contact">qsdfdqsf</Link>
-                ) : null }
-                
-              </div>
-            ))}
+            <div className="Content" dangerouslySetInnerHTML={{ __html: this.props.data.markdownRemark.html }} />
+            
+            <div className="Calendar">
+              {calendar.map((month, index) => (
+                <div className="Month" key={index}>
+                  <span className="Month__name">{month.name}</span>
+                  <h3 className="Month__Activity">{month.title}</h3>
+                  <p>{month.text}</p>
+                  {month.has_offers ? (
+                    <Link to="/#Contact">qsdfdqsf</Link>
+                  ) : null }
+                  
+                </div>
+              ))}
+            </div>
+            
             
           </PageHeader>
         </main>
@@ -48,7 +54,6 @@ export const pageQuery = graphql`
       frontmatter {
         template
         title
-        text
         calendar {
           name
           title

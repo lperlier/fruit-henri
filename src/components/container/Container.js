@@ -5,12 +5,12 @@ import s from './Container.module.scss';
 export const Container = ({ children, ...rest }) => {
   
   const passProps = { ...rest };
-  let containerClasses = s.Container;
-  if (passProps.className) containerClasses = [s.Container, passProps.className].join(' ');
+  let itemClasses = s.Container;
+  if (passProps.className) itemClasses += ' ' + passProps.className ;
   
   return (
-    <>
-      <div className={containerClasses}>
+    <>  
+      <div className={itemClasses}>
         {children}
       </div>
     </>

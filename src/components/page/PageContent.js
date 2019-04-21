@@ -4,14 +4,22 @@ import { Container } from 'components/container/Container'
 
 import s from './PageContent.module.scss';
 
-export const PageContent = ({ children }) => (
+export const PageContent = ({ children, ...rest }) => {
   
-  <>
-    <div className={s.PageContent}>
-      <Container>
-        {children}
-      </Container>
-    </div>
-  </>
+  const passProps = { ...rest };
+  let itemClasses = s.PageContent;
+  if (passProps.className) itemClasses += ' ' + passProps.className ;
   
-)
+  return (
+    
+    <>
+      <div className={itemClasses}>
+        <Container>
+          {children}
+        </Container>
+      </div>
+    </>
+    
+  )
+  
+}

@@ -20,7 +20,6 @@ export class AppContainer extends React.Component {
   }
   
   componentDidMount() {
-    console.log('New App Layout');
     document.body.classList.add('is-first');
     document.body.classList.add('is-loading');
     document.body.classList.add('is-animating');
