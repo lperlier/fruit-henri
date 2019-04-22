@@ -3,19 +3,12 @@ label: Offers:Champs
 hide_body: false
 fields:
 - name: type
-  type: select
-  default: []
+  type: text
   config:
     required: false
-    options:
-    - champs
-    - admin
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
   label: Type
+  hidden: true
+  default: champs
 - name: offer
   type: include
   config: {}
