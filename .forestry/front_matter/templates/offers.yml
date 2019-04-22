@@ -10,13 +10,15 @@ fields:
   hidden: true
 - name: type
   type: select
-  default: []
+  default: champs
   config:
     required: false
-    options: []
+    options:
+    - champs
+    - admin
     source:
-      type: pages
-      section: champs
+      type: simple
+      section: ''
       file: 
       path: 
   label: Type
