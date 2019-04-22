@@ -21,11 +21,15 @@ sections:
   label: Champs
   create: all
   match: "**/*"
+  templates:
+  - offers-champs
 - type: directory
   path: src/pages/offers/admin
   label: Administration
   create: documents
   match: "**/*"
+  templates:
+  - offer-admin
 upload_dir: src/images
 public_path: src/images
 front_matter_path: ''
