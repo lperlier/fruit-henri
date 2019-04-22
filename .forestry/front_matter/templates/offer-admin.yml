@@ -1,4 +1,16 @@
 ---
 label: Offer:Admin
 hide_body: false
-fields: []
+fields:
+- name: type
+  type: text
+  config:
+    required: false
+  label: Type
+  default: admin
+  hidden: true
+- name: offer
+  type: include
+  config: {}
+  template: offers
+  label: Offer
