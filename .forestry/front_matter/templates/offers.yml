@@ -14,9 +14,51 @@ fields:
 - type: file
   name: visual
   label: Visuel
-- type: text
-  name: month_start
+- name: month_start
+  type: select
+  default: Janvier
+  config:
+    required: false
+    options:
+    - Janvier
+    - " Février"
+    - Mars
+    - Avril
+    - Mai
+    - Juin
+    - Juillet
+    - Août
+    - Septembre
+    - Octobre
+    - Novembre
+    - Décembre
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
   label: Mois de départ
-- type: text
-  name: month_end
+- name: month_end
+  type: select
+  default: Janvier
+  config:
+    required: false
+    options:
+    - Janvier
+    - Février
+    - Mars
+    - Avril
+    - Mai
+    - Juin
+    - Juillet
+    - Août
+    - Septembre
+    - Octobre
+    - Novembre
+    - Décembre
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
   label: Mois de fin
