@@ -4,19 +4,30 @@ hide_body: false
 fields:
 - type: text
   name: template
-  label: template
+  label: Template
+  default: offer
+  hidden: true
+- name: type
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: pages
+      section: champs
+      file: 
+      path: 
+  label: Type
 - type: text
   name: title
-  label: title
+  label: Titre
 - type: file
   name: visual
-  label: visual
-- type: text
-  name: type
-  label: type
+  label: Visuel
 - type: text
   name: month_start
-  label: month_start
+  label: Mois de départ
 - type: text
   name: month_end
-  label: month_end
+  label: Mois de fin
