@@ -12,6 +12,20 @@ sections:
   label: Fruits
   create: all
   match: "**/*"
+  templates:
+  - fruit
+- type: heading
+  label: Offres
+- type: directory
+  path: src/pages/offers/champs
+  label: Champs
+  create: all
+  match: "**/*"
+- type: directory
+  path: src/pages/offers/admin
+  label: Administration
+  create: documents
+  match: "**/*"
 upload_dir: src/images
 public_path: src/images
 front_matter_path: ''
