@@ -8,20 +8,6 @@ fields:
   label: Template
   default: offer
   hidden: true
-- name: type
-  type: select
-  default: champs
-  config:
-    required: false
-    options:
-    - champs
-    - admin
-    source:
-      type: simple
-      section: ''
-      file: 
-      path: 
-  label: Type
 - type: text
   name: title
   label: Titre
