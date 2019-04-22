@@ -7,7 +7,7 @@ import { Container } from 'components/container/Container'
 export const Verger = ({ data }) => (
     
   <>
-    <section className={s.Verger}>
+    <section id="Verger" className={s.Verger}>
       <Container>
       
         <span className="subtitle">{data.subtitle}</span>

@@ -8,13 +8,13 @@ import { Visual } from 'components/visual/Visual'
 export const About = ({ data }) => (
     
   <>
-    <section className={s.About}>
+    <section id="About" className={s.About}>
       <Container>
       
         <span className="subtitle">{data.subtitle}</span>
         <h2>{data.title}</h2>
         <p>{data.text}</p>
-        <Visual className={s.About__visual} img={data.visual} prllx="80"/>
+        <Visual className={s.About__visual} img={data.visual}/>
         
       </Container>
     </section>

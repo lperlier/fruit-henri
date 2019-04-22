@@ -8,7 +8,7 @@ import { Preview } from 'components/fruits/Preview'
 export const Fruits = ({ data, query }) => (
   
     <>
-      <section className={s.Fruits}>
+      <section id="Fruits" className={s.Fruits}>
         <Container>
         
           <span className="subtitle">{data.subtitle}</span>

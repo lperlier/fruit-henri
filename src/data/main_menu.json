@@ -11,12 +11,12 @@
   },
   {
     "type": "internal",
-    "url": "/#fruits",
+    "url": "/#Fruits",
     "title": "Les fruits"
   },
   {
     "type": "internal",
-    "url": "/#Contact",
+    "url": "/#Recrutment",
     "title": "Recrutement & contact",
     "type": "button"
   }

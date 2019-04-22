@@ -9,8 +9,6 @@ export default class Homepage extends React.Component {
     
     const fruit = this.props.data.markdownRemark.frontmatter;
     const calendar = this.props.data.markdownRemark.frontmatter.calendar;
-    
-    console.log(this.props.data.markdownRemark.html);
 
     return (
       <>
@@ -52,7 +50,6 @@ export const pageQuery = graphql`
       excerpt
       html
       frontmatter {
-        template
         title
         calendar {
           name

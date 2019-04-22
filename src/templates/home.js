@@ -13,14 +13,12 @@ import { Contact } from 'components/contact/Contact'
 
 import s from './home.module.scss';
 
-
-
-
 export default class Homepage extends React.Component {
   render() {
     
     const page = this.props.data.pageData
     const fruits = this.props.data.fruitsData
+    const offers = this.props.data.OffersData
 
     return (
       <>
@@ -44,7 +42,7 @@ export default class Homepage extends React.Component {
           <Verger  data={page.frontmatter.verger}/>
           <Fruits data={page.frontmatter.fruits} query={fruits.edges}/>
           <Bref data={page.frontmatter.bref}/>
-          <Recrutment data={page.frontmatter.recrutment}/>
+          <Recrutment data={page.frontmatter.recrutment} query={offers.edges}/>
           <Contact data={page.frontmatter.apply}/>
           
         </main>
@@ -134,7 +132,23 @@ export const pageQuery = graphql`
         }
       }
     }
-  
+    
+    OffersData: allMarkdownRemark(filter: {frontmatter: {template : {eq : "offer" }}}) {
+      edges {
+        node {
+          id
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            month_start
+            month_end
+            type
+          }
+        }
+      }
+    }
     
   }
 `
