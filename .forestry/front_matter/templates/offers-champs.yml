@@ -1,4 +1,23 @@
 ---
 label: Offers:Champs
 hide_body: false
-fields: []
+fields:
+- name: type
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - champs
+    - admin
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Type
+- name: offer
+  type: include
+  config: {}
+  template: offers
+  label: Offre
