@@ -6,10 +6,12 @@ webhook_url:
 sections:
 - type: document
   path: src/pages/index.md
-  label: Site
+  label: Contenu
+- type: heading
+  label: Fruits
 - type: directory
   path: src/pages/fruits
-  label: Fruits
+  label: Ajouter
   create: all
   match: "**/*"
   templates:
