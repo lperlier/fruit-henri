@@ -11,7 +11,7 @@ sections:
   label: Fruits
 - type: directory
   path: src/pages/fruits
-  label: Ajouter
+  label: Fruits
   create: all
   match: "**/*"
   templates:
