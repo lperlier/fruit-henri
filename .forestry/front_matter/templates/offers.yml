@@ -1,0 +1,22 @@
+---
+label: Offers
+hide_body: false
+fields:
+- type: text
+  name: template
+  label: template
+- type: text
+  name: title
+  label: title
+- type: file
+  name: visual
+  label: visual
+- type: text
+  name: type
+  label: type
+- type: text
+  name: month_start
+  label: month_start
+- type: text
+  name: month_end
+  label: month_end
