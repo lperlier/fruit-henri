@@ -3,8 +3,8 @@ template: offer
 title: Nom du Métier Champs
 visual: "/src/images/brian-jimenez-529-unsplash.jpg"
 type: champs
-month_start: juin
-month_end: aout
+month_start: Janvier
+month_end: Juin
 
 ---
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
