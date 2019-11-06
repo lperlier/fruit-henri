@@ -14,6 +14,7 @@ about:
 
     Le métier d’arboriculteur connait un tournant dans ses pratiques et doit donc s’adapter. L’impact environnemental & social représente un enjeu majeur pour notre génération . Dans ce cadre nous adhérons à la démarche **Verger Eco-responsable et sommes certifiés exploitation à Haute Valeur Environnementale (HVE).**
   visual: src/images/about_visual.jpg
+  image: src/images/about_visual.jpg
 verger:
   subtitle: Le Verger
   content:
@@ -56,5 +57,6 @@ hve:
     clairement exprimé dans les travaux du Grenelle de l’environnement de reconnaître
     les exploitations engagées dans des démarches particulièrement respectueuses de
     l’environnement
+image: src/images/visual.jpg
 
 ---
