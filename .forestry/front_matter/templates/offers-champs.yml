@@ -23,4 +23,5 @@ fields:
   template: offers
   label: Offre
 pages:
+- src/pages/offers/station/administratif.md
 - src/pages/offers/station/conditionnement.md
