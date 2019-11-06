@@ -165,3 +165,5 @@ fields:
         format: html-blocks
     label: Texte
   label: HVE
+pages:
+- src/pages/index.md

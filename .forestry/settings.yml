@@ -7,7 +7,6 @@ sections:
 - type: document
   path: src/pages/index.md
   label: Site
-  match: "**/*"
 - type: heading
   label: Fruits
 - type: directory
