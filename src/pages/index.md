@@ -50,5 +50,11 @@ apply:
   file: https://unsplash.com/photos/_omuigahLco
   phone: 04 88 99 88 99
   email: samuel.fdhenri@gmail.com
+hve:
+  title: "#NOUSSOMMESH.V.E"
+  text: La certification environnementale des exploitations agricoles répond au besoin
+    clairement exprimé dans les travaux du Grenelle de l’environnement de reconnaître
+    les exploitations engagées dans des démarches particulièrement respectueuses de
+    l’environnement
 
 ---
