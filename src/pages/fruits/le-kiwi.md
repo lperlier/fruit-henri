@@ -1,7 +1,7 @@
 ---
 template: fruit
 title: Le kiwi
-family: ''
+family: Kiwis
 intro: Le kiwi est le fruit de l’actinadia, un arbre liane. Son fruit sucré et légèrement
   acidulé est riche en vitamines, fibres et antioxydants. C’est le fruit vitalité
   par excellence !
@@ -27,6 +27,6 @@ calendar:
     dernière est optimum.
 
 ---
-Contrairement à ce que l’on croit le kiwi se cultive très bien sous nos latitudes. Une terre riche et une bonne irrigation lui garantissent un bon développement. Le kiwi est un fruit résistant aux ravageurs, notamment grâce à ses poils qui constituent une barrière physique. Sa sensibilité c’est au vent qu’il la doit. Son bois et ses feuilles sont très cassants, il est primordial de bien le protéger avec des haies brise vent. 
+Contrairement à ce que l’on croit le kiwi se cultive très bien sous nos latitudes. Une terre riche et une bonne irrigation lui garantissent un bon développement. Le kiwi est un fruit résistant aux ravageurs, notamment grâce à ses poils qui constituent une barrière physique. Sa sensibilité c’est au vent qu’il la doit. Son bois et ses feuilles sont très cassants, il est primordial de bien le protéger avec des haies brise vent.
 
 Le kiwi est une plante dioique, c’est-à-dire qu’il existe des plants mâles et des plants femelles. Seules les femelles produisent des fruits. Nous plantons un arbre mâle tous les six arbres femelles pour garantir une bonne pollinisation. Au moment de la floraison nous disposons des ruches dans la parcelle et nous laissons travailler les abeilles…

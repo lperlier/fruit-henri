@@ -8,31 +8,31 @@ import { Contact } from 'components/contact/Contact'
 import s from './offer.module.scss';
 
 function Offer(props) {
-    
+
     const offer = props.data.pageData.frontmatter;
 
     return (
-    
+
         <article className={s.Offer}>
           <Container>
-        
+
             <div className={s.Offer__hero}>
               <h1>{offer.title}</h1>
               <div className={s.Offer__Period}>
                 De {offer.month_start} à {offer.month_end}
               </div>
             </div>
-            
+
             <Visual img={offer.visual} prllx="80"/>
-            
+
             <div className={s.Offer__content} dangerouslySetInnerHTML={{ __html: props.data.pageData.html }} />
-            
+
           </Container>
-          
+
           <Contact/>
-          
+
         </article>
-        
+
     );
 }
 
@@ -44,13 +44,6 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        visual {
-          childImageSharp {
-            fluid(maxWidth: 800) {
-              srcSet
-            }
-          }
-        }
         month_start
         month_end
       }

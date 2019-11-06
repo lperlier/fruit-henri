@@ -15,38 +15,38 @@ import { Contact } from 'components/contact/Contact'
 import s from './home.module.scss';
 
 function Homepage(props) {
-    
+
     const page = props.data.pageData.frontmatter;
     const fruits = useFruits();
 
     return (
-    
+
       <main className={s.pageHome}>
-      
+
         <PageHero>
-        
+
           <h1>{page.title}</h1>
           <ul>
             {fruits.map((fruit) => (
               <li key={fruit.slug}>{fruit.family}</li>
             ))}
           </ul>
-          
+
         </PageHero>
-        
+
         <Visual img={page.pagevisual} prllx="80"/>
-        
+
         <About data={page.about}/>
         <Verger  data={page.verger}/>
         <Fruits data={page.fruits}/>
         <Bref data={page.bref}/>
         <Recrutment data={page.recrutment}/>
         <Contact/>
-        
+
       </main>
-        
+
     );
-    
+
 };
 
 export default Homepage;
@@ -54,7 +54,7 @@ export default Homepage;
 
 export const pageQuery = graphql`
   query HomePageBySlug($slug: String!) {
-    
+
     pageData: markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       excerpt
@@ -63,8 +63,11 @@ export const pageQuery = graphql`
         title
         pagevisual {
           childImageSharp {
-            fluid(maxWidth: 800) {
+            fluid(maxWidth: 1600, quality: 80) {
+              aspectRatio
+              src
               srcSet
+              sizes
             }
           }
         }
@@ -74,8 +77,11 @@ export const pageQuery = graphql`
           text
           visual {
             childImageSharp {
-              fluid(maxWidth: 800) {
+              fluid(maxWidth: 800, quality: 80) {
+                aspectRatio
+                src
                 srcSet
+                sizes
               }
             }
           }
@@ -85,6 +91,16 @@ export const pageQuery = graphql`
           content {
             title
             text
+          }
+          visual {
+            childImageSharp {
+              fluid(maxWidth: 800, quality: 80) {
+                aspectRatio
+                src
+                srcSet
+                sizes
+              }
+            }
           }
         }
         fruits {
@@ -101,8 +117,11 @@ export const pageQuery = graphql`
           text
           visual {
             childImageSharp {
-              fluid(maxWidth: 800) {
-                srcSet
+              fluid(maxWidth: 800, quality: 80) {
+              aspectRatio
+              src
+              srcSet
+              sizes
               }
             }
           }
