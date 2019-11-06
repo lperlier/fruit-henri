@@ -1,6 +1,7 @@
 import React from 'react'
-// eslint-disable-next-line
 import { graphql } from 'gatsby'
+
+import useFruits from 'hooks/use-fruits';
 
 import { PageHero } from 'components/page/PageHero'
 import { Visual } from 'components/visual/Visual'
@@ -13,44 +14,43 @@ import { Contact } from 'components/contact/Contact'
 
 import s from './home.module.scss';
 
-export default class Homepage extends React.Component {
-  render() {
+function Homepage(props) {
     
-    const page = this.props.data.pageData
-    const fruits = this.props.data.fruitsData
-    const offers = this.props.data.OffersData
+    const page = props.data.pageData.frontmatter;
+    const fruits = useFruits();
 
     return (
-      <>
     
-        <main className={s.pageHome}>
+      <main className={s.pageHome}>
+      
+        <PageHero>
         
-          <PageHero>
+          <h1>{page.title}</h1>
+          <ul>
+            {fruits.map((fruit) => (
+              <li key={fruit.slug}>{fruit.family}</li>
+            ))}
+          </ul>
           
-            <h1>{page.frontmatter.title}</h1>
-            <ul>
-              {fruits.edges.map((fruit, index) => (
-                <li key={index}>{fruit.node.frontmatter.family}</li>
-              ))}
-            </ul>
-            
-          </PageHero>
-          
-          <Visual img={page.frontmatter.pagevisual} prllx="80"/>
-          
-          <About data={page.frontmatter.about}/>
-          <Verger  data={page.frontmatter.verger}/>
-          <Fruits data={page.frontmatter.fruits} query={fruits.edges}/>
-          <Bref data={page.frontmatter.bref}/>
-          <Recrutment data={page.frontmatter.recrutment} query={offers.edges}/>
-          <Contact data={page.frontmatter.apply}/>
-          
-        </main>
+        </PageHero>
         
-      </>
-    )
-  }
-}
+        <Visual img={page.pagevisual} prllx="80"/>
+        
+        <About data={page.about}/>
+        <Verger  data={page.verger}/>
+        <Fruits data={page.fruits}/>
+        <Bref data={page.bref}/>
+        <Recrutment data={page.recrutment}/>
+        <Contact/>
+        
+      </main>
+        
+    );
+    
+};
+
+export default Homepage;
+
 
 export const pageQuery = graphql`
   query HomePageBySlug($slug: String!) {
@@ -107,48 +107,7 @@ export const pageQuery = graphql`
             }
           }
         }
-        apply {
-          title
-          text
-          file
-          phone
-          email
-        }
       }
     }
-    
-    fruitsData: allMarkdownRemark(filter: {frontmatter: {template : {eq : "fruit" }}}) {
-      edges {
-        node {
-          id
-          fields {
-            slug
-          }
-          frontmatter {
-            family
-            title
-            intro
-          }
-        }
-      }
-    }
-    
-    OffersData: allMarkdownRemark(filter: {frontmatter: {template : {eq : "offer" }}}) {
-      edges {
-        node {
-          id
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            month_start
-            month_end
-            type
-          }
-        }
-      }
-    }
-    
   }
 `

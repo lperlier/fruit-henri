@@ -4,14 +4,14 @@ import { Link } from "gatsby"
 
 import s from './offerPreview.module.scss';
 
-export const OfferPreview = ({ data }) => {
+export const OfferPreview = ({ offer }) => {
   
   return (
     <>
-      <Link className={s.Offer__Preview} to={data.node.fields.slug}>
-        <span>{data.node.frontmatter.title}</span>
-        <span>{data.node.frontmatter.month_start}</span>
-        <span>{data.node.frontmatter.month_end}</span>
+      <Link className={s.Offer__Preview} to={offer.slug}>
+        <span>{offer.title}</span>
+        <span>{offer.month_start}</span>
+        <span>{offer.month_end}</span>
       </Link>
     </>
   )

@@ -1,5 +1,4 @@
 import React from 'react'
-// eslint-disable-next-line
 import { graphql } from 'gatsby'
 
 import { Container } from 'components/container/Container'
@@ -8,19 +7,13 @@ import { Contact } from 'components/contact/Contact'
 
 import s from './offer.module.scss';
 
-export default class Offer extends React.Component {
-  render() {
+function Offer(props) {
     
-    const offer = this.props.data.pageData.frontmatter;
-    const contact = this.props.data.contactData.frontmatter;
-    
-    console.log(this.props.pageData);
+    const offer = props.data.pageData.frontmatter;
 
     return (
-      <>
     
         <article className={s.Offer}>
-        
           <Container>
         
             <div className={s.Offer__hero}>
@@ -32,18 +25,18 @@ export default class Offer extends React.Component {
             
             <Visual img={offer.visual} prllx="80"/>
             
-            <div className={s.Offer__content} dangerouslySetInnerHTML={{ __html: this.props.data.pageData.html }} />
+            <div className={s.Offer__content} dangerouslySetInnerHTML={{ __html: props.data.pageData.html }} />
             
           </Container>
           
-          <Contact data={contact.apply}/>
+          <Contact/>
           
         </article>
         
-      </>
-    )
-  }
+    );
 }
+
+export default Offer;
 
 export const pageQuery = graphql`
   query OffersBySlug($slug: String!) {
@@ -60,17 +53,6 @@ export const pageQuery = graphql`
         }
         month_start
         month_end
-      }
-    }
-    contactData: markdownRemark(fields: { slug: { eq: "/" } }) {
-      frontmatter {
-        apply {
-          title
-          text
-          file
-          phone
-          email
-        }
       }
     }
   }

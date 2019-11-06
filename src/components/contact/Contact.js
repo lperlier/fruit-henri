@@ -2,29 +2,35 @@ import React from 'react'
 
 import s from './Contact.module.scss';
 
-import { Container } from 'components/container/Container'
+import useContact from 'hooks/use-contact';
 
-export const Contact = ({ data }) => (
+import { Container } from 'components/container/Container';
+
+export const Contact = () => {
   
+  const contact = useContact();
+  
+  return (
+    
     <>
       <section className={s.Contact}>
-        <Container>
+        <Container className={s.Contact__Container}>
         
           
-          <div className="headline">
-            <h2>{data.title}</h2>
+          <div className="Headline">
+            <h2>{contact.title}</h2>
           </div>
-          <div className="content">
-            <p>{data.text}</p>
-            <a className="Btn btn--download" href={data.file} target="_blank" rel="noopener noreferrer">
+          <div className="Content">
+            <p>{contact.text}</p>
+            <a className="Btn btn--download" href={contact.file} target="_blank" rel="noopener noreferrer">
               Télécharger le dossier
             </a>
             <div className="Links">
-              <a className="Link" href={`tel:${data.phone}`} target="_blank" rel="noopener noreferrer">
-                {data.phone}
+              <a className="Link" href={`tel:${contact.phone}`} target="_blank" rel="noopener noreferrer">
+                {contact.phone}
               </a>
-              <a className="Link" href={`mailto:${data.email}`} target="_blank" rel="noopener noreferrer">
-                {data.email}
+              <a className="Link" href={`mailto:${contact.email}`} target="_blank" rel="noopener noreferrer">
+                {contact.email}
               </a>
             </div>
           </div>
@@ -33,5 +39,7 @@ export const Contact = ({ data }) => (
         </Container>
       </section>
     </>
-  
-)
+    
+  )
+}
+

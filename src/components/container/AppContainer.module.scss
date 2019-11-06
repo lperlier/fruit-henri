@@ -14,5 +14,9 @@
     z-index:10;
     min-height: 100vh;
     background: $white;
+    
+    section {
+      padding:percentage(120/1920) 0;
+    }
   }
 }
