@@ -11,9 +11,6 @@ fields:
 - type: text
   name: title
   label: Titre
-- type: file
-  name: visual
-  label: Visuel
 - name: month_start
   type: select
   default: Janvier
