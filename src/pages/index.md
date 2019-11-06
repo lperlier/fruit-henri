@@ -17,12 +17,16 @@ about:
 verger:
   subtitle: Le Verger
   content:
-  - title: Un verger près de Nîmes blah blah.
-    text: magna elit irure eram velit amet nulla anim noster minim quorum culpa aliqua
-      quis veniam enim quis labore aliqua amet
-  - title: Une parcelle pour chaques fruits.
-    text: magna elit irure eram velit amet nulla anim noster minim quorum culpa aliqua
-      quis veniam enim quis labore aliqua amet
+  - title: Un verger sur les Costières de Nîmes
+    text: Notre terroir se caractérise par ses galets ronds (le grès), un sol argilo-calacaire,
+      un fort ensoleillement et une atmosphère ventillée par le mistral, idéal pour
+      la production de fruits à noyaux. Nos hivers froids permettent un bon repos
+      du végétal et les étés chauds assurent une qualité gustative à nos fruits.
+  - title: 80 hectares de culture
+    text: |-
+      Nous cultivons aujourd’hui 80 hectares. Nous comptons 40 hectares d’abricotiers, 35 hectares de pêchers et 5 d’actinadia (kiwi). 85% de notre activité commerciale est concentrée sur la période estivale.
+
+      Trois grands temps forts rythment une année dans nos vergers, la taille, l’eclaircissage et la récolte. La taille se fait tout au long de l’année mais est principalement concentrée sur les mois d’hiver. D’avril à mai nous équilibrons la charge des arbres pour que les fruits encore petis puissent se dévelloper convenablement, c’est l’éclaircissage. En juin la cueille commence jusqu’à la mi-septembre. A partir d’octobre la taille recommence…
   eco-responsable: Nous travaillons dans une optique de développement durable pour
     les générations futures.
 fruits:
