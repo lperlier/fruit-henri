@@ -115,7 +115,7 @@ fields:
       wysiwyg: true
       schema:
         format: html-blocks
-  - name: visual
+  - name: image
     type: file
     config:
       maxSize: 250
