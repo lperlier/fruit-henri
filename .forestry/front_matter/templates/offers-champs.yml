@@ -14,5 +14,3 @@ fields:
   config: {}
   template: offers
   label: Offre
-pages:
-- src/pages/offers/champs/metier.md
