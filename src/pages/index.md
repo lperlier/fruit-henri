@@ -29,6 +29,7 @@ verger:
       Trois grands temps forts rythment une année dans nos vergers, la taille, l’eclaircissage et la récolte. La taille se fait tout au long de l’année mais est principalement concentrée sur les mois d’hiver. D’avril à mai nous équilibrons la charge des arbres pour que les fruits encore petis puissent se dévelloper convenablement, c’est l’éclaircissage. En juin la cueille commence jusqu’à la mi-septembre. A partir d’octobre la taille recommence…
   eco-responsable: Nous travaillons dans une optique de développement durable pour
     les générations futures.
+  visual: ''
 fruits:
   subtitle: Nos fruits
   title: Un savoir-faire familial pour des fruits de qualité
@@ -43,9 +44,9 @@ recrutment:
     manière durable dans notre entreprise.
   visual: "/src/images/roberto-patti-1218020-unsplash.jpg"
 apply:
-  title: "..et pour postuler ?"
-  text: quorum export tamen amet velit multos enim amet quorum amet amet nisi irure
-    magna quid noster quae dolor quis quis
+  title: "… et pour postuler ?"
+  text: Télécharger notre dossier d’inscription et venez le déposer aux bureaux à
+    la station de conditionnement.
   file: https://unsplash.com/photos/_omuigahLco
   phone: 04 88 99 88 99
   email: samuel.fdhenri@gmail.com
