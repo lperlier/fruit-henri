@@ -1,6 +1,7 @@
 ---
 label: Offer:Station
 hide_body: false
+display_field: title
 fields:
 - name: template
   type: text
