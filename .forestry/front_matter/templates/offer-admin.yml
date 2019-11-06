@@ -2,6 +2,13 @@
 label: Offer:Verger
 hide_body: false
 fields:
+- name: template
+  type: text
+  config:
+    required: false
+  label: Template
+  hidden: true
+  default: offer
 - name: type
   type: text
   config:
