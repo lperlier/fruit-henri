@@ -1,28 +1,27 @@
 ---
 template: fruit
-title: L'abricot
+title: L’abricot
 family: Abricots
-intro: Text d'intro quae legam quis quorum irure fore irure veniam export sint.
+intro: L’abricotier fait parti de la famille des Prunus, originaire de Chine. Son
+  fruit est riche en vitamine A (carotène) connue entre autre pour ses bienfaits pour
+  la peau.
 calendar:
 - name: Mars
-  title: Plantation
-  text: Dolor aliqua cillum quis quae magna labore fore cillum nisi quid sunt labore
-    elit culpa legam duis irure aute sint
+  title: Floraison
+  text: 'Pollinisation : on laisse travailler les abeilles.'
   has_offers: false
-- name: Juin
-  title: Taille
-  text: Malis anim nulla esse tamen esse culpa cillum culpa multos quid velit sunt
-    quem multos sunt enim aute anim velit
+- name: Avril Mai
+  title: Éclaircissage
+  text: Faire tomber des fruits pour équilibrer la charge de l’arbre et obtenir un
+    calibre de fruit suffisant.
   has_offers: false
-- name: Aout
+- name: Juin Juillet Août
   title: Récolte
-  text: Ipsum malis anim quae nisi tamen amet veniam legam labore aliqua velit ipsum
-    dolor malis illum quorum duis tamen cillum
-  has_offers: true
+  text: Elle s’effectue entre 3 à 6 passages par arbres. Nous récoltons les fruits
+    proches de leur maturité afin de garantir une qualité gustative optimale
+  has_offers: false
 
 ---
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+L’abricotier est cultivé en France depuis 500 ans environ. C’est une espèce parfaitement adaptée à notre terroir méditerranéen et à son fort ensoleillement. 
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+C’est une culture qui demande de l’attention tout au long de l’année et plus particulièrement au printemps pendant la floraison. Cette fleur, très vulnérable aux intempéries se transforme en fruit en quelques jours, c’est la nouaison. L’abricot, pratique à manger, s’avère excellent lorsqu’il est cueilli proche de sa maturité.
