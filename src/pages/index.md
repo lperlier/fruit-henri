@@ -45,6 +45,7 @@ recrutment:
   text: Nous sommes en constante recherche de collaborateurs voulant s’investir de
     manière durable dans notre entreprise.
   visual: src/images/recrutment_visual.jpg
+  image: src/images/recrutment_visual.jpg
 apply:
   title: "… et pour postuler ?"
   text: Télécharger notre dossier d’inscription et venez le déposer aux bureaux à
