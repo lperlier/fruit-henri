@@ -70,6 +70,11 @@ fields:
     config:
       labelField: title
       max: '2'
+  - name: visual
+    type: file
+    config:
+      maxSize: 250
+    label: Visuel
 - type: field_group
   name: fruits
   label: Fruits
