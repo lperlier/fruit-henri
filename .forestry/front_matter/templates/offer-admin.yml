@@ -1,5 +1,5 @@
 ---
-label: Offer:Admin
+label: Offer:Verger
 hide_body: false
 fields:
 - name: type
@@ -7,7 +7,7 @@ fields:
   config:
     required: false
   label: Type
-  default: admin
+  default: verger
   hidden: true
 - name: offer
   type: include
