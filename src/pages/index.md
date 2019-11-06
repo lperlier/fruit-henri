@@ -1,7 +1,7 @@
 ---
 template: home
 title: Des hommes & des arbres.
-pagevisual: "/src/images/brian-jimenez-529-unsplash.jpg"
+pagevisual: src/images/visual.jpg
 about:
   subtitle: À propos
   title: Plus d’un siècle de passion
@@ -13,7 +13,7 @@ about:
     Depuis 2011, Alexi (petit fils d’Henri) perpétue ce savoir-faire en alliant tradition & modernité.
 
     Le métier d’arboriculteur connait un tournant dans ses pratiques et doit donc s’adapter. L’impact environnemental & social représente un enjeu majeur pour notre génération . Dans ce cadre nous adhérons à la démarche **Verger Eco-responsable et sommes certifiés exploitation à Haute Valeur Environnementale (HVE).**
-  visual: "/src/images/erwan-hesry-102074-unsplash.jpg"
+  visual: src/images/about_visual.jpg
 verger:
   subtitle: Le Verger
   content:
@@ -29,7 +29,7 @@ verger:
       Trois grands temps forts rythment une année dans nos vergers, la taille, l’eclaircissage et la récolte. La taille se fait tout au long de l’année mais est principalement concentrée sur les mois d’hiver. D’avril à mai nous équilibrons la charge des arbres pour que les fruits encore petis puissent se dévelloper convenablement, c’est l’éclaircissage. En juin la cueille commence jusqu’à la mi-septembre. A partir d’octobre la taille recommence…
   eco-responsable: Nous travaillons dans une optique de développement durable pour
     les générations futures.
-  visual: ''
+  visual: src/images/verger_visual.jpg
 fruits:
   subtitle: Nos fruits
   title: Un savoir-faire familial pour des fruits de qualité
@@ -42,7 +42,7 @@ recrutment:
   title: Vous souhaitez nous rejoindre ?
   text: Nous sommes en constante recherche de collaborateurs voulant s’investir de
     manière durable dans notre entreprise.
-  visual: "/src/images/roberto-patti-1218020-unsplash.jpg"
+  visual: src/images/recrutment_visual.jpg
 apply:
   title: "… et pour postuler ?"
   text: Télécharger notre dossier d’inscription et venez le déposer aux bureaux à
