@@ -146,5 +146,24 @@ fields:
   - type: text
     name: email
     label: Email
+- name: hve
+  type: field_group
+  config: {}
+  fields:
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Titre
+  - name: text
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Texte
+  label: HVE
 pages:
 - src/pages/index.md
