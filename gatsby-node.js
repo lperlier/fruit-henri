@@ -12,9 +12,7 @@ exports.createPages = ({ graphql, actions }) => {
     const templates = {
       home: path.resolve('./src/templates/home.js'),
       fruit: path.resolve('./src/templates/fruit.js'),
-      offer: path.resolve('./src/templates/offer.js'),
-      list: path.resolve('./src/templates/list.js'),
-      single: path.resolve('./src/templates/single.js')
+      offer: path.resolve('./src/templates/offer.js')
     }
     resolve(
       // query for markdown files

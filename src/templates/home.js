@@ -1,10 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
-import useFruits from 'hooks/use-fruits';
-
 import { PageHero } from 'components/page/PageHero'
-import { Visual } from 'components/visual/Visual'
 import { About } from 'components/about/About'
 import { Verger } from 'components/verger/Verger'
 import { Fruits } from 'components/fruits/Fruits'
@@ -17,24 +14,14 @@ import s from './home.module.scss';
 function Homepage(props) {
 
     const page = props.data.pageData.frontmatter;
-    const fruits = useFruits();
 
     return (
 
       <main className={s.pageHome}>
 
         <PageHero>
-
           <h1>{page.title}</h1>
-          <ul>
-            {fruits.map((fruit) => (
-              <li key={fruit.slug}>{fruit.family}</li>
-            ))}
-          </ul>
-
         </PageHero>
-
-        <Visual img={page.pagevisual} prllx="80"/>
 
         <About data={page.about}/>
         <Verger  data={page.verger}/>
@@ -61,30 +48,12 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        pagevisual {
-          childImageSharp {
-            fluid(maxWidth: 1600, quality: 80) {
-              aspectRatio
-              src
-              srcSet
-              sizes
-            }
-          }
-        }
+        image
         about {
           subtitle
           title
           text
-          visual {
-            childImageSharp {
-              fluid(maxWidth: 800, quality: 80) {
-                aspectRatio
-                src
-                srcSet
-                sizes
-              }
-            }
-          }
+          image
         }
         verger {
           subtitle
@@ -92,16 +61,7 @@ export const pageQuery = graphql`
             title
             text
           }
-          visual {
-            childImageSharp {
-              fluid(maxWidth: 800, quality: 80) {
-                aspectRatio
-                src
-                srcSet
-                sizes
-              }
-            }
-          }
+          visual
         }
         fruits {
           subtitle
@@ -115,16 +75,7 @@ export const pageQuery = graphql`
           subtitle
           title
           text
-          visual {
-            childImageSharp {
-              fluid(maxWidth: 800, quality: 80) {
-              aspectRatio
-              src
-              srcSet
-              sizes
-              }
-            }
-          }
+          image
         }
       }
     }

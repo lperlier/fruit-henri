@@ -8,6 +8,12 @@ module.exports = {
     description: config.description
   },
   plugins: [
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-offline`,
+    `gatsby-plugin-react-helmet`,
+    'gatsby-transformer-json',
+    'gatsby-plugin-catch-links',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -33,30 +39,39 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
-          `gatsby-remark-normalize-paths`,
+          'gatsby-remark-normalize-paths',
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 800,
-              pathFields: ["image", "cover", "visual", "pagevisual"],
+              maxWidth: 590,
             },
           },
-          'gatsby-remark-normalize-paths',
+          {
+            resolve: `gatsby-remark-responsive-iframe`,
+            options: {
+              wrapperStyle: `margin-bottom: 1.0725rem`,
+            },
+          },
+          'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',
+          'gatsby-remark-smartypants',
         ],
       },
     },
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
-    `gatsby-transformer-json`,
-    `gatsby-plugin-sass`,
     /*{
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         //trackingId: `ADD YOUR TRACKING ID HERE`,
       },
     },*/
+    {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        cssLoaderOptions: {
+          localIdentName: '[local]_[hash:base64:4]',
+        }
+      }
+    },
     {
       resolve: 'gatsby-plugin-react-svg',
       options: {
@@ -73,7 +88,7 @@ module.exports = {
         components: path.join(__dirname, 'src/components'),
         hooks: path.join(__dirname, 'src/hooks'),
         assets: path.join(__dirname, 'src/assets'),
-        styles: path.join(__dirname, 'src/styles'),
+        styles: path.join(__dirname, 'src/styles')
       }
     },
     {
