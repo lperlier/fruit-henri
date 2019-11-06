@@ -1,7 +1,7 @@
 ---
 new_page_extension: md
 auto_deploy: false
-admin_path: 
+admin_path: ''
 webhook_url: 
 sections:
 - type: document
@@ -19,15 +19,15 @@ sections:
 - type: heading
   label: Offres
 - type: directory
-  path: src/pages/offers/champs
-  label: Champs
-  create: all
+  path: src/pages/offers/station
+  label: Station
+  create: documents
   match: "**/*"
   templates:
   - offers-champs
 - type: directory
-  path: src/pages/offers/admin
-  label: Administration
+  path: src/pages/offers/verger
+  label: Verger
   create: documents
   match: "**/*"
   templates:
@@ -37,9 +37,13 @@ public_path: src/images
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
+instant_preview: 
 build:
-  preview_command: gatsby build
-  publish_command: gatsby build
   preview_output_directory: public
-  output_directory: public
+  install_dependencies_command: npm install
+  preview_docker_image: forestryio/build:latest
+  mount_path: "/opt/buildhome/repo"
   instant_preview_command: gatsby develop -H 0.0.0.0 -p 8080
+  publish_command: gatsby build
+  output_directory: public
+  preview_command: gatsby build

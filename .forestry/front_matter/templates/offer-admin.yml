@@ -1,16 +1,27 @@
 ---
-label: Offer:Admin
+label: Offer:Verger
 hide_body: false
 fields:
+- name: template
+  type: text
+  config:
+    required: false
+  label: Template
+  hidden: true
+  default: offer
 - name: type
   type: text
   config:
     required: false
   label: Type
-  default: admin
+  default: verger
   hidden: true
 - name: offer
   type: include
   config: {}
   template: offers
   label: Offer
+pages:
+- src/pages/offers/verger/cueillette.md
+- src/pages/offers/verger/eclaircissage.md
+- src/pages/offers/verger/taille.md

@@ -1,18 +1,27 @@
 ---
-label: Offer:Champs
+label: Offer:Station
 hide_body: false
+display_field: title
 fields:
+- name: template
+  type: text
+  config:
+    required: false
+  label: Template
+  default: offer
+  hidden: true
 - name: type
   type: text
   config:
     required: false
   label: Type
   hidden: true
-  default: champs
+  default: station
 - name: offer
   type: include
   config: {}
   template: offers
   label: Offre
 pages:
-- src/pages/offers/champs/metier.md
+- src/pages/offers/station/administratif.md
+- src/pages/offers/station/conditionnement.md

@@ -23,7 +23,7 @@ fields:
     wysiwyg: true
     schema:
       format: markdown
-  label: Intro
+  label: Texte d'accueil
   description: Texte présent sur l'accueil
 - type: field_group_list
   name: calendar
@@ -42,10 +42,9 @@ fields:
       wysiwyg: true
       schema:
         format: markdown
-  - type: boolean
-    name: has_offers
-    label: Offres présentes
   config:
     labelField: name
 pages:
+- src/pages/fruits/la-pêche-et-la-nectarine.md
+- src/pages/fruits/le-kiwi.md
 - src/pages/fruits/abricot.md

@@ -1,39 +1,60 @@
 ---
 template: home
-title: Lorem Ipsum Dolor sit amet, consectetur.
-pagevisual: "/src/images/brian-jimenez-529-unsplash.jpg"
+title: Des hommes & des arbres.
+pagevisual: src/images/visual.jpg
 about:
   subtitle: À propos
-  title: Des hommes & des arbres.
-  text: L'histoire de Fruit Henry blah blah
-  visual: "/src/images/erwan-hesry-102074-unsplash.jpg"
+  title: Plus d’un siècle de passion
+  text: |-
+    L’histoire du Fruit d’Henri remonte à plus d’un siècle. C’est une histoire de terre, d’Homme, de passion et de savoir-faire.
+
+    Nous sommes en 1979 lorsqu’Henri Bois décide de quitter son Ardèche natale pour s’installer dans les Costières de Nîmes. Il crée la SICA des Costières d’Estagel en 1981 qui sera durant une trentaine d’années pionnière dans la production de fruits à noyaux.
+
+    Depuis 2011, Alexi (petit fils d’Henri) perpétue ce savoir-faire en alliant tradition & modernité.
+
+    Le métier d’arboriculteur connait un tournant dans ses pratiques et doit donc s’adapter. L’impact environnemental & social représente un enjeu majeur pour notre génération . Dans ce cadre nous adhérons à la démarche **Verger Eco-responsable et sommes certifiés exploitation à Haute Valeur Environnementale (HVE).**
+  visual: src/images/about_visual.jpg
 verger:
   subtitle: Le Verger
   content:
-  - title: Un verger près de Nîmes blah blah.
-    text: magna elit irure eram velit amet nulla anim noster minim quorum culpa aliqua
-      quis veniam enim quis labore aliqua amet
-  - title: Une parcelle pour chaques fruits.
-    text: magna elit irure eram velit amet nulla anim noster minim quorum culpa aliqua
-      quis veniam enim quis labore aliqua amet
+  - title: Un verger sur les Costières de Nîmes
+    text: Notre terroir se caractérise par ses galets ronds (le grès), un sol argilo-calacaire,
+      un fort ensoleillement et une atmosphère ventillée par le mistral, idéal pour
+      la production de fruits à noyaux. Nos hivers froids permettent un bon repos
+      du végétal et les étés chauds assurent une qualité gustative à nos fruits.
+  - title: 80 hectares de culture
+    text: |-
+      Nous cultivons aujourd’hui 80 hectares. Nous comptons 40 hectares d’abricotiers, 35 hectares de pêchers et 5 d’actinadia (kiwi). 85% de notre activité commerciale est concentrée sur la période estivale.
+
+      Trois grands temps forts rythment une année dans nos vergers, la taille, l’eclaircissage et la récolte. La taille se fait tout au long de l’année mais est principalement concentrée sur les mois d’hiver. D’avril à mai nous équilibrons la charge des arbres pour que les fruits encore petis puissent se dévelloper convenablement, c’est l’éclaircissage. En juin la cueille commence jusqu’à la mi-septembre. A partir d’octobre la taille recommence…
+  eco-responsable: Nous travaillons dans une optique de développement durable pour
+    les générations futures.
+  visual: src/images/verger_visual.jpg
 fruits:
   subtitle: Nos fruits
-  title: Des fruits de qualité blah blah
+  title: Un savoir-faire familial pour des fruits de qualité
 bref:
-  title: Bref, nous produisons, conditionnons et expédions.
-  text: illum magna amet anim quorum quorum duis culpa fugiat culpa
+  title: Nous produisons, conditionnons et expédions.
+  text: 'Nos clients : Grandes surfaces, grossistes et vente directe chez nous. Retrouvez
+    nous directement à notre station de conditionnement'
 recrutment:
   subtitle: Recrutement
   title: Vous souhaitez nous rejoindre ?
-  text: velit sint nulla ipsum multos aute esse legam tamen malis quae culpa quis
-    velit ipsum irure culpa fore magna anim
-  visual: "/src/images/roberto-patti-1218020-unsplash.jpg"
+  text: Nous sommes en constante recherche de collaborateurs voulant s’investir de
+    manière durable dans notre entreprise.
+  visual: src/images/recrutment_visual.jpg
 apply:
-  title: "..et pour postuler ?"
-  text: quorum export tamen amet velit multos enim amet quorum amet amet nisi irure
-    magna quid noster quae dolor quis quis
+  title: "… et pour postuler ?"
+  text: Télécharger notre dossier d’inscription et venez le déposer aux bureaux à
+    la station de conditionnement.
   file: https://unsplash.com/photos/_omuigahLco
   phone: 04 88 99 88 99
   email: samuel.fdhenri@gmail.com
+hve:
+  title: "#NOUSSOMMESH.V.E"
+  text: La certification environnementale des exploitations agricoles répond au besoin
+    clairement exprimé dans les travaux du Grenelle de l’environnement de reconnaître
+    les exploitations engagées dans des démarches particulièrement respectueuses de
+    l’environnement
 
 ---
