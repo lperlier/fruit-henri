@@ -44,6 +44,3 @@ fields:
         format: markdown
   config:
     labelField: name
-pages:
-- src/pages/fruits/le-kiwi.md
-- src/pages/fruits/abricot.md
