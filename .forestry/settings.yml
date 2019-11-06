@@ -21,7 +21,7 @@ sections:
 - type: directory
   path: src/pages/offers/station
   label: Station
-  create: all
+  create: documents
   match: "**/*"
   templates:
   - offers-champs
