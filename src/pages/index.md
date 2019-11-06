@@ -31,6 +31,7 @@ verger:
   eco_responsable: Nous travaillons dans une optique de développement durable pour
     les générations futures.
   visual: src/images/verger_visual.jpg
+  image: src/images/verger_visual.jpg
 fruits:
   subtitle: Nos fruits
   title: Un savoir-faire familial pour des fruits de qualité
