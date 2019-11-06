@@ -23,6 +23,8 @@ verger:
   - title: Une parcelle pour chaques fruits.
     text: magna elit irure eram velit amet nulla anim noster minim quorum culpa aliqua
       quis veniam enim quis labore aliqua amet
+  eco-responsable: Nous travaillons dans une optique de développement durable pour
+    les générations futures.
 fruits:
   subtitle: Nos fruits
   title: Un savoir-faire familial pour des fruits de qualité
