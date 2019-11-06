@@ -21,3 +21,5 @@ fields:
   config: {}
   template: offers
   label: Offer
+pages:
+- src/pages/offers/verger/taille.md
