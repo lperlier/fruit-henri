@@ -19,15 +19,15 @@ sections:
 - type: heading
   label: Offres
 - type: directory
-  path: src/pages/offers/champs
-  label: Champs
+  path: src/pages/offers/station
+  label: Station
   create: all
   match: "**/*"
   templates:
   - offers-champs
 - type: directory
-  path: src/pages/offers/admin
-  label: Administration
+  path: src/pages/offers/verger
+  label: Verger
   create: documents
   match: "**/*"
   templates:
