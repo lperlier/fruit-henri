@@ -22,3 +22,5 @@ fields:
   config: {}
   template: offers
   label: Offre
+pages:
+- src/pages/offers/station/conditionnement.md
