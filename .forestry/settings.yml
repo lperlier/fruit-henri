@@ -32,10 +32,6 @@ sections:
   match: "**/*"
   templates:
   - offer-admin
-- type: document
-  path: site-config.json
-  label: Config
-  match: "**/*"
 upload_dir: static/images
 public_path: "/static/images"
 front_matter_path: ''

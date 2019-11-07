@@ -22,6 +22,6 @@ fields:
   template: offers
   label: Offer
 pages:
-- src/pages/offers/verger/cueillette.md
 - src/pages/offers/verger/eclaircissage.md
+- src/pages/offers/verger/cueillette.md
 - src/pages/offers/verger/taille.md
