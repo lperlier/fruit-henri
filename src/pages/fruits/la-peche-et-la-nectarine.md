@@ -1,6 +1,6 @@
 ---
 template: fruit
-title: La peche et la nectarine
+title: La pêche et la nectarine
 family: Pèches
 intro: La pêche, de la famille des Prunus également, est cultivée depuis le 12ème
   siècle en France. Ce fruit juteux et sucré est synonyme de vacances et de plaisir
