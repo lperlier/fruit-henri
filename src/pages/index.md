@@ -39,8 +39,8 @@ verger:
       recommence…</p>"
   image: src/images/verger_visual.jpg
 fruits:
-  subtitle: ''
-  title: ''
+  subtitle: Nos fruits
+  title: Un savoir-faire familial pour des fruits de qualité
 bref:
   title: ''
   text: ''
