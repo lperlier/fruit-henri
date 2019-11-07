@@ -45,4 +45,5 @@ fields:
   config:
     labelField: name
 pages:
+- src/pages/fruits/la-peche-et-la-nectarine.md
 - src/pages/fruits/l-abricot.md
