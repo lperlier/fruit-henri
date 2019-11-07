@@ -44,3 +44,5 @@ fields:
         format: markdown
   config:
     labelField: name
+pages:
+- src/pages/fruits/l-abricot.md
