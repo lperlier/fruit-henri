@@ -6,7 +6,7 @@ webhook_url:
 sections:
 - type: document
   path: src/pages/index.md
-  label: Site
+  label: Accueil
 - type: heading
   label: Fruits
 - type: directory
