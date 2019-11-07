@@ -15,7 +15,7 @@ about:
     un enjeu majeur pour notre génération . </p><p><strong>Dans ce cadre nous adhérons
     à la démarche Verger Eco-responsable et sommes certifiés exploitation à Haute
     Valeur Environnementale (HVE).</strong></p>"
-  image: src/images/about_visual.jpg
+  image: "/static/images/about_visual.jpg"
 verger:
   subtitle: ''
   eco_responsable: Nous travaillons dans une optique de développement durable pour
@@ -37,7 +37,7 @@ verger:
       les fruits encore petis puissent se dévelloper convenablement, c’est l’éclaircissage.
       En juin la cueille commence jusqu’à la mi-septembre. A partir d’octobre la taille
       recommence…</p>"
-  image: src/images/verger_visual.jpg
+  image: "/static/images/verger_visual.jpg"
 fruits:
   subtitle: Nos fruits
   title: Un savoir-faire familial pour des fruits de qualité
@@ -49,7 +49,7 @@ recrutment:
   title: Vous souhaitez nous rejoindre ?
   text: "<p>Nous sommes en constante recherche de collaborateurs voulant s’investir
     de manière durable dans notre entreprise.</p>"
-  image: src/images/recrutment_visual.jpg
+  image: "/static/images/recrutment_visual.jpg"
 apply:
   title: "… et pour postuler ?"
   text: "<p>Télécharger notre dossier d’inscription et venez le déposer aux bureaux
@@ -63,6 +63,6 @@ hve:
     besoin clairement exprimé dans les travaux du Grenelle de l’environnement de reconnaître
     les exploitations engagées dans des démarches particulièrement respectueuses de
     l’environnement</p>"
-image: src/images/visual.jpg
+image: "/static/images/visual.jpg"
 
 ---
