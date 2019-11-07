@@ -51,11 +51,12 @@ recrutment:
     de manière durable dans notre entreprise.</p>"
   image: src/images/recrutment_visual.jpg
 apply:
-  title: ''
-  text: ''
+  title: "… et pour postuler ?"
+  text: "<p>Télécharger notre dossier d’inscription et venez le déposer aux bureaux
+    à la station de conditionnement.</p>"
   file: ''
-  phone: ''
-  email: ''
+  phone: 04 88 99 88 99
+  email: samuel.fdhenri@gmail.com
 hve:
   title: ''
   text: ''
