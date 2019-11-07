@@ -42,8 +42,9 @@ fruits:
   subtitle: Nos fruits
   title: Un savoir-faire familial pour des fruits de qualité
 bref:
-  title: ''
-  text: ''
+  title: Nous produisons, conditionnons et expédions.
+  text: "<p>Nos clients&nbsp;: Grandes surfaces, grossistes et vente directe chez
+    nous. Retrouvez nous directement à notre station de conditionnement</p>"
 recrutment:
   title: ''
   text: ''
