@@ -46,9 +46,10 @@ bref:
   text: "<p>Nos clients&nbsp;: Grandes surfaces, grossistes et vente directe chez
     nous. Retrouvez nous directement à notre station de conditionnement</p>"
 recrutment:
-  title: ''
-  text: ''
-  image: ''
+  title: Vous souhaitez nous rejoindre ?
+  text: "<p>Nous sommes en constante recherche de collaborateurs voulant s’investir
+    de manière durable dans notre entreprise.</p>"
+  image: src/images/recrutment_visual.jpg
 apply:
   title: ''
   text: ''
