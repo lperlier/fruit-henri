@@ -22,9 +22,6 @@ fields:
   label: À propos
   fields:
   - type: text
-    name: subtitle
-    label: Sous-titre
-  - type: text
     name: title
     label: Titre
   - name: text
