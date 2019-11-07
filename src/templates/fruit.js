@@ -5,7 +5,7 @@ import { graphql, Link } from 'gatsby'
 import { PageHeader } from 'components/page/PageHeader'
 
 function Fruit(props) {
-    
+
     const fruit = {
       title : props.data.markdownRemark.frontmatter.title,
       html : props.data.markdownRemark.html,
@@ -15,7 +15,7 @@ function Fruit(props) {
     return (
         <main className="Single Fruit">
           <PageHeader>
-          
+
             <h1>{fruit.title}</h1>
             <div className="Content" dangerouslySetInnerHTML={{ __html: fruit.html }} />
             <div className="Calendar">
@@ -27,11 +27,11 @@ function Fruit(props) {
                   {month.has_offers ? (
                     <Link to="/#Contact">Voir</Link>
                   ) : null }
-                  
+
                 </div>
               ))}
             </div>
-            
+
           </PageHeader>
         </main>
     );
@@ -51,7 +51,6 @@ export const pageQuery = graphql`
           name
           title
           text
-          has_offers
         }
       }
     }

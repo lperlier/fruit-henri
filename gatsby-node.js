@@ -14,6 +14,7 @@ exports.createPages = ({ graphql, actions }) => {
       fruit: path.resolve('./src/templates/fruit.js'),
       offer: path.resolve('./src/templates/offer.js')
     }
+
     resolve(
       // query for markdown files
       graphql(

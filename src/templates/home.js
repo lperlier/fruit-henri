@@ -50,18 +50,30 @@ export const pageQuery = graphql`
         title
         image
         about {
-          subtitle
           title
           text
-          image
+          image {
+            childImageSharp {
+                fluid(maxWidth: 1075, quality: 72) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+            publicURL
+          }
         }
         verger {
-          subtitle
           content {
             title
             text
           }
-          visual
+          image {
+            childImageSharp {
+                fluid(maxWidth: 1075, quality: 72) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+            publicURL
+          }
         }
         fruits {
           subtitle
@@ -72,10 +84,16 @@ export const pageQuery = graphql`
           text
         }
         recrutment {
-          subtitle
           title
           text
-          image
+          image {
+            childImageSharp {
+                fluid(maxWidth: 1075, quality: 72) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+            publicURL
+          }
         }
       }
     }

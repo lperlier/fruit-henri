@@ -22,6 +22,7 @@
     "gatsby-remark-images": "^3.0.1",
     "gatsby-remark-normalize-paths": "github:forestryio/gatsby-remark-normalize-paths#install-from-github",
     "gatsby-remark-prismjs": "^3.3.21",
+    "gatsby-remark-relative-images": "^0.2.3",
     "gatsby-remark-responsive-iframe": "^2.2.25",
     "gatsby-remark-smartypants": "^2.1.14",
     "gatsby-source-filesystem": "^2.0.28",

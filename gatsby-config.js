@@ -8,12 +8,6 @@ module.exports = {
     description: config.description
   },
   plugins: [
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-offline`,
-    `gatsby-plugin-react-helmet`,
-    'gatsby-transformer-json',
-    'gatsby-plugin-catch-links',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -39,25 +33,22 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
-          'gatsby-remark-normalize-paths',
+          `@forestryio/gatsby-remark-normalize-paths`,
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 590,
+              maxWidth: 800,
             },
           },
-          {
-            resolve: `gatsby-remark-responsive-iframe`,
-            options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
-            },
-          },
-          'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',
-          'gatsby-remark-smartypants',
         ],
       },
     },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-react-helmet`,
+    'gatsby-transformer-json',
+    'gatsby-plugin-catch-links',
     /*{
       resolve: `gatsby-plugin-google-analytics`,
       options: {
