@@ -1,5 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import Img from 'gatsby-image'
 
 import { PageHero } from 'components/page/PageHero'
 import { About } from 'components/about/About'
@@ -22,6 +23,8 @@ function Homepage(props) {
         <PageHero>
           <h1>{page.title}</h1>
         </PageHero>
+
+        <Img fluid={page.image.childImageSharp.fluid} />
 
         <About data={page.about}/>
         <Verger  data={page.verger}/>
@@ -48,14 +51,27 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        image
+        image {
+          childImageSharp {
+              fluid(maxWidth: 1075, quality: 72) {
+                aspectRatio
+                src
+                srcSet
+                sizes
+              }
+          }
+          publicURL
+        }
         about {
           title
           text
           image {
             childImageSharp {
                 fluid(maxWidth: 1075, quality: 72) {
-                    ...GatsbyImageSharpFluid
+                  aspectRatio
+                  src
+                  srcSet
+                  sizes
                 }
             }
             publicURL
@@ -69,7 +85,10 @@ export const pageQuery = graphql`
           image {
             childImageSharp {
                 fluid(maxWidth: 1075, quality: 72) {
-                    ...GatsbyImageSharpFluid
+                  aspectRatio
+                  src
+                  srcSet
+                  sizes
                 }
             }
             publicURL
@@ -89,7 +108,10 @@ export const pageQuery = graphql`
           image {
             childImageSharp {
                 fluid(maxWidth: 1075, quality: 72) {
-                    ...GatsbyImageSharpFluid
+                  aspectRatio
+                  src
+                  srcSet
+                  sizes
                 }
             }
             publicURL

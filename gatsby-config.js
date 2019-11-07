@@ -8,6 +8,8 @@ module.exports = {
     description: config.description
   },
   plugins: [
+    "gatsby-transformer-remark",
+    "gatsby-plugin-react-helmet",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -25,36 +27,34 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/static/images`,
         name: 'images',
       },
     },
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: "gatsby-plugin-sharp",
+      options: {
+        defaultQuality: 75
+      }
+    },
+    `gatsby-transformer-sharp`,
+    {
+      resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
-          `@forestryio/gatsby-remark-normalize-paths`,
+          "gatsby-remark-relative-images",
+          "gatsby-remark-normalize-paths",
           {
-            resolve: `gatsby-remark-images`,
+            resolve: "gatsby-remark-images",
             options: {
-              maxWidth: 800,
+              maxWidth: 1000,
+              linkImagesToOriginal: false,
             },
           },
-          'gatsby-remark-copy-linked-files',
         ],
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    `gatsby-plugin-react-helmet`,
     'gatsby-transformer-json',
-    'gatsby-plugin-catch-links',
-    /*{
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
-      },
-    },*/
     {
       resolve: 'gatsby-plugin-sass',
       options: {
