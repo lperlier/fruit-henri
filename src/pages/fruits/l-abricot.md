@@ -11,6 +11,6 @@ calendar:
   text: 'Pollinisation : on laisse travailler les abeilles.'
 
 ---
-L’abricotier est cultivé en France depuis 500 ans environ. C’est une espèce parfaitement adaptée à notre terroir méditerranéen et à son fort ensoleillement. C’est une culture qui demande de l’attention tout au long de l’année et plus particulièrement au printemps pendant la floraison. 
+L’abricotier est cultivé en France depuis 500 ans environ. C’est une espèce parfaitement adaptée à notre terroir méditerranéen et à son fort ensoleillement.
 
-Cette fleur, très vulnérable aux intempéries se transforme en fruit en quelques jours, c’est la nouaison. L’abricot, pratique à manger, s’avère excellent lorsqu’il est cueilli proche de sa maturité.
+C’est une culture qui demande de l’attention tout au long de l’année et plus particulièrement au printemps pendant la floraison. Cette fleur, très vulnérable aux intempéries se transforme en fruit en quelques jours, c’est la nouaison. L’abricot, pratique à manger, s’avère excellent lorsqu’il est cueilli proche de sa maturité.
