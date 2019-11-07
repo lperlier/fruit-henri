@@ -42,9 +42,6 @@ fields:
   name: verger
   label: Le Verger
   fields:
-  - type: text
-    name: subtitle
-    label: Sous-titre
   - name: eco_responsable
     type: text
     config:
