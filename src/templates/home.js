@@ -22,9 +22,12 @@ function Homepage(props) {
 
         <PageHero>
           <h1>{page.title}</h1>
+          <span className="Solgan">Abricots - Pêches - Nectarines - Kiwis</span>
         </PageHero>
 
-        <Img fluid={page.image.childImageSharp.fluid} />
+        <div className="PageVisual">
+          <Img fluid={page.image.childImageSharp.fluid} />
+        </div>
 
         <About data={page.about}/>
         <Verger  data={page.verger}/>

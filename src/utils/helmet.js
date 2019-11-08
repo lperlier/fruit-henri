@@ -32,6 +32,6 @@ export const helmet = {
   ],
   link: [
     { rel: 'icon', type: 'image/x-icon', href: favicon },
-    { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Lato:300,400,700,900' },
+    { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Noto+Serif:400,700|Open+Sans:400,700&display=swap' }
   ],
 };

@@ -13,7 +13,7 @@
     padding-top: 40px;
     padding-bottom: 40px;
   }
-  
+
   &__containerBig {
     background:red;
   }
@@ -23,12 +23,5 @@
   display:inline-block;
   position: relative;
   z-index: 10;
-
-  svg > * {
-    :global(body.is--MenuOpen) & {
-      @include responsive($menuBreakpoint, max) {
-        fill: $white;
-      }
-    }
-  }
+  max-width: 190px;
 }

@@ -1,7 +1,8 @@
 //
 //Typography, WebFonts
 //
-$lato: 'Lato', sans-serif;
+$open: 'Lato', sans-serif;
+$noto: 'Noto Serif', serif;
 
 
 //
@@ -9,11 +10,16 @@ $lato: 'Lato', sans-serif;
 //
 $white: #ffffff;
 $black: #1a1a1a;
-$grey: #f3f3f3;
+$grey: #F2F2F2;
+$grey-l: #EEEBE7;
+$yellow: #F8943C;
+$green: #09432F;
+$green-l: #89A134;
+
 $base: $black;
-$linksColor: #96dacd;
-$yellow:#e9963f;
-$green:#1b432f;
+$fontColor : $green;
+$fontGrey : #9F9F9F;
+$linksColor: $yellow;
 
 
 //

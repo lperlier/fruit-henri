@@ -6,23 +6,23 @@ import { ToggleMenu } from 'components/header/ToggleMenu'
 
 import s from './Header.module.scss';
 
-import WknLogo from 'assets/svg/wkn.svg'
+import Logo from 'assets/images/logo.png'
 
 export const Header = () => (
-  
+
   <>
     <header className={s.Header}>
       <Container className={s.Header__container}>
-      
+
         <Link className={s.Brand} to="/">
-          <WknLogo />
+          <img className="img-fluid" src={Logo} alt="Le fruit d'Henri" />
         </Link>
-        
+
         <Navbar/>
         <ToggleMenu/>
-        
+
       </Container>
     </header>
   </>
-  
+
 )

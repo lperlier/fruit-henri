@@ -1,21 +1,40 @@
 h1 {
-  @include font-vw(100px, $deskXXL);
-  font-weight:900;
+  @include fluid-type($tabletSmall, $deskXXL, 50px, 65px);
+  font-weight:500;
 }
 
 h2 {
-  @include font-vw(50px, $deskXXL);
-  font-weight:900;
+  @include fluid-type($tabletSmall, $deskXXL, 45px, 55px);
+  font-weight:500;
 }
 
 h3 {
-  @include font-vw(32px, $deskXXL);
-  font-weight:900;
+  font-size:1.4rem;
+  font-weight:500;
+  margin-bottom:20px;
 }
 
 p {
-  @include font-vw(16px, $deskXXL);
+  font-size:1.4rem;
   line-height:1.6;
+
+  strong {
+    font-weight:700;
+  }
+}
+
+.subtitle {
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 10px;
+  letter-spacing: 0.33em;
+  font-family: $open;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+a {
+  color:inherit;
 }
 
 em {

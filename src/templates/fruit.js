@@ -3,6 +3,7 @@ import React from 'react'
 import { graphql, Link } from 'gatsby'
 
 import { PageHeader } from 'components/page/PageHeader'
+import { YSWYWContent } from 'components/page/YSWYWContent'
 
 function Fruit(props) {
 
@@ -17,7 +18,8 @@ function Fruit(props) {
           <PageHeader>
 
             <h1>{fruit.title}</h1>
-            <div className="Content" dangerouslySetInnerHTML={{ __html: fruit.html }} />
+            <YSWYWContent html={fruit.html} />
+
             <div className="Calendar">
               {fruit.calendar.map((month, index) => (
                 <div className="Month" key={index}>

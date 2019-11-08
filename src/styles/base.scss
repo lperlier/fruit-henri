@@ -1,23 +1,21 @@
 @import 'reset';
 @import 'utils';
 @import 'fonts';
+@import 'grid';
+@import 'links';
 
 body,
 html {
   min-height: 100vh;
-  background: $green;
+  background: $grey-l;
 }
 
 html {
   font-size: 62.5%;
-  -webkit-overflow-scrolling: touch;
-  overflow-x: hidden;
-  overflow-y: scroll;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
-  max-width:1920px;
-  margin:0 auto;
+  background: $green;
 }
 
 *,
@@ -29,23 +27,39 @@ html {
 body {
   position: relative;
   margin:0;
-  font-family: $lato;
+  font-family: $noto;
   font-size: 1.3rem;
   text-size-adjust: 100%;
-  color: $base;
-  
-  html:not(.no-js) &.is-first {
+  color: $fontColor;
+  background: $green;
+
+  html:not(.no-js) &.is--first {
     visibility: hidden;
+    opacity: 0;
   }
 
-  html:not(.no-js) &.is-loading {
+  html:not(.no-js) &.is--loading {
     overflow: hidden;
     cursor: progress;
     height:100vh;
   }
-  
-  html:not(.no-js) &.is-animating {
+
+  html:not(.no-js) &.is--animating {
     overflow: hidden;
     height:100vh;
   }
+}
+
+.mask {
+  overflow: hidden;
+}
+
+.img-fluid {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.gatsby-image-wrapper {
+  background:$grey;
 }

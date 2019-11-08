@@ -1,25 +1,28 @@
 import React from 'react'
 
-import s from './Contact.module.scss';
-
 import useEco from 'hooks/use-eco';
 
-import { Container } from 'components/container/Container';
+import Leaf from 'assets/svg/leaf.svg';
 
-export const Contact = () => {
+import s from './EcoResponsable.module.scss';
 
-  const ecoResponsable = useEco();
+export const EcoResponsable = () => {
+
+  const eco = useEco();
 
   return (
 
-    <>
-      <div className="ecoResponsable">
-        <div className="inner">
-          <span>Titre Eco Responsable</span>
-          <p>{ecoResponsable.text}</p>
+      <>
+        <div className={s.EcoResponsable__block}>
+          <div className="inner">
+            <Leaf />
+            <div className={s.EcoResponsable__content}>
+              <span className="subtitle">Verger eco-responsable</span>
+              <p>{eco.text}</p>
+            </div>
+          </div>
         </div>
-      </div>
-    </>
-
+      </>
   )
+
 }

@@ -1,5 +1,7 @@
 import React from 'react'
 
+import Img from 'gatsby-image';
+
 import s from './Visual.module.scss';
 
   export class Visual extends React.Component {
@@ -7,6 +9,7 @@ import s from './Visual.module.scss';
     constructor(props) {
 
       super(props);
+
       this.itemClasses = s.Visual__Container;
       if (this.props.className) this.itemClasses += ' ' + this.props.className ;
 
@@ -15,7 +18,9 @@ import s from './Visual.module.scss';
     render() {
 
       return (
-        <div className={this.itemClasses}></div>
+        <div className={this.itemClasses}>
+          <Img fluid={this.props.img.childImageSharp.fluid} />
+        </div>
       )
     }
 }

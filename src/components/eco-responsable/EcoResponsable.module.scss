@@ -1,20 +1,33 @@
 @import '~styles/config';
 
-.Contact {
-  
-  background:$yellow;
-  
-  &__Container{
-    @include grid();
+.EcoResponsable {
+
+  &__block{
+    background: $green-l;
+    color: $white;
+    max-width: 380px;
+
+    :global(.inner) {
+      padding:30px;
+      @include flex(flex-start, flex-start);
+      flex-wrap: nowrap;
+    }
+
+    svg {
+      min-width: 50px;
+
+      > * {
+        fill:$white;
+      }
+    }
   }
-  
-  .Headline {
-    background:red;
-    grid-column: span 3;
+
+  &__content {
+    margin-left:30px;
+
+    p {
+      font-size:1.1rem;
+    }
+
   }
-  
-  :global(.Content) {
-    grid-column: span 9;
-  }
-  
 }

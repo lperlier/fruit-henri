@@ -3,42 +3,54 @@ import React from 'react'
 import useOffers from 'hooks/use-offers';
 
 import { Container } from 'components/container/Container'
+import { YSWYWContent } from 'components/page/YSWYWContent'
 import { Visual } from 'components/visual/Visual'
 import { OfferPreview } from 'components/recrutment/OfferPreview'
 
 import s from './Recrutment.module.scss';
 
 export const Recrutment = ({ data }) => {
-  
+
   const offers = useOffers();
-  const champsOffers = offers.filter((offer) => offer.type === "champs" );
-  const adminOffers = offers.filter((offer) => offer.type === "administration" );
-  
+  const stationOffers = offers.filter((offer) => offer.type === "station" );
+  const vergerOffers = offers.filter((offer) => offer.type === "verger" );
+
   return (
     <>
       <section id="Recrutment" className={s.Recrutment}>
         <Container>
-        
-          <span className='subtitle'>{data.subtitle}</span>
+
+          <span className='subtitle'>Recrutement</span>
           <h2>{data.title}</h2>
-          <p>{data.text}</p>
-          <Visual className={s.Recrutment__visual} img={data.visual} prllx="80"/>
-          
-          <div className={s.Recrutment__Offers}>
-            {champsOffers.map(offer => (
-              <OfferPreview key={offer.slug} offer={offer}/>
-            ))}
-          </div>
-          
-          <div className={s.Recrutment__Offers}>
-            {adminOffers.map(offer => (
-              <OfferPreview key={offer.slug} offer={offer}/>
-            ))}
-          </div>
-          
+          <YSWYWContent html={data.text}/>
+
+          <Visual className={s.Recrutment__visual} img={data.image}/>
+
+          {stationOffers.length > 0 &&
+
+            <div className={s.Recrutment__Offers}>
+              <h3>Offres Station</h3>
+              {stationOffers.map(offer => (
+                <OfferPreview key={offer.slug} offer={offer}/>
+              ))}
+            </div>
+
+          }
+
+          {vergerOffers.length > 0 &&
+
+            <div className={s.Recrutment__Offers}>
+              <h3>Offres Vergers</h3>
+              {vergerOffers.map(offer => (
+                <OfferPreview key={offer.slug} offer={offer}/>
+              ))}
+            </div>
+
+           }
+
         </Container>
       </section>
     </>
   )
-  
+
 }
