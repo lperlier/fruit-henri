@@ -19,8 +19,8 @@
     }
 
    &__item {
-     
-       display:block;
+
+      display:block;
       text-align: center;
 
       @include responsive($menuBreakpoint) {
@@ -38,6 +38,7 @@
    }
 
    &__link {
+     font-family: $open;
       position: relative;
       opacity:0.3;
       font-weight:700;
@@ -81,17 +82,17 @@
          }
       }
    }
-   
+
    &__button {
-     
+
      @extend .Nav__link;
      border:1px solid $base;
      padding:12px 20px;
      border-radius:100px;
-     
+
      &:after {
        content:none;
      }
-     
+
    }
 }

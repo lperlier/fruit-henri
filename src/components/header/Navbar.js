@@ -1,48 +1,30 @@
 import React from 'react'
 import { Link } from "gatsby"
-import { graphql, StaticQuery } from 'gatsby'
+
+import useMenu from 'hooks/use-menu';
 
 import s from './Navbar.module.scss';
 
-const Navbar = ({ data }) => (
-  
-  <>
+export const Navbar = (props) => {
+
+  const menu = useMenu();
+
+  return (
     <nav className={s.Nav}>
       <ul className={s.Nav__Main}>
-        {data.allMainMenuJson.edges.map(link => {
-          
+        {menu.map(link => {
+
           let linkClass = s.Nav__link;
-          if (link.node.type === 'button') linkClass = s.Nav__button;
-          
+          if (link.type === 'button') linkClass = s.Nav__button;
+
           return (
-            <li key={link.node.id} className={s.Nav__item}>
-              <Link to={link.node.url} className={linkClass} activeClassName={ s.Nav__link__Active } partiallyActive={true}>{link.node.title}</Link>
+            <li key={link.id} className={s.Nav__item}>
+              <Link to={link.url} className={linkClass} activeClassName={ s.Nav__link__Active } onClick={props.onClick}>{link.title}</Link>
             </li>
           )
+
         })}
       </ul>
     </nav>
-  </>
-  
-)
-
-export default props => (
-  <StaticQuery
-    query={graphql`
-      {
-        allMainMenuJson {
-          edges {
-            node {
-              id
-              type
-              url
-              title
-              type
-            }
-          }
-        }
-      }
-    `}
-    render={data => <Navbar data={data} {...props} />}
-  />
-)
+  )
+}

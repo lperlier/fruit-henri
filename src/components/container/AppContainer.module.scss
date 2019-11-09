@@ -8,13 +8,17 @@
   overflow: hidden;
   position: relative;
   z-index: 10;
-  
+
+  @include responsive($tabletSmall, max) {
+    margin-bottom: 0!important;
+  }
+
   > main, > article {
     position: relative;
     z-index:10;
     min-height: 100vh;
     background: $white;
-    
+
     section {
       padding:percentage(120/1920) 0;
     }

@@ -8,7 +8,7 @@ import { YSWYWContent } from 'components/page/YSWYWContent'
 export const Bref = ({ data }) => (
 
   <>
-    <section className={s.Bref}>
+    <section id="Bref" className={s.Bref}>
       <Container>
 
         <h2>{data.title}</h2>

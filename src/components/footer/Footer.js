@@ -5,6 +5,8 @@ import { Container } from 'components/container/Container'
 import { HVE } from 'components/footer/HVE'
 
 import Logo from 'assets/images/logo_w.png'
+import Schtlzr from 'assets/svg/schtzlr.svg'
+import Flag from 'assets/svg/flag.svg'
 
 import s from './Footer.module.scss';
 
@@ -45,30 +47,34 @@ export class Footer extends React.Component {
 
     return (
 
-      <>
+      <footer ref={el => (this.Footer = el)} className={s.Footer}>
+        <Container className={s.Footer__container}>
 
-        <footer ref={el => (this.Footer = el)} className={s.Footer}>
-          <Container className={s.Footer__container}>
+          <HVE />
 
-            <HVE />
+          <a className="Btn is--white" href="#" target="_blank" rel="noopener noreferrer">Contactez-nous</a>
 
-            <a className="Link" href="#" target="_blank" rel="noopener noreferrer">Contactez-nous</a>
+          <Link className={s.brand} to="/">
+            <img className="img-fluid" src={Logo} alt="Le fruit d'Henri" />
+          </Link>
 
-            <Link className={s.brand} to="/">
-              <img className="img-fluid" src={Logo} alt="Le fruit d'Henri" />
-            </Link>
-
-            <p>
-              Copyright ©2018<br/>
-              Le Fruit d’Henri<br/>
-              Mentions légales<br/>
+          <div className={s.Footer__mentions}>
+            <span>Copyright ©2018 Le Fruit d’Henri</span>
+            <span>Mentions légales</span>
+            <span>
               Création
-            </p>
+              <a className={s.Schtlzr} href="http://mathieuschatzler.com/" target="_blank" rel="noopener noreferrer">
+                <Schtlzr />
+              </a>
+            </span>
+          </div>
 
-          </Container>
-        </footer>
+          <div className={s.Footer__flag}>
+            <Flag />
+          </div>
 
-      </>
+        </Container>
+      </footer>
 
     )
   }

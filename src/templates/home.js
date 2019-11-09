@@ -33,8 +33,11 @@ function Homepage(props) {
         <Verger  data={page.verger}/>
         <Fruits data={page.fruits}/>
         <Bref data={page.bref}/>
-        <Recrutment data={page.recrutment}/>
-        <Contact/>
+
+        <section id="Recrutment" className="Recrutment">
+          <Recrutment data={page.recrutment}/>
+          <Contact/>
+        </section>
 
       </main>
 

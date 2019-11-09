@@ -14,7 +14,7 @@ export const Contact = () => {
   return (
 
     <>
-      <section className={s.Contact}>
+      <div className={s.Contact__block}>
         <Container className={s.Contact__Container}>
 
 
@@ -40,7 +40,7 @@ export const Contact = () => {
 
 
         </Container>
-      </section>
+      </div>
     </>
 
   )

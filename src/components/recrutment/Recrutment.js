@@ -17,7 +17,7 @@ export const Recrutment = ({ data }) => {
 
   return (
     <>
-      <section id="Recrutment" className={s.Recrutment}>
+      <div className={s.Recrutment__block}>
         <Container>
 
           <span className='subtitle'>Recrutement</span>
@@ -49,7 +49,7 @@ export const Recrutment = ({ data }) => {
            }
 
         </Container>
-      </section>
+      </div>
     </>
   )
 

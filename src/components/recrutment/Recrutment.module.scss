@@ -1,2 +1,10 @@
+@import '~styles/config';
+
 .Recrutment {
+
+}
+
+:global(.Recrutment) {
+  background:$yellow;
+  color:$white;
 }

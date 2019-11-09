@@ -2,10 +2,14 @@ import React from 'react'
 
 import s from './YSWYWContent.module.scss';
 
-export const YSWYWContent = ({ html }) => (
+export const YSWYWContent = ({ html, ...rest }) => {
 
-  <>
-    <div className={s.YSWYWContent} dangerouslySetInnerHTML={{ __html: html }} />
-  </>
+  const passProps = { ...rest };
+  let itemdefaultClass = s.YSWYWContent;
+  if (passProps.className) itemdefaultClass += ' ' + passProps.className ;
 
-)
+  return (
+    <div className={itemdefaultClass} dangerouslySetInnerHTML={{ __html: html }} />
+  )
+
+}

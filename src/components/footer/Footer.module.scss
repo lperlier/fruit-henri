@@ -1,42 +1,82 @@
 @import '~styles/config';
 
 .Footer {
-   position: fixed;
-   bottom:0;
-   left:50%;
-   z-index:1;
-   width:100%;
-   max-width:1920px;
-   transform:translateX(-50%);
    color:$white;
+   text-align: center;
+
+   @include responsive($tabletSmall) {
+     position: fixed;
+     bottom:0;
+     left:50%;
+     z-index:1;
+     width:100%;
+     max-width:1920px;
+     transform:translateX(-50%);
+   }
 
    &__container {
-     @include flex();
-     justify-content: space-between;
-     padding-top:percentage(120/1920);
-     padding-bottom:percentage(120/1920);
+     padding-top: 60px;
+     padding-bottom: 60px;
+   }
+
+   &__mentions {
+
+     span {
+       color: #46685a;
+       display: block;
+       font-size: 1rem;
+
+       &+span {
+         margin-top: 10px;
+       }
+
+       svg {
+         display: block;
+         width: 40px;
+         margin: 5px auto 0;
+
+         > * {
+           fill: $white;
+         }
+       }
+     }
+   }
+
+   &__flag {
+     position: absolute;
+     bottom: 0px;
+     left: 50%;
+     margin-left: -20px;
+
+     svg {
+       display: block;
+     }
    }
 }
 
 .brand {
+  display: block;
   max-width: 190px;
+  margin: 35px auto;
+  position: relative;
+
+  &:after {
+    content: '';
+    display: block;
+    padding-top: 27%;
+  }
+
+  img {
+    position: absolute;
+  }
 }
 
-.made__by {
+.Schtlzr {
+  display: block;
+  width: 40px;
+  margin:0 auto;
 
-   @include flex();
-   color:$white;
-   text-decoration:none;
-
-   .wkn {
-      margin-left: 5px;
-      svg {
-         display: block;
-         width: 20px;
-         height: 20px;
-         > * {
-           fill:$white;
-         }
-      }
-   }
+  svg {
+    display:block;
+  }
 }
