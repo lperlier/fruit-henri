@@ -53,30 +53,31 @@ fields:
   name: verger
   label: Le Verger
   fields:
+  - name: text_col_1
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: html-blocks
+    label: Text
+    description: Texte Colonne droite
+  - name: texte_col_2
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: html-blocks
+    label: Texte
+    description: Texte Colonne gauche
   - name: eco_responsable
     type: text
     config:
       required: false
     label: Eco-responsable
-  - type: field_group_list
-    name: content
-    label: content
-    fields:
-    - name: title
-      type: text
-      config:
-        required: false
-      label: Titre
-    - type: textarea
-      name: text
-      label: Texte
-      config:
-        wysiwyg: true
-        schema:
-          format: html-blocks
-    config:
-      labelField: title
-      max: '2'
   - name: image
     type: file
     config:
