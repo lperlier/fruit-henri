@@ -62,7 +62,7 @@ fields:
       schema:
         format: html-blocks
     label: Texte Colonne droite
-  - name: texte_col_2
+  - name: text_col_2
     type: textarea
     default: ''
     config:
