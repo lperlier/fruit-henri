@@ -17,10 +17,14 @@
     position: relative;
     z-index:10;
     min-height: 100vh;
-    background: $white;
+    background: $grey;
 
     section {
-      padding:percentage(120/1920) 0;
+
+      > * {
+        padding-top: 120px;
+        padding-bottom: 120px;
+      }
     }
   }
 }

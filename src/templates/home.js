@@ -1,14 +1,16 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import Img from 'gatsby-image'
 
 import { PageHero } from 'components/page/PageHero'
+import { PageVisual } from 'components/page/PageVisual'
 import { About } from 'components/about/About'
 import { Verger } from 'components/verger/Verger'
 import { Fruits } from 'components/fruits/Fruits'
 import { Bref } from 'components/bref/Bref'
 import { Recrutment } from 'components/recrutment/Recrutment'
 import { Contact } from 'components/contact/Contact'
+
+import Abricot from 'assets/svg/Abricot.svg'
 
 import s from './home.module.scss';
 
@@ -23,11 +25,10 @@ function Homepage(props) {
         <PageHero>
           <h1>{page.title}</h1>
           <span className="Solgan">Abricots - Pêches - Nectarines - Kiwis</span>
+          <div className="Abricot"><Abricot /></div>
         </PageHero>
 
-        <div className="PageVisual">
-          <Img fluid={page.image.childImageSharp.fluid} />
-        </div>
+        <PageVisual img={page.image} />
 
         <About data={page.about}/>
         <Verger  data={page.verger}/>
@@ -70,7 +71,8 @@ export const pageQuery = graphql`
         }
         about {
           title
-          text
+          text_col_1
+          text_col_2
           image {
             childImageSharp {
                 fluid(maxWidth: 1075, quality: 72) {

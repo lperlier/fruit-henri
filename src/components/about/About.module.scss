@@ -1,7 +1,49 @@
+@import '~styles/config';
+
 .About {
-  
-  &__visual{
-    width:30%;
+
+  &__container {
+    @include flex(flex-start, space-between);
+
+    > * {
+      width:100%;
+    }
   }
-  
+
+  &__headline {
+    max-width: 37%;
+
+    h2 {
+      max-width: 260px;
+    }
+  }
+
+  &__content {
+    max-width: 63%;
+    padding-left: 40px;
+    margin-top: 40px;
+    @include flex(flex-start, space-between);
+
+    > * {
+      width:100%;
+
+      &:nth-child(1) {
+        max-width: 40%;
+      }
+
+      &:nth-child(2) {
+        max-width: 60%;
+        padding-left: 40px;
+      }
+    }
+  }
+
+  &__visual{
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    width: 30%;
+    max-width: 320px;
+    transform: translateY(-50%);
+  }
 }

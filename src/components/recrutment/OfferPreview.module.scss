@@ -1,5 +1,44 @@
+@import '~styles/config';
+
 .Offer {
-  
-  
-  
+
+  &__preview {
+    background: $white;
+    display: block;
+    padding: 30px;
+    position: relative;
+    text-decoration: none!important;
+
+    p {
+      font-size: 1.2rem;
+      color: $fontGrey;
+    }
+  }
+
+  &__title {
+    color:$green;
+    @include fluid-type($tabletSmall, $deskXXL, 16px, 22px);
+    margin-bottom: 20px;
+  }
+
+  &__periode {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    @include flex(center, flex-start);
+    color: $yellow;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-family: $open;
+    font-weight: bold;
+    letter-spacing: 0.3em;
+
+    :global(.arrow) {
+      margin:0 10px;
+
+      svg > * {
+        fill:$yellow;
+      }
+    }
+  }
 }

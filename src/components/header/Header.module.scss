@@ -12,10 +12,23 @@
     justify-content: space-between;
     padding-top: 40px;
     padding-bottom: 40px;
+    max-width: calc(1220px + 80px + 80px);
   }
 
   &__containerBig {
     background:red;
+  }
+
+  &__flag {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-left: -20px;
+    margin-top: -2px;
+
+    svg {
+      display: block;
+    }
   }
 }
 
@@ -24,4 +37,8 @@
   position: relative;
   z-index: 10;
   max-width: 190px;
+
+  &[aria-current="page"] {
+    pointer-events: none;
+  }
 }

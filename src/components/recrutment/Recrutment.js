@@ -28,7 +28,7 @@ export const Recrutment = ({ data }) => {
 
           {stationOffers.length > 0 &&
 
-            <div className={s.Recrutment__Offers}>
+            <div className={s.Recrutment__offers}>
               <h3>Offres Station</h3>
               {stationOffers.map(offer => (
                 <OfferPreview key={offer.slug} offer={offer}/>
@@ -39,7 +39,7 @@ export const Recrutment = ({ data }) => {
 
           {vergerOffers.length > 0 &&
 
-            <div className={s.Recrutment__Offers}>
+            <div className={s.Recrutment__offers}>
               <h3>Offres Vergers</h3>
               {vergerOffers.map(offer => (
                 <OfferPreview key={offer.slug} offer={offer}/>

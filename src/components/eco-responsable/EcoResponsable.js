@@ -6,14 +6,17 @@ import Leaf from 'assets/svg/leaf.svg';
 
 import s from './EcoResponsable.module.scss';
 
-export const EcoResponsable = () => {
+export const EcoResponsable = ({ ...rest }) => {
 
   const eco = useEco();
+  const passProps = { ...rest };
+  let itemdefaultClass = s.EcoResponsable__block;
+  if (passProps.className) itemdefaultClass += ' ' + passProps.className ;
 
   return (
 
       <>
-        <div className={s.EcoResponsable__block}>
+        <div className={itemdefaultClass}>
           <div className="inner">
             <Leaf />
             <div className={s.EcoResponsable__content}>

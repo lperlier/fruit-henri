@@ -1,0 +1,14 @@
+@import '~styles/config';
+
+.PageVisual {
+
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+
+  :global(.gatsby-image-wrapper) {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

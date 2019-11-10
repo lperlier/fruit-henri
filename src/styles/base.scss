@@ -54,6 +54,14 @@ body {
   overflow: hidden;
 }
 
+.arrow {
+  display:inline-block;
+  
+  svg {
+    display:block;
+  }
+}
+
 .img-fluid {
   display: block;
   max-width: 100%;

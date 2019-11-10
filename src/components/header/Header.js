@@ -4,9 +4,10 @@ import { Container } from 'components/container/Container'
 import { Navbar } from 'components/header/Navbar'
 import { ToggleMenu } from 'components/header/ToggleMenu'
 
-import s from './Header.module.scss';
-
+import Flag from 'assets/svg/flag.svg'
 import Logo from 'assets/images/logo.png'
+
+import s from './Header.module.scss';
 
 export class Header extends React.Component {
 
@@ -45,6 +46,10 @@ export class Header extends React.Component {
 
       <header className={s.Header}>
         <Container className={s.Header__container}>
+
+          <div className={s.Header__flag}>
+            <Flag />
+          </div>
 
           <Link className={s.Brand} to="/" onClick={this.closeMenu} partiallyActive={true}>
             <img className="img-fluid" src={Logo} alt="Le Fruit d'Henri"/>

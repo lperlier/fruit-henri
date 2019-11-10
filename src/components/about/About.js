@@ -13,15 +13,24 @@ export const About = ({ data }) =>  {
 
     <>
       <section id="About" className={s.About}>
-        <Container>
+        <Container className={s.About__container}>
 
-          <span className="subtitle">à propos</span>
-          <h2>{data.title}</h2>
-          <YSWYWContent html={data.text} />
+          <div className={s.About__headline}>
+            <span className="subtitle">à propos</span>
+            <h2>{data.title}</h2>
+          </div>
+
+          <div className={s.About__content}>
+            <div className="col">
+              <YSWYWContent html={data.text_col_1} />
+            </div>
+            <div className="col">
+              <YSWYWContent html={data.text_col_2} />
+              <EcoResponsable />
+            </div>
+          </div>
 
           <Visual className={s.About__visual} img={data.image}/>
-
-          <EcoResponsable />
 
         </Container>
       </section>

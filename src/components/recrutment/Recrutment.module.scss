@@ -2,6 +2,21 @@
 
 .Recrutment {
 
+  &__offers {
+    > h3 {
+      font-size: 1.4rem;
+      display: block;
+      margin-bottom: 30px;
+      letter-spacing: 0.33em;
+      font-family: $open;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    &+& {
+      margin-top: 30px;
+    }
+  }
 }
 
 :global(.Recrutment) {
