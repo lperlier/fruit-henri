@@ -75,7 +75,8 @@ verger:
     commence jusqu’à la mi-septembre. A partir d’octobre la taille recommence…</p>"
 fruits:
   subtitle: Nos fruits
-  title: Un savoir-faire familial pour des fruits de qualité
+  title: "<h2>Un savoir-faire <br><strong>familial</strong> pour des <br>fruits de
+    <strong>qualité</strong></h2>"
 bref:
   title: Nous produisons, conditionnons et expédions.
   text: "<p>Nos clients&nbsp;: Grandes surfaces, grossistes et vente directe chez
