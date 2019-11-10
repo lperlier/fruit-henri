@@ -88,8 +88,14 @@ fields:
   - type: text
     name: subtitle
     label: Sous-titre
-  - type: text
-    name: title
+  - name: title
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: html-blocks
     label: Titre
 - type: field_group
   name: bref
