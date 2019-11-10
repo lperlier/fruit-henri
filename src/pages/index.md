@@ -42,12 +42,12 @@ verger:
   - title: 80 hectares de culture
     text: "<p>Nous cultivons aujourd’hui 80 hectares. Nous comptons 40 hectares d’abricotiers,
       35 hectares de pêchers et 5 d’actinadia (kiwi). 85% de notre activité commerciale
-      est concentrée sur la période estivale. Trois grands temps forts rythment une
-      année dans nos vergers, la taille, l’eclaircissage et la récolte. </p><p>La
-      taille se fait tout au long de l’année mais est principalement concentrée sur
-      les mois d’hiver. D’avril à mai nous équilibrons la charge des arbres pour que
-      les fruits encore petis puissent se dévelloper convenablement, c’est l’éclaircissage.
-      En juin la cueille commence jusqu’à la mi-septembre. A partir d’octobre la taille
+      est concentrée sur la période estivale.</p><p>Trois grands temps forts rythment
+      une année dans nos vergers, la taille, l’eclaircissage et la récolte. La taille
+      se fait tout au long de l’année mais est principalement concentrée sur les mois
+      d’hiver. D’avril à mai nous équilibrons la charge des arbres pour que les fruits
+      encore petis puissent se dévelloper convenablement, c’est l’éclaircissage. En
+      juin la cueille commence jusqu’à la mi-septembre. A partir d’octobre la taille
       recommence…</p>"
   image: "/static/images/verger_visual.jpg"
 fruits:
