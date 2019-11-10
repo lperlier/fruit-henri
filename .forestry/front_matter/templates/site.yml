@@ -85,9 +85,6 @@ fields:
   name: fruits
   label: Fruits
   fields:
-  - type: text
-    name: subtitle
-    label: Sous-titre
   - name: title
     type: textarea
     default: ''
