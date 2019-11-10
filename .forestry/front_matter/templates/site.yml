@@ -63,13 +63,9 @@ fields:
     label: content
     fields:
     - name: title
-      type: textarea
-      default: ''
+      type: text
       config:
         required: false
-        wysiwyg: true
-        schema:
-          format: html-blocks
       label: Titre
     - type: textarea
       name: text
