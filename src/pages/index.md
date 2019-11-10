@@ -39,7 +39,7 @@ verger:
       mistral, idéal pour la production de fruits à noyaux. Nos hivers froids permettent
       un bon repos du végétal et les étés chauds assurent une qualité gustative à
       nos fruits.</p>"
-  - title: 80 hectares de culture
+  - title: "<strong>80 hectares</strong> de culture"
     text: "<p>Nous cultivons aujourd’hui 80 hectares. Nous comptons 40 hectares d’abricotiers,
       35 hectares de pêchers et 5 d’actinadia (kiwi). 85% de notre activité commerciale
       est concentrée sur la période estivale.</p><p>Trois grands temps forts rythment
