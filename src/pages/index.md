@@ -33,13 +33,13 @@ verger:
   eco_responsable: Nous travaillons dans une optique de développement durable pour
     les générations futures.
   content:
-  - title: Un verger sur les Costières de <strong>Nîmes</strong>
+  - title: Un verger sur<br/>les Costières<br/>de <strong>Nîmes</strong>
     text: "<p>Notre terroir se caractérise par ses galets ronds (le grès), un sol
       argilo-calacaire, un fort ensoleillement et une atmosphère ventillée par le
       mistral, idéal pour la production de fruits à noyaux. Nos hivers froids permettent
       un bon repos du végétal et les étés chauds assurent une qualité gustative à
       nos fruits.</p>"
-  - title: "<strong>80 hectares</strong> de culture"
+  - title: "<strong>80 hectares</strong><br/>de culture"
     text: "<p>Nous cultivons aujourd’hui 80 hectares. Nous comptons 40 hectares d’abricotiers,
       35 hectares de pêchers et 5 d’actinadia (kiwi). 85% de notre activité commerciale
       est concentrée sur la période estivale.</p><p>Trois grands temps forts rythment
