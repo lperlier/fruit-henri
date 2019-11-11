@@ -45,6 +45,16 @@ fields:
         format: markdown
   config:
     labelField: name
+- name: visual
+  type: file
+  config:
+    maxSize: 250
+  label: Visuel
+- name: leaves
+  type: file
+  config:
+    maxSize: 250
+  label: Visuel Feuilles
 pages:
 - src/pages/fruits/l-abricot.md
 - src/pages/fruits/le-kiwi.md
