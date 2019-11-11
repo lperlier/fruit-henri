@@ -26,6 +26,8 @@ calendar:
     suivons l’évolution des sucres et commençons la commercialisation dès que cette
     dernière est optimum.
 fruit_single: Le Kiwi
+visual: "/static/images/kiwi.png"
+leaves: "/static/images/peach_leaves-1.png"
 
 ---
 Contrairement à ce que l’on croit le kiwi se cultive très bien sous nos latitudes. Une terre riche et une bonne irrigation lui garantissent un bon développement. Le kiwi est un fruit résistant aux ravageurs, notamment grâce à ses poils qui constituent une barrière physique. Sa sensibilité c’est au vent qu’il la doit. Son bois et ses feuilles sont très cassants, il est primordial de bien le protéger avec des haies brise vent.
