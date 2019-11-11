@@ -139,9 +139,6 @@ fields:
   name: apply
   label: Postuler
   fields:
-  - type: text
-    name: title
-    label: Titre
   - type: textarea
     name: text
     label: Texte
