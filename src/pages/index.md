@@ -78,7 +78,8 @@ fruits:
   title: "<h2>Un savoir-faire <br><strong>familial</strong> pour des <br>fruits de
     <strong>qualité</strong></h2>"
 bref:
-  title: Nous produisons, conditionnons et expédions.
+  title: "<h2>Nous <strong>produisons</strong>,<br><strong>conditionnons</strong>
+    et <strong>expédions</strong>.</h2>"
   text: "<p>Nos clients&nbsp;: Grandes surfaces, grossistes et vente directe chez
     nous. Retrouvez nous directement à notre station de conditionnement</p>"
 recrutment:
