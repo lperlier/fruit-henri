@@ -18,6 +18,8 @@ calendar:
   text: Elle s’effectue entre 3 à 6 passages par arbres. Nous récoltons les fruits
     proches de leur maturité afin de garantir une qualité gustative optimale
 fruit_single: L'abricot
+visual: "/static/images/abricot.png"
+leaves: "/static/images/abricot_leaves.png"
 
 ---
 L’abricotier est cultivé en France depuis 500 ans environ. C’est une espèce parfaitement adaptée à notre terroir méditerranéen et à son fort ensoleillement.
