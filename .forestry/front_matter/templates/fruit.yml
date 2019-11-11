@@ -12,10 +12,6 @@ fields:
   name: title
   label: Titre
   description: Titre de la page
-- type: text
-  name: fruit_single
-  label: Singulier
-  description: Accueil mot déstructuré
 - name: intro
   type: textarea
   default: ''
@@ -26,6 +22,10 @@ fields:
       format: markdown
   label: Texte d'accueil
   description: Texte présent sur l'accueil
+- type: text
+  name: fruit_single
+  label: Singulier déstructuré
+  description: Filigrane page Accueil
 - type: field_group_list
   name: calendar
   label: Calendrier
