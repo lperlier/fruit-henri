@@ -2,9 +2,10 @@
 template: fruit
 title: Le kiwi
 family: Kiwis
-intro: Le kiwi est le fruit de l’actinadia, un arbre liane. Son fruit sucré et légèrement
-  acidulé est riche en vitamines, fibres et antioxydants. C’est le fruit vitalité
-  par excellence !
+intro: |-
+  ### Le Kiwi
+
+  Le kiwi est le fruit de l’actinadia, un arbre liane. Son fruit sucré et légèrement acidulé est riche en vitamines, fibres et antioxydants. C’est le fruit vitalité par excellence !
 calendar:
 - name: Janvier
   title: Taille
@@ -25,6 +26,7 @@ calendar:
   text: Une période d’affinage est nécessaire pour avoir un kiwi de qualité. Nous
     suivons l’évolution des sucres et commençons la commercialisation dès que cette
     dernière est optimum.
+fruit_single: Le Kiwi
 
 ---
 Contrairement à ce que l’on croit le kiwi se cultive très bien sous nos latitudes. Une terre riche et une bonne irrigation lui garantissent un bon développement. Le kiwi est un fruit résistant aux ravageurs, notamment grâce à ses poils qui constituent une barrière physique. Sa sensibilité c’est au vent qu’il la doit. Son bois et ses feuilles sont très cassants, il est primordial de bien le protéger avec des haies brise vent.
