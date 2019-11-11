@@ -98,9 +98,15 @@ fields:
   name: bref
   label: En bref
   fields:
-  - type: text
-    name: title
-    label: Title
+  - name: title
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: html-blocks
+    label: Titre
   - name: text
     type: textarea
     default: ''
