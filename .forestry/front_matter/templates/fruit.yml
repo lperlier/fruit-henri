@@ -11,6 +11,7 @@ fields:
 - type: text
   name: title
   label: Titre
+  description: Titre de la page
 - type: text
   name: fruit_single
   label: Singulier
