@@ -2,9 +2,9 @@
 template: fruit
 title: La pêche et la nectarine
 family: Pèches
-intro: La pêche, de la famille des Prunus également, est cultivée depuis le 12ème
-  siècle en France. Ce fruit juteux et sucré est synonyme de vacances et de plaisir
-  !
+intro: "### LA   \nPÊCHE / NECTARINE\n\nLa pêche, de la famille des Prunus également,
+  est cultivée depuis le 12ème siècle en France. Ce fruit juteux et sucré est synonyme
+  de vacances et de plaisir !"
 calendar:
 - name: Janvier février mars
   title: Taille
@@ -18,6 +18,7 @@ calendar:
   title: Cueillette
   text: Comme pour l’abricotier il faut entre trois à six passages pour cueillir un
     arbre. Le haut murit en premier et l’on descend au fur et à mesure des récoltes.
+fruit_single: La pêche
 
 ---
 Le pêcher se plait à merveille dans le sol argilo calcaire des Costières de Nîmes. Durant l’été, la chaleur emmagasinée par les galets dans le sol et une irrigation contrôlée permettent une production de fruit de qualité. 
