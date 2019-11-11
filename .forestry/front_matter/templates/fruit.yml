@@ -12,9 +12,9 @@ fields:
   name: title
   label: Titre
 - type: text
-  name: family
-  label: Famille
-  description: Abricots, Kiwis, Pèches...
+  name: fruit_single
+  label: Singulier
+  description: Accueil mot déstructuré
 - name: intro
   type: textarea
   default: ''
