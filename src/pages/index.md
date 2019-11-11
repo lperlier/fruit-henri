@@ -80,8 +80,8 @@ fruits:
 bref:
   title: "<h2>Nous <strong>produisons</strong>,<br><strong>conditionnons</strong>
     et <strong>expédions</strong>.</h2>"
-  text: "<p>Nos clients&nbsp;: Grandes surfaces, grossistes et vente directe chez
-    nous. Retrouvez nous directement à notre station de conditionnement</p>"
+  text: "<p>Nos clients : Grandes surfaces, grossistes et vente directe chez nous.
+    <br>Retrouvez nous directement à notre station de conditionnement</p>"
 recrutment:
   title: Vous souhaitez nous rejoindre ?
   text: "<p>Nous sommes en constante recherche de collaborateurs voulant s’investir
