@@ -94,6 +94,17 @@ fields:
       schema:
         format: html-blocks
     label: Titre
+  - name: fruits
+    type: list
+    config:
+      use_select: true
+      min: 
+      max: 
+      source:
+        type: pages
+        section: fruits
+    label: Fruits
+    description: Ordre d'affichage des fruits
 - type: field_group
   name: bref
   label: En bref
