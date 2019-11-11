@@ -2,10 +2,9 @@
 template: fruit
 title: Le kiwi
 family: Kiwis
-intro: |-
-  ### Le Kiwi
-
-  Le kiwi est le fruit de l’actinadia, un arbre liane. Son fruit sucré et légèrement acidulé est riche en vitamines, fibres et antioxydants. C’est le fruit vitalité par excellence !
+intro: "<h3>Le Kiwi</h3><p>Le kiwi est le fruit de l’actinadia, un arbre liane. Son
+  fruit sucré et légèrement acidulé est riche en vitamines, fibres et antioxydants.
+  C’est le fruit vitalité par excellence !</p>"
 calendar:
 - name: Janvier
   title: Taille
