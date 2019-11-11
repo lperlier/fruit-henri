@@ -84,8 +84,9 @@ bref:
     <br>Retrouvez nous directement à notre station de conditionnement</p>"
 recrutment:
   title: Vous souhaitez nous rejoindre ?
-  text: "<p>Nous sommes en constante recherche de collaborateurs voulant s’investir
-    de manière durable dans notre entreprise.</p>"
+  text: "<h2>Vous souhaitez<br><strong>nous rejoindre ?</strong></h2><p>Nous sommes
+    en constante recherche de collaborateurs voulant s’investir de manière durable
+    dans notre entreprise.</p>"
   image: "/static/images/recrutment_visual.jpg"
 apply:
   title: "… et pour postuler ?"
