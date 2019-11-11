@@ -2,10 +2,9 @@
 template: fruit
 title: L'abricot
 family: Abricots
-intro: |-
-  ### L'abricot
-
-  L’abricotier fait parti de la famille des Prunus, originaire de Chine. Son fruit est riche en vitamine A (carotène) connue entre autre pour ses bienfaits pour la peau.
+intro: "<h3>L'abricot</h3><p>L’abricotier fait parti de la famille des Prunus, originaire
+  de Chine. Son fruit est riche en vitamine A (carotène) connue entre autre pour ses
+  bienfaits pour la peau.</p>"
 calendar:
 - name: Mars
   title: Floraison
