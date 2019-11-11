@@ -19,7 +19,7 @@ fields:
     required: false
     wysiwyg: true
     schema:
-      format: markdown
+      format: html-blocks
   label: Texte d'accueil
   description: Texte présent sur l'accueil
 - type: text
