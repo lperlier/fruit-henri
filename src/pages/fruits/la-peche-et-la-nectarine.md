@@ -2,9 +2,9 @@
 template: fruit
 title: La pêche et la nectarine
 family: Pèches
-intro: "### LA   \nPÊCHE / NECTARINE\n\nLa pêche, de la famille des Prunus également,
+intro: "<h3>LA<br>PÊCHE / NECTARINE </h3><p>La pêche, de la famille des Prunus également,
   est cultivée depuis le 12ème siècle en France. Ce fruit juteux et sucré est synonyme
-  de vacances et de plaisir !"
+  de vacances et de plaisir !</p>"
 calendar:
 - name: Janvier février mars
   title: Taille
