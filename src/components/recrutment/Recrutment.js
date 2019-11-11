@@ -21,7 +21,6 @@ export const Recrutment = ({ data }) => {
         <Container>
 
           <span className='subtitle'>Recrutement</span>
-          <h2>{data.title}</h2>
           <YSWYWContent html={data.text}/>
 
           <Visual className={s.Recrutment__visual} img={data.image}/>

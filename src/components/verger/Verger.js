@@ -14,19 +14,13 @@ export const Verger = ({ data }) => (
       <Container className={s.Verger__container}>
 
         <div className="row">
-          {data.content.map((content, index) => (
-            <div className="col" key={index}>
-
-              {index === 0 &&
-                <span className="subtitle">Le Verger</span>
-              }
-
-              <div className={s.Verger__block}>
-                <h2 dangerouslySetInnerHTML={{ __html: content.title }} ></h2>
-                <YSWYWContent html={content.text} />
-              </div>
-            </div>
-          ))}
+          <div className={s.Verger__block}>
+            <span className="subtitle">Le Verger</span>
+            <YSWYWContent html={data.text_col_1} />
+          </div>
+          <div className={s.Verger__block}>
+            <YSWYWContent html={data.text_col_2} />
+          </div>
         </div>
 
         <EcoResponsable className={s.Verger__eco} />

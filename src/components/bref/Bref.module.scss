@@ -2,6 +2,39 @@
 
 .Bref {
 
+  text-align: center;
 
+  &__title {
 
+    h2 {
+      margin-bottom: 80px;
+
+      strong {
+        color:$yellow;
+      }
+    }
+  }
+
+  &__steps {
+    @include flex(center, center);
+    flex-wrap: nowrap;
+    margin-bottom: 40px;
+
+    > * {
+      margin:0 10px;
+    }
+
+    svg {
+      > * {
+        fill:$green;
+      }
+    }
+
+    :global(.Arrow) {
+      svg {
+        width:20px;
+        height:10px;
+      }
+    }
+  }
 }

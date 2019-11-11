@@ -53,6 +53,10 @@
        display: block;
      }
    }
+
+   :global(.Btn) {
+     margin-top: 0px;
+   }
 }
 
 .brand {

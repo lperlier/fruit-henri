@@ -86,10 +86,8 @@ export const pageQuery = graphql`
           }
         }
         verger {
-          content {
-            title
-            text
-          }
+          text_col_1
+          text_col_2
           image {
             childImageSharp {
                 fluid(maxWidth: 1075, quality: 72) {
@@ -103,7 +101,6 @@ export const pageQuery = graphql`
           }
         }
         fruits {
-          subtitle
           title
         }
         bref {
@@ -111,7 +108,6 @@ export const pageQuery = graphql`
           text
         }
         recrutment {
-          title
           text
           image {
             childImageSharp {

@@ -10,6 +10,7 @@
   font-size: 1rem;
   letter-spacing: 0.3em;
   text-decoration: none!important;
+  margin-top: 40px;
 
   &.is--white {
     background: $white;
@@ -19,6 +20,12 @@
   &.is--green {
     background: $green;
     color: $white;
+  }
+
+  &.is--lined {
+    background: 0;
+    border: 1px solid $green;
+    color: $green;
   }
 }
 
