@@ -1,0 +1,155 @@
+@import '~styles/config';
+
+.Fruit {
+
+  &__single {
+    padding-top: 10px;
+    padding-bottom: 200px;
+  }
+
+  &__visual {
+    width: 50%;
+    max-width: 300px;
+    margin: 30px auto;
+    position: relative;
+    z-index: 5;
+
+    > * {
+      background: transparent;
+    }
+
+    :global(.Fruit) {
+      position: relative;
+      z-index: 10;
+    }
+
+    :global(.Leaves) {
+      position: absolute!important;
+      width: 100%;
+      left: 0;
+      top: 0;
+      z-index: 1;
+    }
+  }
+
+  &__header {
+    text-align: center;
+    position: relative;
+    max-width: 600px;
+    margin:0 auto;
+  }
+
+  &__text {
+    max-width: 600px;
+    margin: 40px auto 0;
+  }
+
+  &__filigrane {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include fluid-type($tabletSmall, $deskXXL, 90px, 130px);
+    color: #EEEBE7;
+    letter-spacing: 0.8em;
+    transform: translate(-50%, -50%);
+    font-family: $open;
+    font-weight: bold;
+    z-index: -1;
+    text-transform: uppercase;
+    width: auto;
+    white-space: nowrap;
+  }
+
+  &__calendar {
+    margin: 120px auto 0;
+  }
+}
+
+.Month {
+  position: relative;
+  @include flex(center, flex-end);
+  min-height: 120px;
+  padding-right: 180px;
+  width:50%;
+  margin-left: 60px;
+
+  &:nth-child(odd) {
+    margin-left: calc(50% - 60px);
+    padding-right: 0;
+    padding-left: 180px;
+    justify-content: flex-start;
+
+    .Month__name {
+      left: 0;
+      right: initial;
+
+      &:after {
+        left: 98%;
+      }
+    }
+  }
+
+  &+& {
+    margin-top:60px;
+  }
+
+  &__name {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 120px;
+
+    &:before {
+      content: '';
+      display: block;
+      padding-top: 100%;
+      border-radius: 100%;
+      background:$white;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 50%;
+      left: 2%;
+      transform: rotate(45deg);
+      margin-top: -10px;
+      margin-left: -10px;
+      background: $white;
+    }
+
+    span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.3em;
+      font-family: $open;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+  }
+
+  &__content {
+    max-width: 320px;
+
+    h3 {
+      text-transform: uppercase;
+      letter-spacing: 0.3em;
+      font-family: $open;
+      font-weight: bold;
+      font-size: 1rem;
+      margin-bottom: 10px;
+      @include fluid-type($tabletSmall, $deskXXL, 18px, 24px);
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+}

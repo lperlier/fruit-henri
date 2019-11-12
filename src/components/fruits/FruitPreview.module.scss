@@ -1,13 +1,20 @@
 @import '~styles/config';
 
 .Preview {
+  position: relative;
   @include flex(center, center);
   flex-wrap: nowrap;
 
-  &:nth-child(even) {
+  &:nth-child(odd) {
+
+    .Preview__visual {
+      order: 2;
+    }
+
     .Preview__content {
-      order:2;
-      margin-left: 40px;
+      order: 1;
+      margin-left: 0px;
+      margin-right: 40px;
     }
   }
 
@@ -21,8 +28,9 @@
 
   &__visual {
     width:50%;
-    max-width: 400px;
+    max-width: 420px;
     position: relative;
+    z-index: 5;
 
     > * {
       background: transparent;
@@ -43,8 +51,11 @@
   }
 
   &__content {
+    position: relative;
     width:50%;
-    max-width: 320px;
+    max-width: 360px;
+    margin-left:40px;
+    z-index: 10;
 
     h3 {
       font-family: $open;
@@ -52,11 +63,28 @@
       @include fluid-type($tabletSmall, $deskXXL, 18px, 24px);
       font-weight: bold;
       letter-spacing: 0.33em;
+      white-space: nowrap;
     }
 
     p {
       font-size:1.2rem;
       max-width: 280px;
     }
+  }
+
+  &__filigrane {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include fluid-type($tabletSmall, $deskXXL, 90px, 130px);
+    color: #EEEBE7;
+    letter-spacing: 0.8em;
+    transform: translate(-50%, -50%);
+    font-family: $open;
+    font-weight: bold;
+    z-index: 1;
+    text-transform: uppercase;
+    width: auto;
+    white-space: nowrap;
   }
 }

@@ -12,15 +12,13 @@ import { Contact } from 'components/contact/Contact'
 
 import Abricot from 'assets/svg/Abricot.svg'
 
-import s from './home.module.scss';
-
 function Homepage(props) {
 
     const page = props.data.pageData.frontmatter;
 
     return (
 
-      <main className={s.pageHome}>
+      <main>
 
         <PageHero>
           <h1>{page.title}</h1>

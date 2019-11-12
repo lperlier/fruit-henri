@@ -1,0 +1,13 @@
+.Swiper {
+  overflow: visible!important;
+
+  :global(.swiper-slide) {
+    height: auto;
+    width: 370px;
+
+    > * {
+      box-sizing: border-box;
+      height: 100%;
+    }
+  }
+}

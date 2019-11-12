@@ -1,7 +1,6 @@
 import { useStaticQuery, graphql } from "gatsby"
 
-const useFruits = (array) => {
-
+const useFruits = (orderedList = null) => {
 
   const data = useStaticQuery( graphql`
     query {
@@ -49,17 +48,34 @@ const useFruits = (array) => {
   `);
 
 
-  const dataMapped = [];
-  array.map(item => {
-    data.allFile.edges.map(fruit => {
-      if (fruit.node.relativePath === item.replace("src/pages/","")) {
-        dataMapped.push(fruit);
-      };
+  let dataResults;
+  if (orderedList) {
+
+    dataResults = [];
+    orderedList.map((item) => {
+
+      data.allFile.edges.map(fruit => {
+
+        if (fruit.node.relativePath === item.replace("src/pages/","")) {
+          dataResults.push(fruit);
+          return null;
+        };
+
+        return null;
+
+      });
+
+      return null;
+
     });
-  });
 
+  } else {
 
-  return dataMapped.map(fruit => ({
+    dataResults = data.allFile.edges;
+
+  }
+
+  return dataResults.map(fruit => ({
     slug : fruit.node.childMarkdownRemark.fields.slug,
     single : fruit.node.childMarkdownRemark.frontmatter.fruit_single,
     title : fruit.node.childMarkdownRemark.frontmatter.title,

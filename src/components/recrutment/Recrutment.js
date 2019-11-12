@@ -6,6 +6,7 @@ import { Container } from 'components/container/Container'
 import { YSWYWContent } from 'components/page/YSWYWContent'
 import { Visual } from 'components/visual/Visual'
 import { OfferPreview } from 'components/recrutment/OfferPreview'
+import { CustomSwiper } from 'components/swiper/Swiper'
 
 import s from './Recrutment.module.scss';
 
@@ -26,27 +27,39 @@ export const Recrutment = ({ data }) => {
 
           <Visual className={s.Recrutment__visual} img={data.image}/>
 
-          {stationOffers.length > 0 &&
+          <div className={s.Recrutment__offers}>
 
-            <div className={s.Recrutment__offers}>
-              <h3>Offres Station</h3>
-              {stationOffers.map(offer => (
-                <OfferPreview key={offer.slug} offer={offer}/>
-              ))}
-            </div>
+            {stationOffers.length > 0 &&
 
-          }
+              <div className={s.Recrutment__offerType}>
+                <h3>Offres Station</h3>
+                <CustomSwiper>
+                    {stationOffers.map(offer => (
+                      <div className="swiper-slide" key={offer.slug}>
+                        <OfferPreview offer={offer}/>
+                      </div>
+                    ))}
+                </CustomSwiper>
+              </div>
 
-          {vergerOffers.length > 0 &&
+            }
 
-            <div className={s.Recrutment__offers}>
-              <h3>Offres Vergers</h3>
-              {vergerOffers.map(offer => (
-                <OfferPreview key={offer.slug} offer={offer}/>
-              ))}
-            </div>
+            {vergerOffers.length > 0 &&
 
-           }
+              <div className={s.Recrutment__offerType}>
+                <h3>Offres Vergers</h3>
+                <CustomSwiper>
+                  {vergerOffers.map(offer => (
+                    <div className="swiper-slide" key={offer.slug}>
+                      <OfferPreview offer={offer}/>
+                    </div>
+                  ))}
+                </CustomSwiper>
+              </div>
+
+             }
+
+          </div>
 
         </Container>
       </div>

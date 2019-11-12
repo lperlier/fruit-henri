@@ -7,6 +7,40 @@ import s from './offerPreview.module.scss';
 
 export const OfferPreview = ({ offer }) => {
 
+  function RemapMonth(month) {
+    switch (month) {
+      case 'Janvier':
+        return 'Jan';
+      case 'Février':
+        return 'Fév';
+      case 'Mars':
+        return 'Mars';
+      case 'Avril':
+        return 'Avr';
+      case 'Mai':
+        return 'mai';
+      case 'Juin':
+        return 'Juin';
+      case 'Juillet':
+        return 'Jui';
+      case 'Août':
+        return 'Août';
+      case 'Septembre':
+        return 'Sept';
+      case 'Octobre':
+        return 'Oct';
+      case 'Novembre':
+        return 'Nov';
+      case 'Décembre':
+        return 'Déc';
+      default :
+        return month;
+    }
+  }
+
+  offer.month_start = RemapMonth(offer.month_start);
+  offer.month_end = RemapMonth(offer.month_end);
+
   return (
     <>
 

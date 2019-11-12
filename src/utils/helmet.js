@@ -32,6 +32,7 @@ export const helmet = {
   ],
   link: [
     { rel: 'icon', type: 'image/x-icon', href: favicon },
-    { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Noto+Serif:400,700|Open+Sans:400,700&display=swap' }
+    { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Noto+Serif:400,700|Open+Sans:400,700&display=swap' },
+    { rel: 'stylesheet', href: 'https://unpkg.com/swiper/css/swiper.min.css' }
   ],
 };

@@ -34,6 +34,11 @@
   }
 
   &__offers {
+    margin-left: -60px;
+    margin-top: 40px;
+  }
+
+  &__offerType {
     > h3 {
       font-size: 1.4rem;
       display: block;

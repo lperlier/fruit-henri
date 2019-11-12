@@ -1,8 +1,9 @@
 import React from 'react'
 
 import { Link } from "gatsby"
-import { YSWYWContent } from 'components/page/YSWYWContent'
 import Img from 'gatsby-image'
+
+import { YSWYWContent } from 'components/page/YSWYWContent'
 
 import s from './FruitPreview.module.scss';
 
@@ -29,6 +30,10 @@ export const FruitPreview = ({ fruit }) => {
           <Link className="Btn" to={fruit.slug}>
             Voir le calendrier
           </Link>
+        </div>
+
+        <div className={s.Preview__filigrane}>
+          <span>{fruit.single}</span>
         </div>
 
       </article>
