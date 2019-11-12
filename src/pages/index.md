@@ -78,9 +78,9 @@ fruits:
   title: "<h2>Un savoir-faire <br><strong>familial</strong> pour des <br>fruits de
     <strong>qualité</strong></h2>"
   fruits:
+  - src/pages/fruits/le-kiwi.md
   - src/pages/fruits/l-abricot.md
   - src/pages/fruits/la-peche-et-la-nectarine.md
-  - src/pages/fruits/le-kiwi.md
 bref:
   title: "<h2>Nous <strong>produisons</strong>,<br><strong>conditionnons</strong>
     et <strong>expédions</strong>.</h2>"
