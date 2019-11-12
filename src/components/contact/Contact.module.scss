@@ -1,20 +1,67 @@
 @import '~styles/config';
 
 .Contact {
-  
-  background:$yellow;
-  
-  &__Container{
-    @include grid();
+
+  &__block {
+    padding-top: 0!important;
+    margin-top: -60px;
+
+    h2 {
+      position: absolute;
+      top: -5px;
+      left: 0;
+      margin-bottom: 0;
+
+      strong {
+        color:$green;
+      }
+    }
+
+    p {
+      color:$green;
+      max-width: 310px;
+    }
+
+    :global(.wrapper) {
+      position: relative;
+      padding-left: 40%;
+    }
+
+    :global(.Links) {
+      margin-top:110px;
+
+      > a {
+        position: relative;
+        color: $white;
+        @include fluid-type($tabletSmall, $deskXXL, 24px, 35px);
+        line-height: 1.2;
+        margin-right:20px;
+        margin-left:40px;
+
+        &+a {
+          margin-top:10px;
+        }
+
+        &:after {
+          background: $white;
+        }
+      }
+
+      :global(.Arrow) {
+        position: absolute;
+        top: 50%;
+        right: 100%;
+        transform:translate(0%, -50%);
+        margin-right: 20px;
+
+        svg {
+          width: 20px;
+          height: 10px;
+          > * {
+            fill: $white;
+          }
+        }
+      }
+    }
   }
-  
-  .Headline {
-    background:red;
-    grid-column: span 3;
-  }
-  
-  :global(.Content) {
-    grid-column: span 9;
-  }
-  
 }

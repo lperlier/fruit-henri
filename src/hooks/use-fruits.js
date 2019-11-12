@@ -1,34 +1,73 @@
 import { useStaticQuery, graphql } from "gatsby"
 
-const useFruits = () => {
-  
+const useFruits = (array) => {
+
+
   const data = useStaticQuery( graphql`
     query {
-      allMarkdownRemark(filter: {frontmatter: {template : {eq : "fruit" }}}) {
+      allFile(filter : {relativeDirectory: {eq: "fruits"}}) {
         edges {
           node {
             id
-            fields {
-              slug
-            }
-            frontmatter {
-              family
-              title
-              intro
+            relativePath
+            childMarkdownRemark {
+              fields {
+                slug
+              }
+              frontmatter {
+                title
+                intro
+                fruit_single
+                visual {
+                  childImageSharp {
+                      fluid(maxWidth: 1075, quality: 72) {
+                        aspectRatio
+                        src
+                        srcSet
+                        sizes
+                      }
+                  }
+                  publicURL
+                }
+                leaves {
+                  childImageSharp {
+                      fluid(maxWidth: 1075, quality: 72) {
+                        aspectRatio
+                        src
+                        srcSet
+                        sizes
+                      }
+                  }
+                  publicURL
+                }
+              }
             }
           }
         }
       }
-  }
+    }
   `);
-  
-  return data.allMarkdownRemark.edges.map(fruit => ({
-      family : fruit.node.frontmatter.family,
-      title : fruit.node.frontmatter.title,
-      intro : fruit.node.frontmatter.intro,
-      slug : fruit.node.fields.slug,
+
+
+  const dataMapped = [];
+  array.map(item => {
+    data.allFile.edges.map(fruit => {
+      if (fruit.node.relativePath === item.replace("src/pages/","")) {
+        dataMapped.push(fruit);
+      };
+    });
+  });
+
+
+  return dataMapped.map(fruit => ({
+    slug : fruit.node.childMarkdownRemark.fields.slug,
+    single : fruit.node.childMarkdownRemark.frontmatter.fruit_single,
+    title : fruit.node.childMarkdownRemark.frontmatter.title,
+    intro : fruit.node.childMarkdownRemark.frontmatter.intro,
+    visual : fruit.node.childMarkdownRemark.frontmatter.visual,
+    leaves : fruit.node.childMarkdownRemark.frontmatter.leaves
   }));
-    
+
 };
 
 export default useFruits;

@@ -1,0 +1,16 @@
+@import '~styles/config';
+
+.Fruits {
+
+  &__headline {
+    text-align: center;
+    margin-bottom: 120px;
+    margin-top: 80px;
+  }
+
+  &__title {
+    strong {
+      color:$yellow;
+    }
+  }
+}

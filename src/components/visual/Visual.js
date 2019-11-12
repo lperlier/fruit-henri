@@ -9,7 +9,6 @@ import s from './Visual.module.scss';
     constructor(props) {
 
       super(props);
-
       this.itemClasses = s.Visual__Container;
       if (this.props.className) this.itemClasses += ' ' + this.props.className ;
 

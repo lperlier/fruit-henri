@@ -10,8 +10,6 @@ export const PageVisual = ({ img, ...rest }) => {
   let itemClasses = s.PageVisual;
   if (passProps.className) itemClasses += ' ' + passProps.className ;
 
-  console.log(img);
-
   return (
 
     <>

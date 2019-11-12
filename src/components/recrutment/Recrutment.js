@@ -19,9 +19,10 @@ export const Recrutment = ({ data }) => {
     <>
       <div className={s.Recrutment__block}>
         <Container>
-
-          <span className='subtitle'>Recrutement</span>
-          <YSWYWContent html={data.text}/>
+          <div className={s.Recrutment__content}>
+            <span className='subtitle'>Recrutement</span>
+            <YSWYWContent  html={data.text}/>
+          </div>
 
           <Visual className={s.Recrutment__visual} img={data.image}/>
 

@@ -29,7 +29,6 @@ function Homepage(props) {
         </PageHero>
 
         <PageVisual img={page.image} />
-
         <About data={page.about}/>
         <Verger  data={page.verger}/>
         <Fruits data={page.fruits}/>
@@ -102,6 +101,7 @@ export const pageQuery = graphql`
         }
         fruits {
           title
+          fruits
         }
         bref {
           title
