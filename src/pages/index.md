@@ -92,6 +92,13 @@ recrutment:
     en constante recherche de collaborateurs voulant s’investir de manière durable
     dans notre entreprise.</p>"
   image: "/static/images/recrutment_visual.jpg"
+  offres_station:
+  - src/pages/offers/station/test.md
+  - src/pages/offers/station/administratif.md
+  offres_verger:
+  - src/pages/offers/verger/cueillette.md
+  - src/pages/offers/verger/eclaircissage.md
+  - src/pages/offers/verger/taille.md
 apply:
   title: "… et pour postuler ?"
   text: "<h2>… et pour<br><strong>postuler ?</strong></h2><p>Télécharger notre dossier
