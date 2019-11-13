@@ -5,17 +5,32 @@
   &__block{
     background: $green-l;
     color: $white;
-    width: 380px;
-    margin-top: 50px;
+    margin-top: 40px;
+    text-align: center;
+
+    @include responsive($tabletSmall) {
+      width: 380px;
+      margin-top: 50px;
+      text-align: left;
+    }
+
 
     :global(.inner) {
       padding:30px 25px;
-      @include flex(flex-start, flex-start);
-      flex-wrap: nowrap;
+
+      @include responsive($tabletSmall) {
+        @include flex(flex-start, flex-start);
+        flex-wrap: nowrap;
+      }
     }
 
     svg {
-      min-width: 50px;
+      width: 50px;
+      margin: 0 auto 30px;
+
+      @include responsive($tabletSmall) {
+        margin:0;
+      }
 
       > * {
         fill:$white;
@@ -24,7 +39,9 @@
   }
 
   &__content {
-    margin-left:30px;
+    @include responsive($tabletSmall) {
+      margin-left:30px;
+    }
 
     p {
       font-size:1.1rem;

@@ -118,6 +118,8 @@ export const pageQuery = graphql`
             }
             publicURL
           }
+          offres_station
+          offres_verger
         }
       }
     }

@@ -11,39 +11,57 @@
   }
 
   &__headline {
-    max-width: 37%;
+    @include responsive($tabletSmall) {
+      max-width: 37%;
+    }
 
     h2 {
-      max-width: 260px;
+      @include responsive($tabletSmall) {
+        max-width: 260px;
+      }
     }
   }
 
   &__content {
-    max-width: 63%;
-    padding-left: 40px;
-    margin-top: 40px;
-    @include flex(flex-start, space-between);
+
+    @include responsive($tabletSmall) {
+      margin-top: 40px;
+      @include flex(flex-start, space-between);
+      max-width: 63%;
+      padding-left: 40px;
+    }
 
     > * {
       width:100%;
 
       &:nth-child(1) {
-        max-width: 40%;
+        @include responsive($tabletSmall) {
+          max-width: 40%;
+        }
       }
 
       &:nth-child(2) {
-        max-width: 60%;
-        padding-left: 40px;
+        @include responsive($tabletSmall) {
+          max-width: 60%;
+          padding-left: 40px;
+        }
       }
     }
   }
 
-  &__visual{
-    position: absolute;
-    top: 100%;
-    left: 10%;
-    width: 25%;
-    max-width: 320px;
-    transform: translateY(-50%);
+  &__visual {
+    margin-top:40px;
+    margin-bottom: -120px;
+
+    @include responsive($tabletSmall) {
+      position: absolute;
+      top: 100%;
+      left: 10%;
+      width: 25%;
+      max-width: 320px;
+      transform: translateY(-50%);
+      margin-top: 0;
+      margin-bottom: 0;
+    }
   }
 }

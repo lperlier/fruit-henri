@@ -48,6 +48,7 @@ const useFruits = (orderedList = null) => {
   `);
 
 
+  // Reorder
   let dataResults;
   if (orderedList) {
 
@@ -58,7 +59,6 @@ const useFruits = (orderedList = null) => {
 
         if (fruit.node.relativePath === item.replace("src/pages/","")) {
           dataResults.push(fruit);
-          return null;
         };
 
         return null;

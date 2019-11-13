@@ -3,11 +3,15 @@
 .Recrutment {
 
   &__block {
-    padding:0!important;
+    @include responsive($tabletSmall) {
+      padding:0!important;
+    }
 
     > * {
-      padding-top: 120px;
-      padding-bottom: 120px;
+      @include responsive($tabletSmall) {
+        padding-top: 120px;
+        padding-bottom: 120px;
+      }
     }
   }
 
@@ -19,30 +23,39 @@
     }
 
     p {
-      margin-left:52%;
-      max-width: 280px;
+      @include responsive($tabletSmall) {
+        margin-left:52%;
+        max-width: 280px;
+      }
     }
   }
 
   &__visual {
-    position: absolute;
-    top:0;
-    right:80px;
-    max-width:260px;
-    width:21%;
-    transform:translateY(-50%);
+    display: none;
+
+    @include responsive($tabletSmall) {
+      display: block;
+      position: absolute;
+      top:0;
+      right:80px;
+      max-width:260px;
+      width:21%;
+      transform:translateY(-50%);
+    }
   }
 
   &__offers {
-    margin-left: -60px;
-    margin-top: 40px;
+    @include responsive($tabletSmall) {
+      margin-left: -60px;
+      margin-top: 40px;
+    }
   }
 
   &__offerType {
     > h3 {
       font-size: 1.4rem;
       display: block;
-      margin-bottom: 30px;
+      margin: 30px 0;
       letter-spacing: 0.33em;
       font-family: $open;
       text-transform: uppercase;

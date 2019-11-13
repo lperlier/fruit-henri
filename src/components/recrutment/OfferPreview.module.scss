@@ -18,13 +18,14 @@
   &__title {
     color:$green;
     @include fluid-type($tabletSmall, $deskXXL, 16px, 22px);
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+
+    @include responsive($tabletSmall) {
+      margin-bottom: 20px;
+    }
   }
 
   &__periode {
-    position: absolute;
-    top: 40px;
-    right: 30px;
     @include flex(center, flex-start);
     color: $yellow;
     font-size: 0.8rem;
@@ -32,6 +33,13 @@
     font-family: $open;
     font-weight: bold;
     letter-spacing: 0.3em;
+    margin-bottom: 20px;
+
+    @include responsive($tabletSmall) {
+      position: absolute;
+      top: 40px;
+      right: 30px;
+    }
 
     :global(.arrow) {
       margin:0 10px;

@@ -1,14 +1,26 @@
 h1 {
-  @include fluid-type($tabletSmall, $deskXXL, 50px, 65px);
+  @include fluid-type($tabletSmall, $deskXXL, 45px, 65px);
   line-height: 1.1;
   font-weight: 500;
 }
 
 h2 {
-  @include fluid-type($tabletSmall, $deskXXL, 45px, 55px);
+  @include fluid-type($tabletSmall, $deskXXL, 36px, 55px);
   line-height: 1.1;
   font-weight: 500;
   margin-bottom:  40px;
+
+  br  {
+    @include responsive($tabletSmall, max) {
+      content: ' ';
+    }
+  }
+
+  br:after {
+    @include responsive($tabletSmall, max) {
+      content: ' ';
+    }
+  }
 }
 
 h3 {

@@ -9,16 +9,28 @@
 
     > * {
       width: 100%;
-      max-width: 50%;
-      padding-right: 15%;
+
+      @include responsive($tabletSmall) {
+        max-width: 50%;
+        padding-right: 15%;
+      }
 
       &:nth-child(1) {
-        order: 2;
+        margin-top:60px;
+
+        @include responsive($tabletSmall) {
+          order: 2;
+          margin-top: 0;
+        }
       }
 
       &:nth-child(2) {
-        order: 1;
-        margin-top: 240px;
+        margin-top:40px;
+
+        @include responsive($tabletSmall) {
+          margin-top: 240px;
+          order: 1;
+        }
       }
 
       p {
@@ -36,19 +48,28 @@
   }
 
   &__eco {
-    position: absolute;
-    left: 50%;
-    bottom: 25%;
-    z-index: 10;
-    transform: translateX(50%);
+    @include responsive($tabletSmall) {
+      position: absolute;
+      left: 50%;
+      bottom: 25%;
+      z-index: 10;
+      transform: translateX(50%);
+    }
   }
 
   &__visual {
-    position: absolute;
-    bottom: 0;
-    left: 47%;
-    width: 50%;
-    max-width: 320px;
-    transform: translateY(10%);
+    margin-top: 40px;
+    margin-bottom: -120px;
+
+    @include responsive($tabletSmall) {
+      position: absolute;
+      bottom: 0;
+      left: 47%;
+      width: 50%;
+      max-width: 320px;
+      transform: translateY(10%);
+      margin-top: 0;
+      margin-bottom: 0;
+    }
   }
 }
