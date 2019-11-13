@@ -51,10 +51,10 @@ verger:
       recommence…</p>"
   image: "/static/images/verger_visual.jpg"
   text_col_1: "<h2>Un verger sur<br>les Costières<br>de <strong>Nîmes</strong></h2><p>Notre
-    terroir se caractérise par ses galets ronds (le grès), un sol argilo-calacaire,
-    un fort ensoleillement et une atmosphère ventillée par le mistral, idéal pour
-    la production de fruits à noyaux. Nos hivers froids permettent un bon repos du
-    végétal et les étés chauds assurent une qualité gustative à nos fruits.</p>"
+    terroir se caractérise par ses galets ronds (le grès), un sol argilo-calcaire,
+    un fort ensoleillement et une atmosphère ventilée par le mistral, idéal pour la
+    production de fruits à noyaux. Nos hivers froids permettent un bon repos du végétal
+    et les étés chauds assurent une qualité gustative à nos fruits.</p>"
   texte_col_2: "<h2><strong>80 hectares</strong><br>de culture</h2><p>Nous cultivons
     aujourd’hui 80 hectares. Nous comptons 40 hectares d’abricotiers, 35 hectares
     de pêchers et 5 d’actinadia (kiwi). 85% de notre activité commerciale est concentrée
@@ -66,12 +66,12 @@ verger:
     jusqu’à la mi-septembre. A partir d’octobre la taille recommence…</p>"
   text_col_2: "<h2><strong>80 hectares</strong><br>de culture</h2><p>Nous cultivons
     aujourd’hui 80 hectares. Nous comptons 40 hectares d’abricotiers, 35 hectares
-    de pêchers et 5 d’actinadia (kiwi). 85% de notre activité commerciale est concentrée
+    de pêchers et 5 d’actinidia (kiwi). 85% de notre activité commerciale est concentrée
     sur la période estivale.</p><p>Trois grands temps forts rythment une année dans
-    nos vergers, la taille, l’éclaircissage et la récolte. La taille se fait tout
-    au long de l’année mais est principalement concentrée sur les mois d’hiver. D’avril
+    nos vergers, la taille, éclaircissage et la récolte. La taille se fait tout au
+    long de l’année mais est principalement concentrée sur les mois d’hiver. D’Avril
     à mai nous équilibrons la charge des arbres pour que les fruits encore petits
-    puissent se déveloper convenablement, c’est l’éclaircissage. En juin la cueille
+    puissent se développer convenablement, c’est l’éclaircissage. En juin la cueille
     commence jusqu’à la mi-septembre. A partir d’octobre la taille recommence…</p>"
 fruits:
   subtitle: Nos fruits
