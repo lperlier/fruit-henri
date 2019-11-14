@@ -12,6 +12,10 @@
 
       @include responsive($tabletSmall) {
         max-width: 50%;
+        padding-right: 10%;
+      }
+
+      @include responsive($desk) {
         padding-right: 15%;
       }
 
@@ -28,8 +32,12 @@
         margin-top:40px;
 
         @include responsive($tabletSmall) {
-          margin-top: 240px;
+          margin-top: 180px;
           order: 1;
+        }
+
+        @include responsive($desk) {
+          margin-top: 240px;
         }
       }
 
@@ -53,6 +61,10 @@
       left: 50%;
       bottom: 25%;
       z-index: 10;
+    }
+
+    @include responsive($desk) {
+      left: 50%;
       transform: translateX(50%);
     }
   }

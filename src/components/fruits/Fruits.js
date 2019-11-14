@@ -6,6 +6,9 @@ import s from './Fruits.module.scss';
 import { Container } from 'components/container/Container'
 import { FruitPreview } from 'components/fruits/FruitPreview'
 
+import { Lines } from 'components/lines/Lines'
+import FruitsLines from 'assets/svg/fruits_lines.svg'
+
 export const Fruits = ({data}) => {
 
   const fruits = useFruits(data.fruits);
@@ -18,6 +21,10 @@ export const Fruits = ({data}) => {
           <div className={s.Fruits__headline}>
             <span className="subtitle">Nos fruits</span>
             <div className={s.Fruits__title} dangerouslySetInnerHTML={{ __html: data.title }}></div>
+
+            <Lines className="FruitsLines">
+              <FruitsLines/>
+            </Lines>
           </div>
 
           {fruits.map(fruit => (

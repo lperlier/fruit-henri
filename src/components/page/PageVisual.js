@@ -1,6 +1,7 @@
 import React from 'react'
-
 import Img from 'gatsby-image'
+
+import { Prllx } from 'components/prllx/Prllx'
 
 import s from './PageVisual.module.scss';
 
@@ -14,7 +15,9 @@ export const PageVisual = ({ img, ...rest }) => {
 
     <>
       <div className={itemClasses}>
-        <Img fluid={img.childImageSharp.fluid} />
+        <Prllx from='{"y": "-100"}' to='{"y": "100"}'>
+          <Img fluid={img.childImageSharp.fluid} />
+        </Prllx>
       </div>
     </>
 

@@ -38,6 +38,28 @@
   z-index: 10;
   max-width: 190px;
 
+  img {
+    &:global(.menuOpen) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+    }
+  }
+
+  body:global(.is--MenuOpen) & {
+    img {
+      @include responsive($menuBreakpoint, max) {
+        opacity: 0;
+      }
+      &:global(.menuOpen) {
+        @include responsive($menuBreakpoint, max) {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
   &[aria-current="page"] {
     pointer-events: none;
   }

@@ -6,6 +6,7 @@ import { ToggleMenu } from 'components/header/ToggleMenu'
 
 import Flag from 'assets/svg/flag.svg'
 import Logo from 'assets/images/logo.png'
+import LogoW from 'assets/images/logo_white.png'
 
 import s from './Header.module.scss';
 
@@ -53,6 +54,7 @@ export class Header extends React.Component {
 
           <Link className={s.Brand} to="/" onClick={this.closeMenu} partiallyActive={true}>
             <img className="img-fluid" src={Logo} alt="Le Fruit d'Henri"/>
+            <img className="img-fluid menuOpen" src={LogoW} alt="Le Fruit d'Henri"/>
           </Link>
 
           <Navbar onClick={this.closeMenu}/>

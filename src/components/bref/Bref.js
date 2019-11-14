@@ -10,6 +10,9 @@ import IconConditionnement from 'assets/svg/icon_conditionnement.svg'
 import IconLivraison from 'assets/svg/icon_livraison.svg'
 import Arrow from 'assets/svg/arrow.svg'
 
+import { Lines } from 'components/lines/Lines'
+import BrefLines from 'assets/svg/bref_lines.svg'
+
 export const Bref = ({ data }) => (
 
   <>
@@ -28,6 +31,10 @@ export const Bref = ({ data }) => (
 
         <YSWYWContent html={data.text} />
         <a className="Btn is--lined" href="#" target="_blank" rel="noopener noreferrer">Contactez-nous</a>
+
+        <Lines className="BrefLines">
+          <BrefLines/>
+        </Lines>
 
       </Container>
     </section>

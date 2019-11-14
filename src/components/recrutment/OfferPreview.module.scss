@@ -33,13 +33,9 @@
     font-family: $open;
     font-weight: bold;
     letter-spacing: 0.3em;
-    margin-bottom: 20px;
-
-    @include responsive($tabletSmall) {
-      position: absolute;
-      top: 40px;
-      right: 30px;
-    }
+    position: absolute;
+    top: 36px;
+    right: 30px;
 
     :global(.arrow) {
       margin:0 10px;

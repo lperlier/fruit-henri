@@ -2,8 +2,6 @@ import { useStaticQuery, graphql } from "gatsby"
 
 const useOffers = (orderedList = null) => {
 
-  console.log(orderedList);
-
   const data = useStaticQuery( graphql`
   query {
       allFile(filter : {relativeDirectory: {regex: "/offers/"}}) {

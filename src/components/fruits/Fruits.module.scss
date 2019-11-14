@@ -3,9 +3,17 @@
 .Fruits {
 
   &__headline {
+    position: relative;
     text-align: center;
     margin-bottom: 120px;
-    margin-top: 80px;
+
+    @include responsive($desk) {
+      margin-top: 80px;
+    }
+  }
+
+  > * {
+    position: relative;
   }
 
   &__title {

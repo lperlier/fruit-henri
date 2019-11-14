@@ -1,8 +1,14 @@
 @import '~styles/config';
 
 .Bref {
-
+  position: relative;
   text-align: center;
+
+  > * {
+    @include responsive($desk, max) {
+      padding-top:40px!important;
+    }
+  }
 
   &__title {
 

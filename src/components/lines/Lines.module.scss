@@ -1,0 +1,197 @@
+@import '~styles/config';
+
+.Lines {
+  position: relative;
+
+  &:before {
+    content:'';
+    display:block;
+    width:100%;
+  }
+
+  svg {
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+
+    path {
+      opacity: 1!important;
+      fill:darken($grey, 15%)!important;
+    }
+  }
+
+  &:global(.HeroLines) {
+    position: absolute;
+    bottom:0%;
+    left:50%;
+    transform:translateX(-50%);
+    width: 100vw;
+    min-width: 1600px;
+    max-height: 60vh;
+    z-index: 0;
+    opacity: 0.6;
+  }
+
+  &:global(.AboutLines) {
+    position: absolute;
+    top: 55%;
+    left: 23%;
+    width: 280px;
+    transform: translateY(-50%);
+    z-index: -1;
+    opacity: 0.4;
+    max-width: 25%;
+
+    &:before {
+      padding-top:140%;
+    }
+  }
+
+  &:global(.VergerLines) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 450px;
+    transform: translate(-50%, -25%);
+    opacity: 0.5;
+    max-width: 50%;
+
+    svg {
+      path {
+        fill:$white!important;
+      }
+    }
+
+    &:before {
+      padding-top:80%;
+    }
+  }
+
+  &:global(.FruitsLines) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 510px;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0.3;
+    max-width: 50%;
+
+    &:before {
+      padding-top:90%;
+    }
+
+    svg {
+      path {
+        fill:darken($grey, 20%)!important;
+      }
+    }
+  }
+
+  &:global(.BrefLines) {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    width: 110px;
+    transform: translate(0%, 0%);
+    z-index: -1;
+    opacity: 0.3;
+    max-width: 8%;
+
+    &:before {
+      padding-top:122%;
+    }
+
+    svg {
+      path {
+        fill:darken($grey, 20%)!important;
+      }
+    }
+  }
+
+  &:global(.RecrutmentLines) {
+    position: absolute;
+    top: 0%;
+    left: 55%;
+    width: 270px;
+    transform: translate(0%, -50%);
+    z-index: 100;
+    opacity: 0.5;
+    max-width: 22%;
+
+    &:before {
+      padding-top:152%;
+    }
+
+    svg {
+      path {
+        fill:darken($grey, 10%)!important;
+      }
+    }
+  }
+
+  &:global(.RecrutmentLines_2) {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    width: 300px;
+    max-width: 28%;
+    transform: translate(0%, 0%);
+    z-index: 0;
+    opacity: 0.8;
+
+    &:before {
+      padding-top:132%;
+    }
+
+    svg {
+      path {
+        fill:$white!important;
+      }
+    }
+  }
+
+  &:global(.RecrutmentLines_3) {
+    position: absolute;
+    top: 60%;
+    left: 55%;
+    width: 160px;
+    max-width: 12%;
+    transform: translate(0%, 0%);
+    z-index: 0;
+    opacity: 1;
+
+    &:before {
+      padding-top:115%;
+    }
+
+    svg {
+      path {
+        fill:$white!important;
+      }
+    }
+  }
+
+  &:global(.ContactLines) {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    width: 280px;
+    max-width: 22%;
+    transform: translate(0%, 0%);
+    z-index: 0;
+    opacity: 1;
+
+    &:before {
+      padding-top:102%;
+    }
+
+    svg {
+      path {
+        fill:$white!important;
+      }
+    }
+  }
+}

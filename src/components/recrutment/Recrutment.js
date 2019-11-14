@@ -5,8 +5,12 @@ import useOffers from 'hooks/use-offers';
 import { Container } from 'components/container/Container'
 import { YSWYWContent } from 'components/page/YSWYWContent'
 import { Visual } from 'components/visual/Visual'
-import { OfferPreview } from 'components/recrutment/OfferPreview'
-import { CustomSwiper } from 'components/swiper/Swiper'
+import { OfferSwiper } from 'components/recrutment/OfferSwiper'
+
+import { Lines } from 'components/lines/Lines'
+import RecrutmentLines from 'assets/svg/recrutment_lines.svg'
+import RecrutmentLines_2 from 'assets/svg/recrutment_lines_2.svg'
+import RecrutmentLines_3 from 'assets/svg/recrutment_lines_3.svg'
 
 import s from './Recrutment.module.scss';
 
@@ -18,9 +22,18 @@ export const Recrutment = ({ data }) => {
   return (
     <div className={s.Recrutment__block}>
       <Container>
+
+        <Lines className="RecrutmentLines">
+          <RecrutmentLines/>
+        </Lines>
+
         <div className={s.Recrutment__content}>
           <span className='subtitle'>Recrutement</span>
           <YSWYWContent  html={data.text}/>
+
+          <Lines className="RecrutmentLines_2">
+            <RecrutmentLines_2/>
+          </Lines>
         </div>
 
         <Visual className={s.Recrutment__visual} img={data.image}/>
@@ -29,35 +42,25 @@ export const Recrutment = ({ data }) => {
 
           {stationOffers.length > 0 &&
             <div className={s.Recrutment__offerType}>
-
               <h3>Offres Station</h3>
-              <CustomSwiper>
-                  {stationOffers.map(offer => (
-                    <div className="swiper-slide" key={offer.slug}>
-                      <OfferPreview offer={offer}/>
-                    </div>
-                  ))}
-              </CustomSwiper>
-
+              <OfferSwiper offers={stationOffers} />
             </div>
           }
 
           {vergerOffers.length > 0 &&
             <div className={s.Recrutment__offerType}>
-
               <h3>Offres Vergers</h3>
-              <CustomSwiper>
-                {vergerOffers.map(offer => (
-                  <div className="swiper-slide" key={offer.slug}>
-                    <OfferPreview offer={offer}/>
-                  </div>
-                ))}
-              </CustomSwiper>
-
+              <OfferSwiper offers={vergerOffers} />
             </div>
            }
 
+           <Lines className="RecrutmentLines_3">
+             <RecrutmentLines_3/>
+           </Lines>
+
         </div>
+
+
 
       </Container>
     </div>

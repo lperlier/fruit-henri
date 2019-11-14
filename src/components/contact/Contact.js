@@ -8,6 +8,9 @@ import { Container } from 'components/container/Container';
 import { YSWYWContent } from 'components/page/YSWYWContent';
 import Arrow from 'assets/svg/arrow.svg'
 
+import { Lines } from 'components/lines/Lines'
+import ContactLines from 'assets/svg/contact_lines.svg'
+
 export const Contact = () => {
 
   const contact = useContact();
@@ -35,6 +38,10 @@ export const Contact = () => {
               </a>
             </div>
           </div>
+
+          <Lines className="ContactLines">
+            <ContactLines/>
+          </Lines>
         </Container>
       </div>
     </>

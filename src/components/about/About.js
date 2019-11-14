@@ -7,6 +7,9 @@ import { YSWYWContent } from 'components/page/YSWYWContent'
 import { Visual } from 'components/visual/Visual'
 import { EcoResponsable } from 'components/eco-responsable/EcoResponsable'
 
+import { Lines } from 'components/lines/Lines'
+import AboutLines from 'assets/svg/about_lines.svg'
+
 export const About = ({ data }) =>  {
 
   return (
@@ -31,6 +34,10 @@ export const About = ({ data }) =>  {
           </div>
 
           <Visual className={s.About__visual} img={data.image}/>
+
+          <Lines className="AboutLines">
+            <AboutLines/>
+          </Lines>
 
         </Container>
       </section>

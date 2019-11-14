@@ -6,6 +6,8 @@
   @include responsive($tabletSmall) {
     @include flex(center, center);
     flex-wrap: nowrap;
+    width:90%;
+    margin:0 auto;
   }
 
   &:nth-child(odd) {
@@ -29,6 +31,10 @@
     margin-top: 80px;
 
     @include responsive($tabletSmall) {
+      margin-top:120px;
+    }
+
+    @include responsive($desk) {
       margin-top:160px;
     }
   }
@@ -89,6 +95,10 @@
     p {
       font-size:1.2rem;
       max-width: 280px;
+
+      @include responsive($tabletSmall, max) {
+        margin:0 auto;
+      }
     }
   }
 

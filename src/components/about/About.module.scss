@@ -26,22 +26,25 @@
 
     @include responsive($tabletSmall) {
       margin-top: 40px;
-      @include flex(flex-start, space-between);
       max-width: 63%;
       padding-left: 40px;
+    }
+
+    @include responsive($desk) {
+      @include flex(flex-start, space-between);
     }
 
     > * {
       width:100%;
 
       &:nth-child(1) {
-        @include responsive($tabletSmall) {
+        @include responsive($desk) {
           max-width: 40%;
         }
       }
 
       &:nth-child(2) {
-        @include responsive($tabletSmall) {
+        @include responsive($desk) {
           max-width: 60%;
           padding-left: 40px;
         }

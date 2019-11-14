@@ -7,6 +7,9 @@ import { YSWYWContent } from 'components/page/YSWYWContent'
 import { Visual } from 'components/visual/Visual'
 import { EcoResponsable } from 'components/eco-responsable/EcoResponsable'
 
+import { Lines } from 'components/lines/Lines'
+import VergerLines from 'assets/svg/verger_lines.svg'
+
 export const Verger = ({ data }) => (
 
   <>
@@ -25,6 +28,10 @@ export const Verger = ({ data }) => (
 
         <EcoResponsable className={s.Verger__eco} />
         <Visual className={s.Verger__visual} img={data.image}/>
+
+        <Lines className="VergerLines">
+          <VergerLines/>
+        </Lines>
 
       </Container>
     </section>

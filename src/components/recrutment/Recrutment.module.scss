@@ -16,7 +16,12 @@
   }
 
   &__content {
+    position: relative;
+
     h2 {
+      position: relative;
+      z-index: 10;
+      
       strong {
         color:$green;
       }
@@ -45,7 +50,7 @@
   }
 
   &__offers {
-    @include responsive($tabletSmall) {
+    @include responsive($desk) {
       margin-left: -60px;
       margin-top: 40px;
     }
