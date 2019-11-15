@@ -10,7 +10,13 @@
   }
 
   > * {
-    @include absolute();
+    @include responsive($tabletSmall) {
+      @include absolute();
+    }
+
+    @include responsive($tabletSmall, max) {
+      transform: none!important;
+    }
   }
 
   :global(.gatsby-image-wrapper) {

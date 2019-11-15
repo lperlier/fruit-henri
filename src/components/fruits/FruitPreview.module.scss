@@ -54,12 +54,14 @@
     }
 
     > * {
-      background: transparent;
+      position: relative;
+      z-index: 10;
     }
 
     :global(.Fruit) {
       position: relative;
       z-index: 10;
+      background: transparent;
     }
 
     :global(.Leaves) {
@@ -68,6 +70,7 @@
       left: 0;
       top: 0;
       z-index: 1;
+      background: transparent;
     }
   }
 

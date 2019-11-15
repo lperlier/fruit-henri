@@ -2,6 +2,7 @@ import React from 'react'
 
 import { Link } from "gatsby"
 import Img from 'gatsby-image'
+import { Prllx } from 'components/prllx/Prllx'
 
 import { YSWYWContent } from 'components/page/YSWYWContent'
 
@@ -16,7 +17,9 @@ export const FruitPreview = ({ fruit }) => {
         <div className={s.Preview__visual}>
 
           {fruit.visual ? (
-            <Img className="Fruit" fluid={fruit.visual.childImageSharp.fluid} />
+            <Prllx from='{"y": "-80", "rotation" : "10deg"}' to='{"y": "0", "rotation" : "0deg", "ease" : "power3.out"}' treshold="0.6">
+              <Img className="Fruit" fluid={fruit.visual.childImageSharp.fluid} />
+            </Prllx>
           ) : null }
 
           {fruit.leaves ? (
@@ -25,12 +28,12 @@ export const FruitPreview = ({ fruit }) => {
 
         </div>
 
-        <div className={s.Preview__content}>
+        <Prllx className={s.Preview__content} from='{"y": "80"}' to='{"y": "0", "ease" : "power3.out"}' treshold="0.9">
           <YSWYWContent html={fruit.intro} />
           <Link className="Btn" to={fruit.slug}>
             Voir le calendrier
           </Link>
-        </div>
+        </Prllx>
 
         <div className={s.Preview__filigrane}>
           <span>{fruit.single}</span>

@@ -9,8 +9,8 @@ import { OfferSwiper } from 'components/recrutment/OfferSwiper'
 
 import { Lines } from 'components/lines/Lines'
 import RecrutmentLines from 'assets/svg/recrutment_lines.svg'
-import RecrutmentLines_2 from 'assets/svg/recrutment_lines_2.svg'
-import RecrutmentLines_3 from 'assets/svg/recrutment_lines_3.svg'
+import RecrutmentLines2 from 'assets/svg/recrutment_lines_2.svg'
+import RecrutmentLines3 from 'assets/svg/recrutment_lines_3.svg'
 
 import s from './Recrutment.module.scss';
 
@@ -32,7 +32,7 @@ export const Recrutment = ({ data }) => {
           <YSWYWContent  html={data.text}/>
 
           <Lines className="RecrutmentLines_2">
-            <RecrutmentLines_2/>
+            <RecrutmentLines2/>
           </Lines>
         </div>
 
@@ -55,7 +55,7 @@ export const Recrutment = ({ data }) => {
            }
 
            <Lines className="RecrutmentLines_3">
-             <RecrutmentLines_3/>
+             <RecrutmentLines3/>
            </Lines>
 
         </div>

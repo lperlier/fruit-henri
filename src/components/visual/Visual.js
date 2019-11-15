@@ -1,5 +1,7 @@
 import React from 'react'
+
 import Img from 'gatsby-image';
+import { Prllx } from 'components/prllx/Prllx'
 
 import s from './Visual.module.scss';
 
@@ -17,7 +19,9 @@ import s from './Visual.module.scss';
 
       return (
         <div className={this.itemClasses}>
-          <Img fluid={this.props.img.childImageSharp.fluid} />
+          <Prllx from='{"scale": "1.2"}' to='{"scale": "1"}'>
+            <Img fluid={this.props.img.childImageSharp.fluid} />
+          </Prllx>
         </div>
       )
     }

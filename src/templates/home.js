@@ -9,6 +9,7 @@ import { Fruits } from 'components/fruits/Fruits'
 import { Bref } from 'components/bref/Bref'
 import { Recrutment } from 'components/recrutment/Recrutment'
 import { Contact } from 'components/contact/Contact'
+import { Prllx } from 'components/prllx/Prllx'
 
 import Abricot from 'assets/svg/Abricot.svg'
 
@@ -23,7 +24,11 @@ function Homepage(props) {
         <PageHero>
           <h1>{page.title}</h1>
           <span className="Solgan">Abricots - Pêches - Nectarines - Kiwis</span>
-          <div className="Abricot"><Abricot /></div>
+          <div className="Abricot">
+            <Prllx from='{"y": "0"}' to='{"y": "-30"}'>
+              <Abricot />
+            </Prllx>
+          </div>
         </PageHero>
 
         <PageVisual img={page.image} />
