@@ -3,7 +3,6 @@
 .Prllx {
   &__container {
     position: relative;
-    will-change:transform;
 
     @include responsive($tabletSmall, max) {
       transform:none!important;

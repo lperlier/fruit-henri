@@ -1,22 +1,22 @@
 [
   {
     "type": "internal",
-    "url": "/#About",
+    "url": "#About",
     "title": "À propos"
   },
   {
     "type": "internal",
-    "url": "/#Verger",
+    "url": "#Verger",
     "title": "Le verger"
   },
   {
     "type": "internal",
-    "url": "/#Fruits",
+    "url": "#Fruits",
     "title": "Les fruits"
   },
   {
     "type": "internal",
-    "url": "/#Recrutment",
+    "url": "#Recrutment",
     "title": "Recrutement & contact",
     "type": "button"
   }

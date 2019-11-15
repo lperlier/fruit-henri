@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from "gatsby"
+import { AnchorLink } from "components/header/AnchorLink"
 
 import useMenu from 'hooks/use-menu';
 
@@ -10,21 +11,24 @@ export const Navbar = (props) => {
   const menu = useMenu();
 
   return (
+
     <nav className={s.Nav}>
       <ul className={s.Nav__Main}>
         {menu.map(link => {
 
           let linkClass = s.Nav__link;
+          let navItem;
           if (link.type === 'button') linkClass = s.Nav__button;
 
           return (
             <li key={link.id} className={s.Nav__item}>
-              <Link to={link.url} className={linkClass} activeClassName={ s.Nav__link__Active } onClick={props.onClick}>{link.title}</Link>
+              <AnchorLink href={link.url} className={linkClass} onClick={props.onClick}>{link.title}</AnchorLink>
             </li>
           )
 
         })}
       </ul>
     </nav>
+
   )
 }

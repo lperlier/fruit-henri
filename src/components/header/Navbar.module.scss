@@ -73,6 +73,10 @@
          transform-origin:left center;
          transition:transform 400ms $easeOutQuad;
 
+         @include responsive($menuBreakpoint, max) {
+           background:$white;
+         }
+
          body.showMenu & {
             @include responsive($menuBreakpoint, max) {
                background:$white;
