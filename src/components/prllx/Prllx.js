@@ -11,24 +11,16 @@ export class Prllx extends React.Component {
     super(props);
 
     this.state = {
-      scroll : 0,
       progress: 0,
       inView : false
     };
 
-    this.itemClasses = s.Prllx__container;
-    if (this.props.className) this.itemClasses += ' ' + this.props.className ;
+    // Set Classes
+    this.defaultClasses = s.Prllx__container;
+    if (this.props.className) this.defaultClasses += ' ' + this.props.className ;
 
-    this._onScroll = this._onScroll.bind(this);
     this.PrllxItem = React.createRef();
-
-  }
-
-  _onScroll(e) {
-
-    if(!this.PrllxItem) return;
-    if (window.innerWidth < 768) return;
-    this.setState({ scroll: window.pageYOffset || document.documentElement.scrollTop });
+    this._onRender = this._onRender.bind(this);
 
   }
 
@@ -45,30 +37,29 @@ export class Prllx extends React.Component {
     this.TL = gsap.timeline({ paused:true, defaults: {duration: 1, ease: "linear"} });
     this.TL.fromTo(node, TLfrom, TLto);
 
-    window.addEventListener("scroll", this._onScroll, { passive: true });
+    node._onRender = this._onRender.bind(this);
 
   }
 
-  componentDidUpdate() {
+  _onRender() {
 
     if (window.innerWidth < 768) return;
-
-    const { scroll } = this.state;
-    const { treshold } = this.props;
-    const { node } = this.PrllxItem.current;
-    const { inView, entry } = this.PrllxItem.current.state;
+    const { inView } = this.PrllxItem.current.state;
 
     if (inView) {
 
-      const start = Math.floor(node.getBoundingClientRect().top + scroll - window.innerHeight);
-      const end = Math.floor(node.getBoundingClientRect().top + node.offsetHeight + scroll);
+      const { treshold } = this.props;
+      const { node } = this.PrllxItem.current;
 
-      let progress = gsap.utils.normalize(start, end, scroll);
+      const start = Math.floor(node.getBoundingClientRect().top - window.innerHeight);
+      const end = Math.floor(node.getBoundingClientRect().top + node.offsetHeight);
+
+
+      let progress = gsap.utils.normalize(start, end, 0);
+            console.log(start, end, 0);
 
       if (treshold) {
-        let remapProgress = gsap.utils.pipe(
-          gsap.utils.mapRange(0, 1, 0, 1 / treshold)
-        );
+        let remapProgress = gsap.utils.pipe(gsap.utils.mapRange(0, 1, 0, 1 / treshold));
         progress = remapProgress(progress);
       }
 
@@ -77,16 +68,10 @@ export class Prllx extends React.Component {
     }
   }
 
-  componentWillUnmount() {
-
-    window.removeEventListener("scroll", this._onScroll);
-
-  }
-
   render() {
 
     return (
-      <InView as="div" className={this.itemClasses} ref={this.PrllxItem} onChange={(inView) => this.setState({ scroll:inView})}>
+      <InView as="div" className={this.defaultClasses} ref={this.PrllxItem} data-prllx>
         {this.props.children}
       </InView>
     )

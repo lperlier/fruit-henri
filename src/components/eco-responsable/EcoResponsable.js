@@ -16,7 +16,7 @@ export const EcoResponsable = ({ ...rest }) => {
   return (
 
       <>
-        <Prllx className={itemdefaultClass} from='{"y": "-40"}' to='{"y": "40"}'>
+        <Prllx className={itemdefaultClass} from={passProps.from} to={passProps.to} treshold={passProps.treshold}>
           <div className="inner">
             <Leaf />
             <div className={s.EcoResponsable__content}>
@@ -28,4 +28,10 @@ export const EcoResponsable = ({ ...rest }) => {
       </>
   )
 
+}
+
+EcoResponsable.defaultProps = {
+    from: '{"y": "-40"}',
+    to: '{"y": "40"}',
+    treshold: '1'
 }

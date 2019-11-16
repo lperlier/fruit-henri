@@ -9,6 +9,7 @@ import { Fruits } from 'components/fruits/Fruits'
 import { Bref } from 'components/bref/Bref'
 import { Recrutment } from 'components/recrutment/Recrutment'
 import { Contact } from 'components/contact/Contact'
+import { PrllxContainer } from 'components/prllx/PrllxContainer'
 import { Prllx } from 'components/prllx/Prllx'
 
 import Abricot from 'assets/svg/Abricot.svg'
@@ -19,13 +20,13 @@ function Homepage(props) {
 
     return (
 
-      <main>
+      <PrllxContainer as="main">
 
         <PageHero>
           <h1>{page.title}</h1>
-          <span className="Solgan">Abricots - Pêches - Nectarines - Kiwis</span>
+          <span className="Slogan">Abricots - Pêches - Nectarines - Kiwis</span>
           <div className="Abricot">
-            <Prllx from='{"y": "0"}' to='{"y": "-30"}'>
+            <Prllx from='{"y": "0", "rotation": "0deg"}' to='{"y": "-100", "rotation": "-10deg"}'>
               <Abricot />
             </Prllx>
           </div>
@@ -42,7 +43,7 @@ function Homepage(props) {
           <Contact/>
         </section>
 
-      </main>
+      </PrllxContainer>
 
     );
 

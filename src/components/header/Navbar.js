@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from "gatsby"
 import { AnchorLink } from "components/header/AnchorLink"
 
 import useMenu from 'hooks/use-menu';
@@ -17,7 +16,6 @@ export const Navbar = (props) => {
         {menu.map(link => {
 
           let linkClass = s.Nav__link;
-          let navItem;
           if (link.type === 'button') linkClass = s.Nav__button;
 
           return (

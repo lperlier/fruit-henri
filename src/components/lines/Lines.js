@@ -2,18 +2,17 @@ import React from 'react'
 
 import s from './Lines.module.scss';
 
-export const Lines = ({ children, ...rest }) => {
+export const Lines = React.forwardRef((props, ref) => {
 
-  const passProps = { ...rest };
   let itemClasses = s.Lines;
-  if (passProps.className) itemClasses += ' ' + passProps.className ;
+  if (props.className) itemClasses += ' ' + props.className ;
 
   return (
 
-    <div className={itemClasses}>
-      {children}
+    <div className={itemClasses} ref={ref}>
+      {props.children}
     </div>
 
   )
 
-}
+});

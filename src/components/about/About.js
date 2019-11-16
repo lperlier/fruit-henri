@@ -29,7 +29,7 @@ export const About = ({ data }) =>  {
             </div>
             <div className="col">
               <YSWYWContent html={data.text_col_2} />
-              <EcoResponsable />
+              <EcoResponsable from='{"y": "40"}' to='{"y": "0"}' treshold="0.5"/>
             </div>
           </div>
 

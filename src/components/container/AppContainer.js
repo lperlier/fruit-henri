@@ -26,7 +26,7 @@ export class AppContainer extends React.Component {
     this.myIntro.current.playIntro();
 
   }
-  
+
   render() {
 
     const { marginBottom } = this.state;
