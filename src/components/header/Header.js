@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from "gatsby"
 import { Container } from 'components/container/Container'
 import { Navbar } from 'components/header/Navbar'
+import { BackBtn } from 'components/header/BackBtn'
 import { ToggleMenu } from 'components/header/ToggleMenu'
 
 import Flag from 'assets/svg/flag.svg'
@@ -59,6 +60,7 @@ export class Header extends React.Component {
 
           <Navbar onClick={this.closeMenu}/>
           <ToggleMenu toggleMenu={this.toggleMenu}/>
+          <BackBtn />
 
         </Container>
       </header>

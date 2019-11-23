@@ -3,6 +3,7 @@ import React from 'react'
 import { Link } from "gatsby"
 import Img from 'gatsby-image'
 import { Prllx } from 'components/prllx/Prllx'
+import { FruitTitle } from 'components/fruits/FruitTitle'
 
 import { YSWYWContent } from 'components/page/YSWYWContent'
 
@@ -35,9 +36,7 @@ export const FruitPreview = ({ fruit }) => {
           </Link>
         </Prllx>
 
-        <div className={s.Preview__filigrane}>
-          <span>{fruit.single}</span>
-        </div>
+        <FruitTitle>{fruit.single}</FruitTitle>
 
       </article>
 

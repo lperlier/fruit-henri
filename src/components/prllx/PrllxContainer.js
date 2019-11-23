@@ -1,5 +1,4 @@
 import React from 'react'
-import { InView } from 'react-intersection-observer'
 import { gsap } from "gsap";
 
 export class PrllxContainer extends React.Component {

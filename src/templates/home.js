@@ -17,6 +17,7 @@ import Abricot from 'assets/svg/Abricot.svg'
 function Homepage(props) {
 
     const page = props.data.pageData.frontmatter;
+    document.querySelector('body').classList.remove('is--fruit');
 
     return (
 

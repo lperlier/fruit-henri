@@ -18,6 +18,12 @@
        }
     }
 
+    :global(body.is--fruit) & {
+      @include responsive($menuBreakpoint) {
+        display:none;
+      }
+    }
+
    &__item {
 
       display:block;

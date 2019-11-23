@@ -1,0 +1,11 @@
+@import '~styles/config';
+
+.BackBtn {
+  margin-top: 0px!important;
+
+  :global(body:not(.is--fruit)) & {
+    @include responsive($menuBreakpoint) {
+      display:none;
+    }
+  }
+}

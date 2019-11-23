@@ -28,6 +28,21 @@
     border: 1px solid $green;
     color: $green;
   }
+
+  &.has--arrow {
+    @include flex(center, center, inline-flex);
+    padding: 15px 30px;
+
+    .Arrow {
+      display:block;
+      margin-right:15px;
+
+      svg {
+        transform: rotate(180deg);
+        > * {fill: $white;}
+      }
+    }
+  }
 }
 
 .Link {

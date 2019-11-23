@@ -2,8 +2,6 @@ import React from 'react'
 import { InView } from 'react-intersection-observer'
 import { gsap } from "gsap";
 
-import s from './Prllx.module.scss';
-
 export class Prllx extends React.Component {
 
   constructor(props) {
@@ -11,13 +9,8 @@ export class Prllx extends React.Component {
     super(props);
 
     this.state = {
-      progress: 0,
-      inView : false
+      progress: 0
     };
-
-    // Set Classes
-    this.defaultClasses = s.Prllx__container;
-    if (this.props.className) this.defaultClasses += ' ' + this.props.className ;
 
     this.PrllxItem = React.createRef();
     this._onRender = this._onRender.bind(this);
@@ -54,9 +47,7 @@ export class Prllx extends React.Component {
       const start = Math.floor(node.getBoundingClientRect().top - window.innerHeight);
       const end = Math.floor(node.getBoundingClientRect().top + node.offsetHeight);
 
-
       let progress = gsap.utils.normalize(start, end, 0);
-            console.log(start, end, 0);
 
       if (treshold) {
         let remapProgress = gsap.utils.pipe(gsap.utils.mapRange(0, 1, 0, 1 / treshold));
@@ -71,7 +62,7 @@ export class Prllx extends React.Component {
   render() {
 
     return (
-      <InView as="div" className={this.defaultClasses} ref={this.PrllxItem} data-prllx>
+      <InView as="div" className={this.props.className} ref={this.PrllxItem} data-prllx>
         {this.props.children}
       </InView>
     )
