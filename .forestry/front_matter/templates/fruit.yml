@@ -55,6 +55,11 @@ fields:
   config:
     maxSize: 250
   label: Visuel Feuilles
+- name: visual_prllx
+  type: file
+  config:
+    maxSize: 250
+  label: Visuel Parallax
 pages:
 - src/pages/fruits/le-kiwi.md
 - src/pages/fruits/la-peche-et-la-nectarine.md
