@@ -40,7 +40,7 @@ function Fruit(props) {
               <h1>{fruit.title}</h1>
               <YSWYWContent className={s.Fruit__text} html={fruit.html} />
 
-              <FruitTitle> {fruit.single} </FruitTitle>
+              <FruitTitle>{fruit.single}</FruitTitle>
 
             </div>
 

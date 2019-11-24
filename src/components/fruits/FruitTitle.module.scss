@@ -14,11 +14,28 @@
   text-transform: uppercase;
   width: auto;
   white-space: nowrap;
+  line-height: 1.2;
 
-  span {
+  > span {
     display:inline-block;
     position: relative;
     left:50%;
     transform:translateX(-50%);
+
+    > span {
+      display:block;
+
+      &:nth-child(1) {
+        transform:translateX(-25%);
+      }
+
+      &:nth-child(3) {
+        transform:translateX(25%);
+
+        :global(.l-abricot) & {
+          transform:translateX(50%);
+        }
+      }
+    }
   }
 }

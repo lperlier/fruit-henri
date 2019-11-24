@@ -11,9 +11,11 @@ import s from './FruitPreview.module.scss';
 
 export const FruitPreview = ({ fruit }) => {
 
+  let classSlug = fruit.slug.split('/fruits/')[1].split('/')[0];
+
   return (
 
-      <article className={s.Preview}>
+      <article className={`${s.Preview} ${classSlug}`}>
 
         <div className={s.Preview__visual}>
 
