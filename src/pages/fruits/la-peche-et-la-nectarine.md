@@ -18,9 +18,10 @@ calendar:
   title: Cueillette
   text: Comme pour l’abricotier il faut entre trois à six passages pour cueillir un
     arbre. Le haut murit en premier et l’on descend au fur et à mesure des récoltes.
-fruit_single: La pêche
+fruit_single: la/pêc/he
 visual: "/static/images/peach.png"
 leaves: "/static/images/peach_leaves.png"
+visual_prllx: ''
 
 ---
 Le pêcher se plait à merveille dans le sol argilo calcaire des Costières de Nîmes. Durant l’été, la chaleur emmagasinée par les galets dans le sol et une irrigation contrôlée permettent une production de fruit de qualité. 

@@ -61,6 +61,6 @@ fields:
     maxSize: 250
   label: Visuel Parallax
 pages:
+- src/pages/fruits/la-peche-et-la-nectarine.md
 - src/pages/fruits/l-abricot.md
 - src/pages/fruits/le-kiwi.md
-- src/pages/fruits/la-peche-et-la-nectarine.md
