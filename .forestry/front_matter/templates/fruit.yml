@@ -25,7 +25,7 @@ fields:
 - type: text
   name: fruit_single
   label: Singulier déstructuré
-  description: Filigrane présent sur l'accueil
+  description: Séparer avec / pour créer une nouvelle ligne
 - type: field_group_list
   name: calendar
   label: Calendrier
