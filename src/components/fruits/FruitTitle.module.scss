@@ -24,9 +24,22 @@
 
     > span {
       display:block;
+      letter-spacing: 0.5em;
 
       &:nth-child(1) {
         transform:translateX(-25%);
+
+        :global(.le-kiwi) & {
+          transform:translateX(-40%);
+        }
+      }
+
+      &:nth-child(2) {
+        transform:translateX(0%);
+
+        :global(.le-kiwi) & {
+          transform:translateX(50%);
+        }
       }
 
       &:nth-child(3) {
@@ -34,6 +47,10 @@
 
         :global(.l-abricot) & {
           transform:translateX(50%);
+        }
+
+        :global(.le-kiwi) & {
+          transform:translateX(0%);
         }
       }
     }
