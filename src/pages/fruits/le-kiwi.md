@@ -25,7 +25,7 @@ calendar:
   text: Une période d’affinage est nécessaire pour avoir un kiwi de qualité. Nous
     suivons l’évolution des sucres et commençons la commercialisation dès que cette
     dernière est optimum.
-fruit_single: Le Kiwi
+fruit_single: le/ki/wi
 visual: "/static/images/kiwi.png"
 leaves: "/static/images/peach_leaves-1.png"
 visual_prllx: "/static/images/kiwi_prllx.png"
