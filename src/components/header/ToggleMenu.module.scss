@@ -11,6 +11,10 @@
       display: none;
    }
 
+   :global(body.is--fruit) & {
+     display: none;
+   }
+
    .line {
       display: block;
       height: 2px;

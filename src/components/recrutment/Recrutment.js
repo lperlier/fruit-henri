@@ -5,6 +5,7 @@ import useOffers from 'hooks/use-offers';
 import { Container } from 'components/container/Container'
 import { YSWYWContent } from 'components/page/YSWYWContent'
 import { Visual } from 'components/visual/Visual'
+import { Prllx } from 'components/prllx/Prllx'
 import { OfferSwiper } from 'components/recrutment/OfferSwiper'
 
 import { Lines } from 'components/lines/Lines'
@@ -24,7 +25,9 @@ export const Recrutment = ({ data }) => {
       <Container>
 
         <Lines className="RecrutmentLines">
-          <RecrutmentLines/>
+          <Prllx from='{"y": "-80"}' to='{"y": "80"}'>
+            <RecrutmentLines/>
+          </Prllx>
         </Lines>
 
         <div className={s.Recrutment__content}>
@@ -32,7 +35,9 @@ export const Recrutment = ({ data }) => {
           <YSWYWContent  html={data.text}/>
 
           <Lines className="RecrutmentLines_2">
-            <RecrutmentLines2/>
+            <Prllx from='{"y": "60"}' to='{"y": "-60"}'>
+              <RecrutmentLines2/>
+            </Prllx>
           </Lines>
         </div>
 
@@ -55,7 +60,9 @@ export const Recrutment = ({ data }) => {
            }
 
            <Lines className="RecrutmentLines_3">
-             <RecrutmentLines3/>
+             <Prllx from='{"y": "-40"}' to='{"y": "40"}'>
+               <RecrutmentLines3/>
+             </Prllx>
            </Lines>
 
         </div>

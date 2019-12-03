@@ -3,16 +3,25 @@
 .Fruit {
 
   &__single {
-    padding-top: 10px;
-    padding-bottom: 200px;
+    padding-bottom: 120px;
+
+    @include responsive($tabletSmall) {
+        padding-top: 10px;
+        padding-bottom: 200px;
+    }
   }
 
   &__visual {
-    width: 50%;
+    width: 75%;
     max-width: 300px;
-    margin: 30px auto;
+    margin: 120px auto 40px;
     position: relative;
     z-index: 5;
+
+    @include responsive($tabletSmall) {
+      width: 50%;
+      margin: 30px auto;
+    }
 
     > * {
       background: transparent;
@@ -39,34 +48,61 @@
     z-index: 100;
 
     &:nth-child(1) {
-      width:30%;
+      width:40%;
       top:-12%;
-      left:50%;
+      left:55%;
+
+      @include responsive($tabletSmall) {
+        width:25%;
+        left:55%;
+      }
     }
 
     &:nth-child(2) {
-      width:10%;
-      top:10%;
-      left:10%;
+      width:20%;
+      top:12%;
+      left:-10%;
+
+      @include responsive($tabletSmall) {
+        left:10%;
+        width:10%;
+        top:10%;
+      }
     }
 
     &:nth-child(3) {
-      width:40%;
-      bottom:20%;
-      left:90%;
+      width: 30%;
+      bottom: 8%;
+      left: 80%;
+
+      @include responsive($tabletSmall) {
+        bottom:20%;
+        left:90%;
+      }
     }
 
     &:nth-child(4) {
       width:10%;
-      bottom:0%;
-      left:20%;
+      bottom:10%;
+      left:5%;
       z-index: -1;
+
+      @include responsive($tabletSmall) {
+        bottom:0%;
+        left:20%;
+      }
     }
 
     &:nth-child(5) {
       width:20%;
-      bottom:20%;
-      right:90%;
+      bottom:25%;
+      right:85%;
+
+      @include responsive($tabletSmall) {
+        width:20%;
+        bottom:20%;
+        right:90%;
+      }
     }
 
     :global(.gatsby-image-wrapper) {
@@ -103,30 +139,41 @@
   }
 
   &__calendar {
-    margin: 120px auto 0;
+    margin: 80px auto 0;
+
+    @include responsive($tabletSmall) {
+      margin: 120px auto 0;
+    }
   }
 }
 
 .Month {
   position: relative;
-  @include flex(center, flex-end);
-  min-height: 120px;
-  padding-right: 180px;
-  width:50%;
-  margin-left: 60px;
+
+  @include responsive($tabletSmall) {
+    @include flex(center, flex-end);
+    min-height: 120px;
+    padding-right: 180px;
+    width:50%;
+    margin-left: 60px;
+  }
 
   &:nth-child(odd) {
-    margin-left: calc(50% - 60px);
-    padding-right: 0;
-    padding-left: 180px;
-    justify-content: flex-start;
+    @include responsive($tabletSmall) {
+      margin-left: calc(50% - 60px);
+      padding-right: 0;
+      padding-left: 180px;
+      justify-content: flex-start;
+    }
 
     .Month__name {
       left: 0;
       right: initial;
 
       &:after {
-        left: 98%;
+        @include responsive($tabletSmall) {
+          left: 98%;
+        }
       }
     }
   }
@@ -136,10 +183,18 @@
   }
 
   &__name {
-    position: absolute;
-    top: 0;
-    right: 0;
-    min-width: 120px;
+    position: relative;
+    width: 120px;
+    margin: 0 auto;
+
+    @include responsive($tabletSmall) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      min-width: 120px;
+      width: auto;
+      margin: 0;
+    }
 
     &:before {
       content: '';
@@ -155,12 +210,18 @@
       width: 20px;
       height: 20px;
       position: absolute;
-      top: 50%;
-      left: 2%;
-      transform: rotate(45deg);
-      margin-top: -10px;
-      margin-left: -10px;
+      top: 100%;
+      left: 50%;
+      transform: rotate(45deg) translate(-90%, -30%);
       background: $white;
+
+      @include responsive($tabletSmall) {
+        top: 50%;
+        left: 2%;
+        margin-top: -10px;
+        margin-left: -10px;
+        transform: rotate(45deg);
+      }
     }
 
     span {
@@ -179,6 +240,11 @@
 
   &__content {
     max-width: 320px;
+
+    @include responsive($tabletSmall, max) {
+      margin: 30px auto 0;
+      text-align: center;
+    }
 
     h3 {
       text-transform: uppercase;

@@ -57,7 +57,7 @@
     margin-bottom: -120px;
 
     @include responsive($tabletSmall) {
-      position: absolute;
+      position: absolute!important;
       top: 100%;
       left: 10%;
       width: 25%;

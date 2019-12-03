@@ -5,6 +5,7 @@ import s from './About.module.scss';
 import { Container } from 'components/container/Container'
 import { YSWYWContent } from 'components/page/YSWYWContent'
 import { Visual } from 'components/visual/Visual'
+import { Prllx } from 'components/prllx/Prllx'
 import { EcoResponsable } from 'components/eco-responsable/EcoResponsable'
 
 import { Lines } from 'components/lines/Lines'
@@ -36,7 +37,9 @@ export const About = ({ data }) =>  {
           <Visual className={s.About__visual} img={data.image}/>
 
           <Lines className="AboutLines">
-            <AboutLines/>
+            <Prllx from='{"y": "40"}' to='{"y": "-40"}'>
+              <AboutLines/>
+            </Prllx>
           </Lines>
 
         </Container>

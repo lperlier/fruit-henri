@@ -5,6 +5,7 @@ import s from './Contact.module.scss';
 import useContact from 'hooks/use-contact';
 
 import { Container } from 'components/container/Container';
+import { Prllx } from 'components/prllx/Prllx'
 import { YSWYWContent } from 'components/page/YSWYWContent';
 import Arrow from 'assets/svg/arrow.svg'
 
@@ -40,7 +41,9 @@ export const Contact = () => {
           </div>
 
           <Lines className="ContactLines">
-            <ContactLines/>
+            <Prllx from='{"y": "60"}' to='{"y": "-60"}'>
+              <ContactLines/>
+            </Prllx>
           </Lines>
         </Container>
       </div>

@@ -2,7 +2,7 @@ const path = require('path');
 const config = require('./site-config.json')
 
 module.exports = {
-  pathPrefix: process.env.PATH_PREFIX || '/',
+  pathPrefix: process.env.PATH_PREFIX || '/fruit-henri',
   siteMetadata: {
     title: config.title,
     description: config.description

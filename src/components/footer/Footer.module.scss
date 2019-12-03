@@ -15,8 +15,13 @@
    }
 
    &__container {
-     padding-top: 60px;
-     padding-bottom: 60px;
+     padding-top: 75px;
+     padding-bottom: 75px;
+
+     @include responsive($tabletSmall) {
+       padding-top: 60px;
+       padding-bottom: 60px;
+     }
    }
 
    &__mentions {

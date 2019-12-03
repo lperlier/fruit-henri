@@ -11,7 +11,7 @@ export const helmet = {
   htmlAttributes: { lang: 'en' },
   meta: [
     { name: 'description', content: description },
-    { name: 'viewport', content: 'width=device-width, initial-scale=1, user-scalable=no' },
+    { name: 'viewport', content: 'width=device-width, initial-scale=1' },
     { name: 'apple-mobile-web-app-status-bar-style', content: 'black' },
     { name: 'msapplication-navbutton-color', content: '#000' },
     { name: 'msapplication-TileColor', content: '#000' },

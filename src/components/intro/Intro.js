@@ -1,5 +1,5 @@
 import React from 'react'
-import { TimelineMax, Power3 } from "gsap/all";
+import { TimelineMax, Power3, Bounce } from "gsap/all";
 
 import Tree from 'assets/svg/tree.svg'
 
@@ -36,8 +36,10 @@ export class Intro extends React.Component {
 
 
     this.introTween.fromTo(this.myIntroBrand.current, IntroDuration, { opacity: 0, scale: 1.2 }, { opacity: 1, scale: 1, ease: Power3.easeOut, clearProps: 'all' }, 0);
-    this.introTween.fromTo(this.myIntroInner.current, IntroDuration, { y: 0 }, { y: '75%', ease: Power3.easeInOut, clearProps: 'all' }, 0.8);
-    this.introTween.fromTo(this.myIntro.current, IntroDuration, { y: 0 }, { y: '-100%', ease: Power3.easeInOut, clearProps: 'all' }, 0.8);
+    this.introTween.fromTo(this.myIntroBrand.current.querySelector('.Orange'), IntroDuration * 1.2, { y: 0 }, { y: 90, ease: Bounce.easeOut}, 0);
+    this.introTween.fromTo(this.myIntroBrand.current.querySelector('.Orange'), IntroDuration * 1.2, { x: 0 }, { x: -20, ease: Power3.linear}, 0);
+    this.introTween.fromTo(this.myIntroInner.current, IntroDuration, { y: 0 }, { y: '75%', ease: Power3.easeInOut, clearProps: 'all' }, 1);
+    this.introTween.fromTo(this.myIntro.current, IntroDuration, { y: 0 }, { y: '-100%', ease: Power3.easeInOut, clearProps: 'all' }, 1);
 
   }
 

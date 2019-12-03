@@ -3,9 +3,25 @@
 .BackBtn {
   margin-top: 0px!important;
 
+  @include responsive($tabletSmall, max) {
+    padding:0px!important;
+    width:40px;
+    height:40px;
+  }
+
   :global(body:not(.is--fruit)) & {
-    @include responsive($menuBreakpoint) {
-      display:none;
+    display:none;
+  }
+
+  :global(.Arrow) {
+    @include responsive($tabletSmall, max) {
+      margin:0!important;
+    }
+
+    & + span {
+      @include responsive($tabletSmall, max) {
+        display:none!important;
+      }
     }
   }
 }

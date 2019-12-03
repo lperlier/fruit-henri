@@ -51,6 +51,7 @@
 
     @include responsive($tabletSmall, max) {
       margin: 0 auto 30px;
+      width:70%;
     }
 
     > * {

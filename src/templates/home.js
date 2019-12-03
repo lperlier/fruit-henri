@@ -14,17 +14,23 @@ import { Prllx } from 'components/prllx/Prllx'
 
 import Abricot from 'assets/svg/Abricot.svg'
 
-function Homepage(props) {
+class Homepage extends React.Component {
+  constructor(props) {
+    super(props);
+    this.data = props.data.pageData.frontmatter;
+  }
 
-    const page = props.data.pageData.frontmatter;
+  componentDidMount() {
     document.querySelector('body').classList.remove('is--fruit');
+  }
 
+  render(){
     return (
 
       <PrllxContainer as="main">
 
         <PageHero>
-          <h1>{page.title}</h1>
+          <h1>{this.data.title}</h1>
           <span className="Slogan">Abricots - Pêches - Nectarines - Kiwis</span>
           <div className="Abricot">
             <Prllx from='{"y": "0", "rotation": "0deg"}' to='{"y": "-100", "rotation": "-10deg"}'>
@@ -33,21 +39,21 @@ function Homepage(props) {
           </div>
         </PageHero>
 
-        <PageVisual img={page.image} />
-        <About data={page.about}/>
-        <Verger  data={page.verger}/>
-        <Fruits data={page.fruits}/>
-        <Bref data={page.bref}/>
+        <PageVisual img={this.data.image} />
+        <About data={this.data.about}/>
+        <Verger  data={this.data.verger}/>
+        <Fruits data={this.data.fruits}/>
+        <Bref data={this.data.bref}/>
 
         <section id="Recrutment" className="Recrutment">
-          <Recrutment data={page.recrutment}/>
+          <Recrutment data={this.data.recrutment}/>
           <Contact/>
         </section>
 
       </PrllxContainer>
 
     );
-
+  }
 };
 
 export default Homepage;

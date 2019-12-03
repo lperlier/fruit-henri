@@ -5,6 +5,7 @@ import s from './Verger.module.scss';
 import { Container } from 'components/container/Container'
 import { YSWYWContent } from 'components/page/YSWYWContent'
 import { Visual } from 'components/visual/Visual'
+import { Prllx } from 'components/prllx/Prllx'
 import { EcoResponsable } from 'components/eco-responsable/EcoResponsable'
 
 import { Lines } from 'components/lines/Lines'
@@ -30,7 +31,9 @@ export const Verger = ({ data }) => (
         <Visual className={s.Verger__visual} img={data.image}/>
 
         <Lines className="VergerLines">
-          <VergerLines/>
+          <Prllx from='{"y": "40"}' to='{"y": "-40"}'>
+            <VergerLines/>
+          </Prllx>
         </Lines>
 
       </Container>

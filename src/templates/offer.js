@@ -2,7 +2,6 @@ import React from 'react'
 import { graphql } from 'gatsby'
 
 import { Container } from 'components/container/Container'
-import { Visual } from 'components/visual/Visual'
 import { Contact } from 'components/contact/Contact'
 
 import s from './offer.module.scss';
@@ -22,8 +21,6 @@ function Offer(props) {
                 De {offer.month_start} à {offer.month_end}
               </div>
             </div>
-
-            <Visual img={offer.visual} prllx="80"/>
 
             <div className={s.Offer__content} dangerouslySetInnerHTML={{ __html: props.data.pageData.html }} />
 

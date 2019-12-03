@@ -27,10 +27,11 @@ export class PageHero extends React.Component {
   componentDidMount() {
 
     this.TL = gsap.timeline({ paused:true, defaults: {duration: 2, ease: "power3.out"}, delay:0.2 });
-    this.TL.fromTo(this.PageHero.current.querySelector('h1'), {opacity: 0, y: 40}, {opacity: 1, y: 0, clearprops:"All"}, 0);
-    this.TL.fromTo(this.PageHero.current.querySelector('.Slogan'), {opacity: 0, y: 40}, {opacity: 1, y: 0, clearprops:"All"}, 0.3);
+    this.TL.fromTo(this.PageHero.current.querySelector('h1'), {opacity: 0, y: 40}, {opacity: 1, y: 0, clearProps:"All"}, 0);
+    this.TL.fromTo(this.PageHero.current.querySelector('.Slogan'), {opacity: 0, y: 40}, {opacity: 1, y: 0, clearProps:"All"}, 0.3);
     this.TL.from(this.PageHero.current.querySelector('.Abricot'), {duration:2, opacity: 0, rotation:"5deg", y: "-50%"}, 0.6);
     this.TL.from(this.PageHeroLines.current, {duration: 2, opacity: 0, y:"10%"}, 0);
+    this.TL.from(this.PageHero.current.nextSibling, {duration: 2, opacity: 0, y:"10%"}, 0);
     this.TL.play();
 
   }
