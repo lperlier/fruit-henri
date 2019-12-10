@@ -104,7 +104,7 @@ apply:
   title: "… et pour postuler ?"
   text: "<h2>… et pour<br><strong>postuler ?</strong></h2><p>Télécharger notre dossier
     d’inscription et venez le déposer aux bureaux à la station de conditionnement.</p>"
-  file: ''
+  file: "/static/images/fruit-henri.pdf"
   phone: 04 88 99 88 99
   email: samuel.fdhenri@gmail.com
 hve:
