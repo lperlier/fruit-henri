@@ -143,6 +143,11 @@ fields:
     config:
       maxSize: 250
     label: Visuel
+  - name: recrut_email
+    type: text
+    config:
+      required: false
+    label: Email de recrutement
   - name: offres_station
     type: list
     config:
