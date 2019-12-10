@@ -99,6 +99,7 @@ recrutment:
   - src/pages/offers/verger/taille.md
   - src/pages/offers/verger/eclaircissage.md
   - src/pages/offers/verger/cueillette.md
+  recrut_email: recrutment@fruit-henri.com
 apply:
   title: "… et pour postuler ?"
   text: "<h2>… et pour<br><strong>postuler ?</strong></h2><p>Télécharger notre dossier
