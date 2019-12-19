@@ -9,6 +9,10 @@
         padding-top: 10px;
         padding-bottom: 200px;
     }
+
+    :global(.is--blurred > *) {
+      filter:blur(5px);
+    }
   }
 
   &__visual {

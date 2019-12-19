@@ -9,6 +9,9 @@ const useContact = () => {
           apply {
             title
             text
+            file {
+              publicURL
+            }
             phone
             email
           }

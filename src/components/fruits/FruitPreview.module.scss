@@ -35,7 +35,7 @@
     }
 
     @include responsive($desk) {
-      margin-top:160px;
+      margin-top:180px;
     }
   }
 
@@ -57,6 +57,14 @@
     > * {
       position: relative;
       z-index: 10;
+
+      & + * {
+        position: absolute!important;
+        width: 100%;
+        left: 0;
+        top: 0;
+        z-index: 1;
+      }
     }
 
     :global(.Fruit) {

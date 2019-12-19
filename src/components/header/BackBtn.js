@@ -8,7 +8,7 @@ export const BackBtn = (props) => {
 
     return (
 
-      <Link to="/" className={`${s.BackBtn} Btn has--arrow is--green`}>
+      <Link to="/#Fruits" className={`${s.BackBtn} Btn has--arrow is--green`}>
         <span className="Arrow"><Arrow /></span>
         <span>RETOUR AUX FRUITS</span>
       </Link>

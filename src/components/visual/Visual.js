@@ -19,7 +19,7 @@ import s from './Visual.module.scss';
 
       return (
         <div className={this.itemClasses}>
-          <Prllx from='{"scale": "1.2"}' to='{"scale": "1"}'>
+          <Prllx from='{"scale": "1.1", "y" : "-40"}' to='{"scale": "1", "y" : "40"}'>
             <Img fluid={this.props.img.childImageSharp.fluid} />
           </Prllx>
         </div>

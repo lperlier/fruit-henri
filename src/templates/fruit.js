@@ -27,6 +27,7 @@ class Fruit extends React.Component {
       }
 
       this.fruitPrllx = this.data.visual_prllx != null ? this.data.visual_prllx.childImageSharp : this.data.visual.childImageSharp;
+      this.isBlurred = this.data.visual_prllx === null ? " is--blurred" : "";
       this.FruitHeader = React.createRef();
       this.FruitPrllxWrapper = React.createRef();
       this.FruitCalendar = React.createRef();
@@ -38,8 +39,8 @@ class Fruit extends React.Component {
       document.querySelector('body').classList.add('is--fruit');
 
       this.TL = gsap.timeline({ paused:true, defaults: {duration: 2, ease: "power3.out"}, delay:0.2 });
-      this.TL.fromTo(this.FruitHeader.current.querySelectorAll(':scope > *'), {opacity: 0, y: 40}, {opacity: 1, y: 0, clearProps:"All", stagger:0.1}, 0);
-      this.TL.fromTo(this.FruitPrllxWrapper.current.querySelectorAll(':scope > * .Fruit'), {y: 40, opacity: 0}, {y:0, opacity: 1, clearProps:"All", stagger:0.1}, 0);
+      this.TL.fromTo(this.FruitHeader.current.querySelectorAll(':scope > *'), {opacity: 0, y: -40}, {opacity: 1, y: 0, clearProps:"All", stagger:0.1}, 0);
+      this.TL.fromTo(this.FruitPrllxWrapper.current.querySelectorAll(':scope > * .Fruit'), {y: -40, opacity: 0}, {y:0, opacity: 1, clearProps:"All", stagger:0.1}, 0);
       this.TL.fromTo(this.FruitCalendar.current, {y: 40, opacity: 0}, {y:0, opacity: 1, clearProps:"All"}, 0);
       this.TL.play();
 
@@ -78,7 +79,7 @@ class Fruit extends React.Component {
               ))}
             </div>
 
-            <div className="wrapper" ref={this.FruitPrllxWrapper}>
+            <div className={`wrapper${this.isBlurred}`} ref={this.FruitPrllxWrapper}>
 
               <Prllx className={s.Fruit__prllx} from='{"y": "-100", "rotation": "-20deg"}' to='{"y": "0", "rotation": "-10deg"}'>
                 <Img className="Fruit" fluid={this.fruitPrllx.fluid} />

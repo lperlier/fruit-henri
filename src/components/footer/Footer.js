@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 
 import { Container } from 'components/container/Container'
 import { HVE } from 'components/footer/HVE'
+import { ContactBtn } from 'components/contact/ContactBtn'
 
 import Logo from 'assets/images/logo_w.png'
 import Schtlzr from 'assets/svg/schtzlr.svg'
@@ -42,7 +43,6 @@ export class Footer extends React.Component {
     window.removeEventListener('resize', this.updateSize.bind(this));
   }
 
-
   render() {
 
     return (
@@ -52,15 +52,14 @@ export class Footer extends React.Component {
 
           <HVE />
 
-          <a className="Btn is--white" href="#" target="_blank" rel="noopener noreferrer">Contactez-nous</a>
+          <ContactBtn btnClass="is--white"/>
 
           <Link className={s.brand} to="/">
             <img className="img-fluid" src={Logo} alt="Le fruit d'Henri" />
           </Link>
 
           <div className={s.Footer__mentions}>
-            <span>Copyright ©2018 Le Fruit d’Henri</span>
-            <span>Mentions légales</span>
+            <span>Copyright ©2019 Le Fruit d’Henri</span>
             <span>
               Création
               <a className={s.Schtlzr} href="http://mathieuschatzler.com/" target="_blank" rel="noopener noreferrer">

@@ -24,7 +24,7 @@ export const Contact = () => {
           <div className="wrapper">
 
             <YSWYWContent html={contact.text} />
-            <a className="Btn is--green" href={contact.file} target="_blank" rel="noopener noreferrer">
+            <a className="Btn is--green" href={contact.file.publicURL} target="_blank" rel="noopener noreferrer">
               Télécharger le dossier
             </a>
 

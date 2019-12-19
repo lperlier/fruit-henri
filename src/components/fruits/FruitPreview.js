@@ -20,13 +20,15 @@ export const FruitPreview = ({ fruit }) => {
         <div className={s.Preview__visual}>
 
           {fruit.visual ? (
-            <Prllx from='{"y": "-80", "rotation" : "10deg"}' to='{"y": "0", "rotation" : "0deg", "ease" : "power3.out"}' treshold="0.6">
+            <Prllx from='{"y": "-120", "rotation" : "10deg"}' to='{"y": "0", "rotation" : "0deg", "ease" : "power3.out"}' treshold="1">
               <Img className="Fruit" fluid={fruit.visual.childImageSharp.fluid} />
             </Prllx>
           ) : null }
 
           {fruit.leaves ? (
-            <Img className="Leaves" fluid={fruit.leaves.childImageSharp.fluid} />
+            <Prllx from='{"y": "60"}' to='{"y": "0", "ease" : "power3.out"}' treshold="1">
+              <Img className="Leaves" fluid={fruit.leaves.childImageSharp.fluid} />
+            </Prllx>
           ) : null }
 
         </div>

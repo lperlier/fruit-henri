@@ -15,7 +15,7 @@ import RecrutmentLines3 from 'assets/svg/recrutment_lines_3.svg'
 
 import s from './Recrutment.module.scss';
 
-export const Recrutment = ({ data }) => {
+export const Recrutment = ({ data, contactEmail }) => {
 
   const stationOffers = useOffers(data.offres_station);
   const vergerOffers = useOffers(data.offres_verger);
@@ -48,14 +48,14 @@ export const Recrutment = ({ data }) => {
           {stationOffers.length > 0 &&
             <div className={s.Recrutment__offerType}>
               <h3>Offres Station</h3>
-              <OfferSwiper offers={stationOffers} />
+              <OfferSwiper offers={stationOffers} contactEmail={contactEmail}/>
             </div>
           }
 
           {vergerOffers.length > 0 &&
             <div className={s.Recrutment__offerType}>
               <h3>Offres Vergers</h3>
-              <OfferSwiper offers={vergerOffers} />
+              <OfferSwiper offers={vergerOffers} contactEmail={contactEmail}/>
             </div>
            }
 

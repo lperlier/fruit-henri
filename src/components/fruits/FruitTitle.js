@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { Prllx } from 'components/prllx/Prllx'
+
 import s from './FruitTitle.module.scss';
 
 export class FruitTitle extends React.Component {
@@ -23,8 +25,14 @@ export class FruitTitle extends React.Component {
 
         <span className={this.itemClasses} ref={this.FruitTitle}>
           <span>
-            {this.splitText.map(text => (
-              <span key={text}>{text}</span>
+            {this.splitText.map((text, index) => (
+              <span key={text}>
+                { index === 1 ? (
+                  <Prllx from='{"x": "-40"}' to='{"x": "0"}'>{text}</Prllx>
+                ) : (
+                  <Prllx from='{"x": "40"}' to='{"x": "0"}'>{text}</Prllx>
+                )}
+              </span>
             ))}
           </span>
         </span>

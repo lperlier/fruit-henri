@@ -1,6 +1,8 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
+import { gsap } from "gsap";
+
 import { PageHero } from 'components/page/PageHero'
 import { PageVisual } from 'components/page/PageVisual'
 import { About } from 'components/about/About'
@@ -16,12 +18,20 @@ import Abricot from 'assets/svg/Abricot.svg'
 
 class Homepage extends React.Component {
   constructor(props) {
+
     super(props);
     this.data = props.data.pageData.frontmatter;
+    this.FruitsSection = React.createRef();
+
   }
 
   componentDidMount() {
     document.querySelector('body').classList.remove('is--fruit');
+
+    this.TL = gsap.timeline({ paused:true, defaults: {duration: 2, ease: "power3.out"}, delay:0.2 });
+    this.TL.fromTo("#Fruits", {opacity: 0}, {opacity: 1, clearProps:"All"}, 0);
+    this.TL.play();
+
   }
 
   render(){
@@ -41,12 +51,12 @@ class Homepage extends React.Component {
 
         <PageVisual img={this.data.image} />
         <About data={this.data.about}/>
-        <Verger  data={this.data.verger}/>
+        <Verger data={this.data.verger}/>
         <Fruits data={this.data.fruits}/>
         <Bref data={this.data.bref}/>
 
         <section id="Recrutment" className="Recrutment">
-          <Recrutment data={this.data.recrutment}/>
+          <Recrutment data={this.data.recrutment} contactEmail={this.data.recrutment.recrut_email}/>
           <Contact/>
         </section>
 
@@ -131,6 +141,7 @@ export const pageQuery = graphql`
             }
             publicURL
           }
+          recrut_email
           offres_station
           offres_verger
         }

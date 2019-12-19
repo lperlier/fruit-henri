@@ -16,6 +16,11 @@
   white-space: nowrap;
   line-height: 1.2;
 
+  div[data-prllx] {
+    position: relative;
+    display:block;
+  }
+
   > span {
     display:inline-block;
     position: relative;

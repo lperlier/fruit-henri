@@ -48,7 +48,7 @@ export class OfferSwiper extends React.Component {
 
             {this.props.offers.map(offer => (
               <div className="swiper-slide" key={offer.slug}>
-                <OfferPreview offer={offer}/>
+                <OfferPreview offer={offer} contactEmail={this.props.contactEmail}/>
               </div>
             ))}
 

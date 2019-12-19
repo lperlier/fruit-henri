@@ -5,7 +5,7 @@ import Arrow from 'assets/svg/arrow.svg'
 
 import s from './offerPreview.module.scss';
 
-export const OfferPreview = ({ offer }) => {
+export const OfferPreview = ({ offer, contactEmail }) => {
 
   function RemapMonth(month) {
     switch (month) {
@@ -44,7 +44,7 @@ export const OfferPreview = ({ offer }) => {
   return (
     <>
 
-      <a href="#" className={s.Offer__preview} target="_blank" rel="noopener noreferrer">
+      <a href={`mailto:${contactEmail}`} className={s.Offer__preview} target="_blank" rel="noopener noreferrer">
         <div className="inner">
           <h3 className={s.Offer__title}>{offer.title}</h3>
           <div className={s.Offer__periode}>
