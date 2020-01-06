@@ -24,4 +24,23 @@
       }
     }
   }
+
+  main & {
+    display: flex !important;
+    flex-wrap: nowrap;
+    width: 240px!important;
+    margin: 80px auto 0!important;
+
+    @include responsive($tabletSmall) {
+      margin: 120px auto 0!important;
+    }
+
+    :global(.Arrow) {
+      margin-right:15px!important;
+      
+      & + span {
+        display: inherit!important;
+      }
+    }
+  }
 }

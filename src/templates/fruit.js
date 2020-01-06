@@ -5,6 +5,7 @@ import { graphql, Link } from 'gatsby'
 import Img from 'gatsby-image'
 import { gsap } from "gsap";
 
+import { BackBtn } from 'components/header/BackBtn'
 import { Container } from 'components/container/Container'
 import { YSWYWContent } from 'components/page/YSWYWContent'
 import { PrllxContainer } from 'components/prllx/PrllxContainer'
@@ -82,6 +83,8 @@ class Fruit extends React.Component {
                 </div>
               ))}
             </div>
+
+            <BackBtn />
 
             <div className={`wrapper${this.isBlurred}`} ref={this.FruitPrllxWrapper}>
 
