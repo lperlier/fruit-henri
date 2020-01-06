@@ -1,4 +1,5 @@
 import React from 'react'
+import Helmet from 'react-helmet';
 // eslint-disable-next-line
 import { graphql, Link } from 'gatsby'
 import Img from 'gatsby-image'
@@ -49,6 +50,9 @@ class Fruit extends React.Component {
     render(){
       return (
         <PrllxContainer  as="main" className={s.Fruit__single}>
+
+          <Helmet title={this.data.title} />
+
           <Container>
 
             <div className={s.Fruit__header} ref={this.FruitHeader}>

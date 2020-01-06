@@ -1,4 +1,5 @@
 import React from 'react'
+import Helmet from 'react-helmet';
 import { graphql } from 'gatsby'
 
 import { gsap } from "gsap";
@@ -38,6 +39,8 @@ class Homepage extends React.Component {
     return (
 
       <PrllxContainer as="main">
+
+        <Helmet title="Arboriculteur dans le Gard | Production et vente directe" />
 
         <PageHero>
           <h1>{this.data.title}</h1>

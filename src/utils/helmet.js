@@ -7,7 +7,7 @@ const share = require('assets/images/share.jpg');
 
 export const helmet = {
   title,
-  titleTemplate: '%s - '+title,
+  titleTemplate: title + ' - %s',
   htmlAttributes: { lang: 'en' },
   meta: [
     { name: 'description', content: description },
