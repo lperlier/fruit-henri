@@ -105,8 +105,8 @@ apply:
   text: "<h2>… et pour<br><strong>postuler ?</strong></h2><p>Télécharger notre dossier
     d’inscription et venez le déposer aux bureaux à la station de conditionnement.</p>"
   file: "/static/images/Dossier d'inscription 2019.pdf"
-  phone: 04 88 99 88 99
-  email: samuel.fdhenri@gmail.com
+  phone: 04 66 01 78 78
+  email: recrutement.fruitdhenri@gmail.com
 hve:
   title: "#NOUSSOMMESH.V.E"
   text: "<p>La certification environnementale des exploitations agricoles répond au
