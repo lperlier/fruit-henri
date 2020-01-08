@@ -27,7 +27,7 @@ calendar:
     dernière est optimum.
 fruit_single: le/ki/wi
 visual: "/static/images/kiwi.png"
-leaves: "/static/images/peach_leaves-1.png"
+leaves: "/static/images/kiwi_leaves.png"
 visual_prllx: "/static/images/kiwi_prllx.png"
 
 ---
