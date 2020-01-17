@@ -8,21 +8,12 @@
     padding: 30px;
     position: relative;
     text-decoration: none!important;
-
-    p {
-      font-size: 1.2rem;
-      color: $fontGrey;
-    }
   }
 
   &__title {
     color:$green;
-    @include fluid-type($tabletSmall, $deskXXL, 16px, 22px);
-    margin-bottom: 10px;
-
-    @include responsive($tabletSmall) {
-      margin-bottom: 20px;
-    }
+    @include fluid-type($tabletSmall, $deskXXL, 22px, 22px);
+    margin-bottom: 5px;
   }
 
   &__periode {
@@ -33,9 +24,12 @@
     font-family: $open;
     font-weight: bold;
     letter-spacing: 0.3em;
-    position: absolute;
-    top: 36px;
-    right: 30px;
+
+    @include responsive($deskXL) {
+      position: absolute;
+      top: 38px;
+      right: 30px;
+    }
 
     :global(.arrow) {
       margin:0 10px;
@@ -43,6 +37,16 @@
       svg > * {
         fill:$yellow;
       }
+    }
+  }
+
+  &__content {
+    margin-top: 20px;
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: $fontGrey;
     }
   }
 }

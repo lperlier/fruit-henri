@@ -54,7 +54,7 @@ export const OfferPreview = ({ offer, contactEmail }) => {
             </i>
             <span>{offer.month_end}</span>
           </div>
-          <YSWYWContent html={offer.text} />
+          <YSWYWContent className={s.Offer__content} html={offer.text} />
         </div>
       </a>
 
