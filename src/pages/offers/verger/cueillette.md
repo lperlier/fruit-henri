@@ -1,8 +1,8 @@
 ---
 template: offer
 type: verger
-month_start: Septembre
-month_end: Décembre
+month_start: Mai
+month_end: Septembre
 title: Cueillette
 
 ---
