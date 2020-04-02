@@ -27,6 +27,8 @@
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
     "react-intersection-observer": "^8.25.1",
+    "react-modal-video": "^1.2.3",
+    "react-youtube": "^7.9.0",
     "swiper": "^5.2.0"
   },
   "keywords": [

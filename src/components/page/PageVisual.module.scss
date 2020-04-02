@@ -4,10 +4,8 @@
 
   overflow: hidden;
   position: relative;
-
-  @include responsive($tabletSmall) {
-    height: 400px;
-  }
+  background: darken($grey, 5%);
+  height: 400px;
 
   > * {
     @include responsive($tabletSmall) {
@@ -26,4 +24,36 @@
       transform: translateY(-50%);
     }
   }
+}
+
+.iframe__container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+
+  &:before {
+    content:'';
+    display: block;
+    padding-top: 400px;
+  }
+
+  iframe {
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1200px;
+    height: 840px;
+    transform: translate(-50%, -50%);
+
+    @include responsive($tablet) {
+      width: 110%;
+      height: 240%;
+    }
+  }
+}
+
+.Video__wrapper {
+  position: relative;
 }

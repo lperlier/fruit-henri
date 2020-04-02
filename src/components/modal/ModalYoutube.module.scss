@@ -1,0 +1,23 @@
+@import '~styles/variables';
+
+.modalTrigger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  cursor: pointer;
+}
+
+:global(.modal-video) {
+  background: rgba(0,0,0,0.8);
+}
+
+:global(.modal-video-body) {
+  max-width: 1000px;
+}
+
+:global(.modal-video-movie-wrap) {
+  background: $base;
+}
