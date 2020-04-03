@@ -1,3 +1,5 @@
+/* global YT */
+
 import React from 'react'
 import YouTube from 'react-youtube';
 
@@ -16,27 +18,36 @@ export const PageVisual = ({ img, ...rest }) => {
     playerVars: {
       rel: 0,
       loop: 1,
+      autoplay: 1,
       modestbranding : 1,
       playsinline: 1,
       showinfo: 0,
       controls: 0,
-      autoplay: 1,
-      start: 5,
+      start: 5
     }
   };
 
   const onReady = (event) => {
     event.target.mute();
+    event.target.playVideo();
     event.target.setPlaybackQuality('highres');
   }
 
+  let reset = false;
+
   const onPlayerStateChange = (event) => {
-    if (event.data) {
+
+    if (event.data === YT.PlayerState.PLAYING && !reset) {
       const video = event.target;
+      reset = true;
+
+      console.log(video.getPlaybackQuality())
+
       setTimeout((event) => {
         video.seekTo(5);
+        reset = false;
       }, 15000);
-    }
+    };
   };
 
   return (
